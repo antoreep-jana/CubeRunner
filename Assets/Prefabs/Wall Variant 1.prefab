@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373795423253364829, guid: be9c50e1575026f4d857343bd7a1717c, type: 3}
       propertyPath: m_TagString
-      value: Collidables
+      value: Wall Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 7604869037824406789, guid: be9c50e1575026f4d857343bd7a1717c, type: 3}
       propertyPath: m_LocalScale.x

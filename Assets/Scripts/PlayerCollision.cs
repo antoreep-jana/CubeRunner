@@ -55,7 +55,19 @@ public class PlayerCollision : MonoBehaviour
             gameOverScript.GameOverScreen(); // Call the GameOverScreen method to display the game over panel
              playerScript.enabled = false; // Disable the PlayerScript to stop player movement
         }
-      
+        else if (other.gameObject.CompareTag("Wall Collidables"))
+        {
+            Debug.Log("Player has collided with a wall obstacle!");
+            // Handle collision with wall obstacle (e.g., reduce health, play sound, etc.)
+            // Destroy(other.gameObject); // Example: Destroy the wall obstacle
+            
+            Debug.Log("Player has collided with a wall obstacle! Game Over!");
+
+            playerScript.SetWallCollision(true); // Call the method to handle wall collision
+            collisionSound.Play(); // Play the collision sound effect
+            gameOverScript.GameOverScreen(); // Call the GameOverScreen method to display the game over panel
+             playerScript.enabled = false; // Disable the PlayerScript to stop player movement
+        }
     }
 
 

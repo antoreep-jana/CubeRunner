@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collidables
   - Collectables
+  - Wall Collidables
   layers:
   - Default
   - TransparentFX

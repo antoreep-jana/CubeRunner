@@ -19,11 +19,24 @@ public class PlayerBehavior : MonoBehaviour
         
     }
 
+    public void SetWallCollision(bool value)
+    {
+        // Handle wall collision logic here
+        // For example, you can enable or disable player movement based on the value of 'value'
+        // You can also trigger animations or other effects when the player collides with a wall
+        Debug.Log("Inside SetWallCollision method. Value: " + value);
+        Debug.Log("Player has collided with a wall obstacle! WallCrashed: " + value);
+        animator.SetBool("WallCrashed", value);
+    }
+
     // Update is called once per frame
     void Update()
     {   
 
         transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp(transform.position.z, minZ, maxZ));
+
+
+        
        
 
         // JUMP

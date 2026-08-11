@@ -17,7 +17,7 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         // Load the main game scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 - Pedestrial Walk");
     }
 
     public void QuitGame()
