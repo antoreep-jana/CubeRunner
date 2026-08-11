@@ -5,8 +5,8 @@ public class PlayerBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public Rigidbody playerRigidbody;
-    float jumpForce = 5f;
-    float moveSpeed = 5f;
+    public float jumpForce = 5f;
+    public float moveSpeed = 5f;
     public float minZ;
     public float maxZ;
 
@@ -27,26 +27,37 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             // playerRigidbody.AddForce(0, jumpForce, 0 );
-            transform.Translate(0, jumpForce * Time.deltaTime, 0);
+            transform.Translate(0, jumpForce * Time.deltaTime, 0, Space.World);
         }
 
 
         // GO RIGHT
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
+            // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
+            transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
         }
         // GO LEFT
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime);
+            transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
             
         }
-        // JUMP{
-        else
+         else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
+            
         }
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(-moveSpeed * Time.deltaTime, 0, 0, Space.World);
+            
+        }
+        // {
+        // else
+        // {
+        //     transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
+        // }
 
 
     }
