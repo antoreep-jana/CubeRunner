@@ -9405,7 +9405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayher
   playerTransform: {fileID: 268229954}
-  offset: 2
+  offsetX: 3.16
+  offsetY: 0
+  offsetZ: 0
 --- !u!1001 &331639025
 PrefabInstance:
   m_ObjectHideFlags: 0
