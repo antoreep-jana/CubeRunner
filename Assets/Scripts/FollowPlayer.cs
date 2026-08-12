@@ -18,6 +18,11 @@ public class FollowPlayher : MonoBehaviour
 
         cameraPosition.x = playerTransform.position.x - offset;
 
+        // copying y and z positions and adding those as well
+
+        // cameraPosition.y = playerTransform.position.y;
+        cameraPosition.z = playerTransform.position.z;
+
         transform.position = cameraPosition;
     }
 }

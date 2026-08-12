@@ -51,13 +51,15 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
-            transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            transform.Translate(0, 0, -moveSpeed * Time.deltaTime, Space.World);
             animator.SetBool("IsRunning", true);
         }
         // GO LEFT
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            // transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            transform.Translate(0, 0, moveSpeed * Time.deltaTime, Space.World);
             animator.SetBool("IsRunning", true);
             
         }
