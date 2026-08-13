@@ -8,6 +8,9 @@ public class PlayerBehavior : MonoBehaviour
 
 
     public Animator animator;
+
+    [Header("Movement Parameters")]
+    [Space(10)]
     public float jumpForce = 5f;
     public float moveSpeed = 5f;
     public float minZ;

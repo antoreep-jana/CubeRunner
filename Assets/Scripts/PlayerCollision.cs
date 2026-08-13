@@ -4,15 +4,23 @@ public class PlayerCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+
+    [Header("Script References")]
+    [Space(10)]
     public PlayerBehavior playerScript;
 
     public GameOver gameOverScript;
 
     public Score scoreScript;
 
+
+    [Header("Audio Sources")]
+    [Space(10)]
     public AudioSource collectableSound; // Reference to the AudioSource component for collision sound
 
     public AudioSource collisionSound; // Reference to the AudioSource component for collision sound
+
+
     void Start()
     {
         
