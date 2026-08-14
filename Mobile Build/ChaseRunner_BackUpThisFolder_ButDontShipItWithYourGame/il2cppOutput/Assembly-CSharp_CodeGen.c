@@ -29,6 +29,14 @@ extern void MenuScript_Update_m7F6F2AA220CF46BAB2F638E8A37BC9E23E88C7FF (void);
 extern void MenuScript_StartGame_m4893629FE0121A90FE5ECCF1420905FB8012C86C (void);
 extern void MenuScript_QuitGame_mC2000B5CF97F55A6C9595ED9359849CDF9189382 (void);
 extern void MenuScript__ctor_mCDAA51C5C929C62E7082872DA581F913C3E66EDC (void);
+extern void MobileController_Start_m6461CE475E4C1499A1748F429EDB78CC0B3088A9 (void);
+extern void MobileController_Update_mB18532F6776CE18C3D227244C9BB5B4DBDF01B3B (void);
+extern void MobileController__ctor_m34A63ABE293ED09EBF278864CC0CBF66B4FA36AB (void);
+extern void MobileInputScript_OnPointerDown_mB97445A696A224835FA7428956A77A74AD0928A5 (void);
+extern void MobileInputScript_OnPointerUp_mB7BD8C37A5ED43E4CA6DE75F294C866B64F7CC0A (void);
+extern void MobileInputScript_Start_m5CADF3750C55B20F20FEA2DBF77CBF090D26734D (void);
+extern void MobileInputScript_Update_m1EC4FBC544975C67F6D377EDF247C6306AD6AA3F (void);
+extern void MobileInputScript__ctor_mD13E3A8CA3766854C84E6C590C6F639F4CE92A10 (void);
 extern void PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E (void);
 extern void PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999 (void);
 extern void PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7 (void);
@@ -52,7 +60,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[45] = 
+static Il2CppMethodPointer s_methodPointers[53] = 
 {
 	FollowPlayher_Start_mD9881F29CE2F164FC9F49789FC16A6A5536ECED2,
 	FollowPlayher_Update_mC9E7BEC7C546E19CEC4F99DFCBD85553F014317C,
@@ -76,6 +84,14 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	MenuScript_StartGame_m4893629FE0121A90FE5ECCF1420905FB8012C86C,
 	MenuScript_QuitGame_mC2000B5CF97F55A6C9595ED9359849CDF9189382,
 	MenuScript__ctor_mCDAA51C5C929C62E7082872DA581F913C3E66EDC,
+	MobileController_Start_m6461CE475E4C1499A1748F429EDB78CC0B3088A9,
+	MobileController_Update_mB18532F6776CE18C3D227244C9BB5B4DBDF01B3B,
+	MobileController__ctor_m34A63ABE293ED09EBF278864CC0CBF66B4FA36AB,
+	MobileInputScript_OnPointerDown_mB97445A696A224835FA7428956A77A74AD0928A5,
+	MobileInputScript_OnPointerUp_mB7BD8C37A5ED43E4CA6DE75F294C866B64F7CC0A,
+	MobileInputScript_Start_m5CADF3750C55B20F20FEA2DBF77CBF090D26734D,
+	MobileInputScript_Update_m1EC4FBC544975C67F6D377EDF247C6306AD6AA3F,
+	MobileInputScript__ctor_mD13E3A8CA3766854C84E6C590C6F639F4CE92A10,
 	PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E,
 	PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999,
 	PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7,
@@ -100,7 +116,7 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[45] = 
+static const int32_t s_InvokerIndices[53] = 
 {
 	13946,
 	13946,
@@ -121,6 +137,14 @@ static const int32_t s_InvokerIndices[45] =
 	13946,
 	13946,
 	13946,
+	13946,
+	13946,
+	13946,
+	13946,
+	13946,
+	13946,
+	10554,
+	10554,
 	13946,
 	13946,
 	13946,
@@ -152,7 +176,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	45,
+	53,
 	s_methodPointers,
 	0,
 	NULL,

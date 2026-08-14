@@ -2,7 +2,20 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+
+    // Mobile input
+
+    public bool mobileW;
+    public bool mobileA;
+
+    public bool mobileS;
+
+    public bool mobileD;
+
+    public bool mobileJump;
+
+
 
     public Rigidbody playerRigidbody;
 
@@ -43,7 +56,7 @@ public class PlayerBehavior : MonoBehaviour
        
 
         // JUMP
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || mobileJump)
         {
             // playerRigidbody.AddForce(0, jumpForce, 0 );
             transform.Translate(0, jumpForce * Time.deltaTime, 0, Space.World);
@@ -51,7 +64,7 @@ public class PlayerBehavior : MonoBehaviour
 
 
         // GO RIGHT
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || mobileD)
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
@@ -59,20 +72,20 @@ public class PlayerBehavior : MonoBehaviour
             animator.SetBool("IsRunning", true);
         }
         // GO LEFT
-        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || mobileA)
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
             transform.Translate(0, 0, moveSpeed * Time.deltaTime, Space.World);
             animator.SetBool("IsRunning", true);
             
         }
-         else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+         else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || mobileW)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
             animator.SetBool("IsRunning", true);
             
         }
-        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || mobileS)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, 0, Space.World);
             animator.SetBool("IsRunning", true);
