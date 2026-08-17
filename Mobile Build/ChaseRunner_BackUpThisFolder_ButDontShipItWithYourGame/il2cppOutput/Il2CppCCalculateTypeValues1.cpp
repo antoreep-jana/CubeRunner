@@ -37750,6 +37750,7 @@ struct PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2  : public MonoBe
 	float ___moveSpeed;
 	float ___minZ;
 	float ___maxZ;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___runningSound;
 };
 struct PlayerCollision_t7BF0F4C2A506987589B3E5E8938A76977B0051B1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
