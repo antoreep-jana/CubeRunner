@@ -32,7 +32,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Start()
     {
-        
+    
     }
 
     public void SetWallCollision(bool value)
@@ -67,21 +67,27 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) || mobileW && mobileD)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, 135, 0);
             animator.SetBool("IsRunning", true);
+
+
         }
         else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) || mobileW && mobileA)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, 45, 0);
             animator.SetBool("IsRunning", true);
         }
         else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) || mobileS && mobileD)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, -135, 0);
             animator.SetBool("IsRunning", true);
         }
         else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) || mobileS && mobileA)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, -45, 0);
             animator.SetBool("IsRunning", true);
         }
         // GO RIGHT
@@ -90,6 +96,7 @@ public class PlayerBehavior : MonoBehaviour
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
             transform.Translate(0, 0, -moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             animator.SetBool("IsRunning", true);
         }
         // GO LEFT
@@ -97,18 +104,21 @@ public class PlayerBehavior : MonoBehaviour
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
             transform.Translate(0, 0, moveSpeed * Time.deltaTime, Space.World);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
             animator.SetBool("IsRunning", true);
             
         }
          else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || mobileW)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
+            transform.rotation = Quaternion.Euler(0, 90, 0);
             animator.SetBool("IsRunning", true);
             
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || mobileS)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, 0, Space.World);
+            transform.rotation = Quaternion.Euler(0, -90, 0);
             animator.SetBool("IsRunning", true);
             
         }
