@@ -62,9 +62,30 @@ public class PlayerBehavior : MonoBehaviour
             transform.Translate(0, jumpForce * Time.deltaTime, 0, Space.World);
         }
 
-
+        
+        // Adding Four more directions
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) || mobileW && mobileD)
+        {
+            transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            animator.SetBool("IsRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) || mobileW && mobileA)
+        {
+            transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            animator.SetBool("IsRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) || mobileS && mobileD)
+        {
+            transform.Translate(-moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
+            animator.SetBool("IsRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) || mobileS && mobileA)
+        {
+            transform.Translate(-moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
+            animator.SetBool("IsRunning", true);
+        }
         // GO RIGHT
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || mobileD)
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || mobileD)
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
@@ -90,7 +111,10 @@ public class PlayerBehavior : MonoBehaviour
             transform.Translate(-moveSpeed * Time.deltaTime, 0, 0, Space.World);
             animator.SetBool("IsRunning", true);
             
-        }else{
+        }
+        
+        
+        else{
 
         animator.SetBool("IsRunning", false);
         }

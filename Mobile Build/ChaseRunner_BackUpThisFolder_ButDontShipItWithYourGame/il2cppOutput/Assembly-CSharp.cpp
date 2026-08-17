@@ -3014,10 +3014,10 @@ IL_0084:
 	{
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:67>
 		bool L_19;
-		L_19 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)275), NULL);
-		if (L_19)
+		L_19 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)119), NULL);
+		if (!L_19)
 		{
-			goto IL_00a1;
+			goto IL_0096;
 		}
 	}
 	{
@@ -3025,170 +3025,390 @@ IL_0084:
 		L_20 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)100), NULL);
 		if (L_20)
 		{
-			goto IL_00a1;
+			goto IL_00a6;
 		}
 	}
+
+IL_0096:
 	{
-		bool L_21 = __this->___mobileD;
+		bool L_21 = __this->___mobileW;
 		if (!L_21)
 		{
-			goto IL_00d6;
+			goto IL_00e2;
+		}
+	}
+	{
+		bool L_22 = __this->___mobileD;
+		if (!L_22)
+		{
+			goto IL_00e2;
 		}
 	}
 
-IL_00a1:
+IL_00a6:
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:71>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
-		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_23 = __this->___moveSpeed;
-		float L_24;
-		L_24 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		NullCheck(L_22);
-		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_22, (0.0f), (0.0f), ((float)il2cpp_codegen_multiply(((-L_23)), L_24)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:69>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_24 = __this->___moveSpeed;
+		float L_25;
+		L_25 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_26 = __this->___moveSpeed;
+		float L_27;
+		L_27 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_23);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_23, ((float)il2cpp_codegen_multiply(L_24, L_25)), (0.0f), ((float)il2cpp_codegen_multiply(((-L_26)), L_27)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:70>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_28 = __this->___animator;
+		NullCheck(L_28);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_28, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_00e2:
+	{
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:72>
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_25 = __this->___animator;
-		NullCheck(L_25);
-		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_25, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
-		return;
+		bool L_29;
+		L_29 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)119), NULL);
+		if (!L_29)
+		{
+			goto IL_00f4;
+		}
+	}
+	{
+		bool L_30;
+		L_30 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
+		if (L_30)
+		{
+			goto IL_0104;
+		}
 	}
 
-IL_00d6:
+IL_00f4:
 	{
+		bool L_31 = __this->___mobileW;
+		if (!L_31)
+		{
+			goto IL_013f;
+		}
+	}
+	{
+		bool L_32 = __this->___mobileA;
+		if (!L_32)
+		{
+			goto IL_013f;
+		}
+	}
+
+IL_0104:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:74>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33;
+		L_33 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_34 = __this->___moveSpeed;
+		float L_35;
+		L_35 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_36 = __this->___moveSpeed;
+		float L_37;
+		L_37 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_33);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_33, ((float)il2cpp_codegen_multiply(L_34, L_35)), (0.0f), ((float)il2cpp_codegen_multiply(L_36, L_37)), 0, NULL);
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:75>
-		bool L_26;
-		L_26 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)276), NULL);
-		if (L_26)
-		{
-			goto IL_00f3;
-		}
-	}
-	{
-		bool L_27;
-		L_27 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
-		if (L_27)
-		{
-			goto IL_00f3;
-		}
-	}
-	{
-		bool L_28 = __this->___mobileA;
-		if (!L_28)
-		{
-			goto IL_0127;
-		}
-	}
-
-IL_00f3:
-	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:78>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
-		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_30 = __this->___moveSpeed;
-		float L_31;
-		L_31 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		NullCheck(L_29);
-		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_29, (0.0f), (0.0f), ((float)il2cpp_codegen_multiply(L_30, L_31)), 0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:79>
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_32 = __this->___animator;
-		NullCheck(L_32);
-		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_32, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_38 = __this->___animator;
+		NullCheck(L_38);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_38, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
 		return;
 	}
 
-IL_0127:
+IL_013f:
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:82>
-		bool L_33;
-		L_33 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)273), NULL);
-		if (L_33)
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:77>
+		bool L_39;
+		L_39 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)115), NULL);
+		if (!L_39)
 		{
-			goto IL_0144;
+			goto IL_0151;
 		}
 	}
 	{
-		bool L_34;
-		L_34 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)119), NULL);
-		if (L_34)
-		{
-			goto IL_0144;
-		}
-	}
-	{
-		bool L_35 = __this->___mobileW;
-		if (!L_35)
-		{
-			goto IL_0178;
-		}
-	}
-
-IL_0144:
-	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:84>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
-		L_36 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_37 = __this->___moveSpeed;
-		float L_38;
-		L_38 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		NullCheck(L_36);
-		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_36, ((float)il2cpp_codegen_multiply(L_37, L_38)), (0.0f), (0.0f), 0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:85>
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_39 = __this->___animator;
-		NullCheck(L_39);
-		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_39, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
-		return;
-	}
-
-IL_0178:
-	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:88>
 		bool L_40;
-		L_40 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)274), NULL);
+		L_40 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)100), NULL);
 		if (L_40)
 		{
-			goto IL_0195;
-		}
-	}
-	{
-		bool L_41;
-		L_41 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)115), NULL);
-		if (L_41)
-		{
-			goto IL_0195;
-		}
-	}
-	{
-		bool L_42 = __this->___mobileS;
-		if (!L_42)
-		{
-			goto IL_01ca;
+			goto IL_0161;
 		}
 	}
 
-IL_0195:
+IL_0151:
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:90>
+		bool L_41 = __this->___mobileS;
+		if (!L_41)
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		bool L_42 = __this->___mobileD;
+		if (!L_42)
+		{
+			goto IL_019e;
+		}
+	}
+
+IL_0161:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:79>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_43;
 		L_43 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		float L_44 = __this->___moveSpeed;
 		float L_45;
 		L_45 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_46 = __this->___moveSpeed;
+		float L_47;
+		L_47 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		NullCheck(L_43);
-		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_43, ((float)il2cpp_codegen_multiply(((-L_44)), L_45)), (0.0f), (0.0f), 0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:91>
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_46 = __this->___animator;
-		NullCheck(L_46);
-		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_46, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_43, ((float)il2cpp_codegen_multiply(((-L_44)), L_45)), (0.0f), ((float)il2cpp_codegen_multiply(((-L_46)), L_47)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:80>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_48 = __this->___animator;
+		NullCheck(L_48);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_48, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
 		return;
 	}
 
-IL_01ca:
+IL_019e:
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:95>
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_47 = __this->___animator;
-		NullCheck(L_47);
-		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_47, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:104>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:82>
+		bool L_49;
+		L_49 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)115), NULL);
+		if (!L_49)
+		{
+			goto IL_01b0;
+		}
+	}
+	{
+		bool L_50;
+		L_50 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
+		if (L_50)
+		{
+			goto IL_01c0;
+		}
+	}
+
+IL_01b0:
+	{
+		bool L_51 = __this->___mobileS;
+		if (!L_51)
+		{
+			goto IL_01fc;
+		}
+	}
+	{
+		bool L_52 = __this->___mobileA;
+		if (!L_52)
+		{
+			goto IL_01fc;
+		}
+	}
+
+IL_01c0:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:84>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53;
+		L_53 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_54 = __this->___moveSpeed;
+		float L_55;
+		L_55 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_56 = __this->___moveSpeed;
+		float L_57;
+		L_57 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_53);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_53, ((float)il2cpp_codegen_multiply(((-L_54)), L_55)), (0.0f), ((float)il2cpp_codegen_multiply(L_56, L_57)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:85>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_58 = __this->___animator;
+		NullCheck(L_58);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_58, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_01fc:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:88>
+		bool L_59;
+		L_59 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)275), NULL);
+		if (L_59)
+		{
+			goto IL_0219;
+		}
+	}
+	{
+		bool L_60;
+		L_60 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)100), NULL);
+		if (L_60)
+		{
+			goto IL_0219;
+		}
+	}
+	{
+		bool L_61 = __this->___mobileD;
+		if (!L_61)
+		{
+			goto IL_024e;
+		}
+	}
+
+IL_0219:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:92>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_62;
+		L_62 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_63 = __this->___moveSpeed;
+		float L_64;
+		L_64 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_62);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_62, (0.0f), (0.0f), ((float)il2cpp_codegen_multiply(((-L_63)), L_64)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:93>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_65 = __this->___animator;
+		NullCheck(L_65);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_65, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_024e:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:96>
+		bool L_66;
+		L_66 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)276), NULL);
+		if (L_66)
+		{
+			goto IL_026b;
+		}
+	}
+	{
+		bool L_67;
+		L_67 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)97), NULL);
+		if (L_67)
+		{
+			goto IL_026b;
+		}
+	}
+	{
+		bool L_68 = __this->___mobileA;
+		if (!L_68)
+		{
+			goto IL_029f;
+		}
+	}
+
+IL_026b:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:99>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_69;
+		L_69 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_70 = __this->___moveSpeed;
+		float L_71;
+		L_71 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_69);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_69, (0.0f), (0.0f), ((float)il2cpp_codegen_multiply(L_70, L_71)), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:100>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_72 = __this->___animator;
+		NullCheck(L_72);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_72, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_029f:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:103>
+		bool L_73;
+		L_73 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)273), NULL);
+		if (L_73)
+		{
+			goto IL_02bc;
+		}
+	}
+	{
+		bool L_74;
+		L_74 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)119), NULL);
+		if (L_74)
+		{
+			goto IL_02bc;
+		}
+	}
+	{
+		bool L_75 = __this->___mobileW;
+		if (!L_75)
+		{
+			goto IL_02f0;
+		}
+	}
+
+IL_02bc:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:105>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_76;
+		L_76 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_77 = __this->___moveSpeed;
+		float L_78;
+		L_78 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_76);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_76, ((float)il2cpp_codegen_multiply(L_77, L_78)), (0.0f), (0.0f), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:106>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_79 = __this->___animator;
+		NullCheck(L_79);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_79, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_02f0:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:109>
+		bool L_80;
+		L_80 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)274), NULL);
+		if (L_80)
+		{
+			goto IL_030d;
+		}
+	}
+	{
+		bool L_81;
+		L_81 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)115), NULL);
+		if (L_81)
+		{
+			goto IL_030d;
+		}
+	}
+	{
+		bool L_82 = __this->___mobileS;
+		if (!L_82)
+		{
+			goto IL_0342;
+		}
+	}
+
+IL_030d:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:111>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_83;
+		L_83 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_84 = __this->___moveSpeed;
+		float L_85;
+		L_85 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_83);
+		Transform_Translate_m8FF175E92671A19466A7728FEB92EFB4E999EB56(L_83, ((float)il2cpp_codegen_multiply(((-L_84)), L_85)), (0.0f), (0.0f), 0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:112>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_86 = __this->___animator;
+		NullCheck(L_86);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_86, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)1, NULL);
+		return;
+	}
+
+IL_0342:
+	{
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:119>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_87 = __this->___animator;
+		NullCheck(L_87);
+		Animator_SetBool_m6F8D4FAF0770CD4EC1F54406249785DE7391E42B(L_87, _stringLiteral145F5B0B4068B3895C7D3D01D48B50C9B894BFBA, (bool)0, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/PlayerBehavior.cs:128>
 		return;
 	}
 }
