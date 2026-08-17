@@ -136,6 +136,7 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____40CF6AD12A98A9010A2A5EFC03A62581E1EB53E3CA1266537B8B328B022F9A3F_FieldInfo_var;
@@ -522,6 +523,13 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___y;
 	float ___z;
 	float ___w;
+};
+struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D 
+{
+	float ___m_XMin;
+	float ___m_YMin;
+	float ___m_Width;
+	float ___m_Height;
 };
 struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
 {
@@ -1287,6 +1295,9 @@ struct Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A  : public MonoBehaviou
 {
 	PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* ___playerBehavior;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___CircleButton;
+	float ___OUTER_CIRCLE_SIZE;
+	float ___HANDLE_SIZE;
+	float ___MAX_DISTANCE;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CInputU3Ek__BackingField;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___joystickRect;
 };
@@ -1627,6 +1638,10 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 {
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
 };
+struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_StaticFields
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___kZero;
+};
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
@@ -1753,6 +1768,8 @@ inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetCom
 {
 	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnDrag_m39E69636AEDC0E471EAD1371A99F4694ECDBA1E9 (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
@@ -2075,7 +2092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameOver__ctor_m2D4239F9C4BCE2EBFD1D1D6F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0 (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:28>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:29>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___U3CInputU3Ek__BackingField;
 		return L_0;
 	}
@@ -2084,7 +2101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_set_Input_mC9C62735133D5431B3F6A8A92AA5286AB31550DB (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:28>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:29>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_value;
 		__this->___U3CInputU3Ek__BackingField = L_0;
 		return;
@@ -2100,20 +2117,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_Awake_m60FE3C5A0DF8F74B7C2182AA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:34>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:35>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0;
 		L_0 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(__this, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
 		__this->___joystickRect = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___joystickRect), (void*)L_0);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:35>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:36>
 		return;
 	}
 }
 // Method Definition Index: 69320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_Start_m5E46F090910AB69BE9838BFDB91A4F6E6934480C (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:41>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___joystickRect;
+		NullCheck(L_0);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_1;
+		L_1 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_il2cpp_TypeInfo_var);
+		float L_2;
+		L_2 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_0), NULL);
+		__this->___OUTER_CIRCLE_SIZE = L_2;
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:42>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3 = __this->___CircleButton;
+		NullCheck(L_3);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_4;
+		L_4 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_3, NULL);
+		V_0 = L_4;
+		float L_5;
+		L_5 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_0), NULL);
+		__this->___HANDLE_SIZE = L_5;
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:43>
+		float L_6 = __this->___OUTER_CIRCLE_SIZE;
+		float L_7 = __this->___HANDLE_SIZE;
+		__this->___MAX_DISTANCE = ((float)(((float)il2cpp_codegen_subtract(L_6, L_7))/(2.0f)));
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:44>
 		return;
 	}
 }
@@ -2121,7 +2169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_Start_m5E46F090910AB69BE9838BFD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_Update_m30AC0394CA0041DD1806C85C68F89E3146566E0F (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:47>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:50>
 		return;
 	}
 }
@@ -2129,10 +2177,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_Update_m30AC0394CA0041DD1806C85
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnPointerDown_mF176903D532D9129C90BBBD00FD7714BA3A0D8E6 (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:51>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:54>
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_0 = ___0_eventData;
 		Joystick_OnDrag_m39E69636AEDC0E471EAD1371A99F4694ECDBA1E9(__this, L_0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:52>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:55>
 		return;
 	}
 }
@@ -2140,19 +2188,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnPointerDown_mF176903D532D9129
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnPointerUp_mEDED4DA77D954CBAC11CF82B57AB7A4DBFCDE22C (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:57>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:60>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___CircleButton;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_0);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_0, L_1, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:59>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:62>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		Joystick_set_Input_mC9C62735133D5431B3F6A8A92AA5286AB31550DB_inline(__this, L_2, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:62>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:65>
 		Joystick_SetMobileButtons_m370817B86F5313EE977C70AE9B6862B2CF3CE355(__this, (bool)0, (bool)0, (bool)0, (bool)0, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:63>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:66>
 		return;
 	}
 }
@@ -2172,8 +2220,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnDrag_m39E69636AEDC0E471EAD137
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:68>
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:69>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:71>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:72>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___joystickRect;
 		PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* L_1 = ___0_eventData;
 		NullCheck(L_1);
@@ -2186,31 +2234,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_OnDrag_m39E69636AEDC0E471EAD137
 		il2cpp_codegen_runtime_class_init_inline(RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var);
 		bool L_5;
 		L_5 = RectTransformUtility_ScreenPointToLocalPointInRectangle_m01A75CAFB6D1019F1C65BA606635EAB10AF31195(L_0, L_2, L_4, (&V_0), NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:71>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:74>
 		String_t* L_6;
 		L_6 = Vector2_ToString_mB47B29ECB21FA3A4ACEABEFA18077A5A6BBCCB27_inline((&V_0), NULL);
 		String_t* L_7;
 		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral4F63A4DCC1B3CACC4A66D3F2DD0CB09DD42693C1, L_6, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:74>
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = V_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
-		L_9 = Vector2_ClampMagnitude_m9BF093877BD11282C41088022FE4AE70A3A0ECA9_inline(L_8, (90.0f), NULL);
-		V_1 = L_9;
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:77>
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = __this->___CircleButton;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = V_1;
-		NullCheck(L_10);
-		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_10, L_11, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:79>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = V_0;
+		float L_9 = __this->___MAX_DISTANCE;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
+		L_10 = Vector2_ClampMagnitude_m9BF093877BD11282C41088022FE4AE70A3A0ECA9_inline(L_8, L_9, NULL);
+		V_1 = L_10;
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:80>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_11 = __this->___CircleButton;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = V_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
-		L_13 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_12, (90.0f), NULL);
-		Joystick_set_Input_mC9C62735133D5431B3F6A8A92AA5286AB31550DB_inline(__this, L_13, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:83>
+		NullCheck(L_11);
+		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_11, L_12, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:82>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13 = V_1;
+		float L_14 = __this->___MAX_DISTANCE;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15;
+		L_15 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_13, L_14, NULL);
+		Joystick_set_Input_mC9C62735133D5431B3F6A8A92AA5286AB31550DB_inline(__this, L_15, NULL);
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:86>
 		Joystick_UpdateMovement_m58598545E578A3C0F49587EE32B6F8D0A4160A61(__this, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:85>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:88>
 		return;
 	}
 }
@@ -2222,38 +2272,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_UpdateMovement_m58598545E578A3C
 	bool V_2 = false;
 	bool V_3 = false;
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:89>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:92>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
 		L_0 = Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0_inline(__this, NULL);
 		float L_1 = L_0.___y;
 		V_0 = (bool)((((float)L_1) > ((float)(0.200000003f)))? 1 : 0);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:90>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:93>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0_inline(__this, NULL);
 		float L_3 = L_2.___x;
 		V_1 = (bool)((((float)L_3) < ((float)(-0.200000003f)))? 1 : 0);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:91>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:94>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
 		L_4 = Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0_inline(__this, NULL);
 		float L_5 = L_4.___y;
 		V_2 = (bool)((((float)L_5) < ((float)(-0.200000003f)))? 1 : 0);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:92>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:95>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
 		L_6 = Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0_inline(__this, NULL);
 		float L_7 = L_6.___x;
 		V_3 = (bool)((((float)L_7) > ((float)(0.200000003f)))? 1 : 0);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:94>
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:95>
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:96>
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:97>
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:98>
 		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:99>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:100>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:101>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:102>
 		bool L_8 = V_0;
 		bool L_9 = V_1;
 		bool L_10 = V_2;
 		bool L_11 = V_3;
 		Joystick_SetMobileButtons_m370817B86F5313EE977C70AE9B6862B2CF3CE355(__this, L_8, L_9, L_10, L_11, NULL);
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:100>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:103>
 		return;
 	}
 }
@@ -2261,27 +2311,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_UpdateMovement_m58598545E578A3C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Joystick_SetMobileButtons_m370817B86F5313EE977C70AE9B6862B2CF3CE355 (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, bool ___0_w, bool ___1_a, bool ___2_s, bool ___3_d, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:108>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:111>
 		PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* L_0 = __this->___playerBehavior;
 		bool L_1 = ___0_w;
 		NullCheck(L_0);
 		L_0->___mobileW = L_1;
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:109>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:112>
 		PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* L_2 = __this->___playerBehavior;
 		bool L_3 = ___1_a;
 		NullCheck(L_2);
 		L_2->___mobileA = L_3;
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:110>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:113>
 		PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* L_4 = __this->___playerBehavior;
 		bool L_5 = ___2_s;
 		NullCheck(L_4);
 		L_4->___mobileS = L_5;
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:111>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:114>
 		PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* L_6 = __this->___playerBehavior;
 		bool L_7 = ___3_d;
 		NullCheck(L_6);
 		L_6->___mobileD = L_7;
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:112>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:115>
 		return;
 	}
 }
@@ -3912,6 +3962,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Score_GetScore_m401C77FE1
 		return L_0;
 	}
 }
+// Method Definition Index: 33891
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Geometry/Rect.cs:128>
+		float L_0 = __this->___m_Width;
+		return L_0;
+	}
+}
 // Method Definition Index: 35411
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
 {
@@ -3931,7 +3990,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Joystick_set_Input_mC9C62735133D5431B3F6A8A92AA5286AB31550DB_inline (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:28>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:29>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_value;
 		__this->___U3CInputU3Ek__BackingField = L_0;
 		return;
@@ -4060,7 +4119,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Joystick_get_Input_mF56856CF01B39E5CFDB8D7708D28A1F3B750FAA0_inline (Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:28>
+		//<source_info:D:/UnityProjects/3D Level platformer/Assets/Scripts/Joystick.cs:29>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___U3CInputU3Ek__BackingField;
 		return L_0;
 	}

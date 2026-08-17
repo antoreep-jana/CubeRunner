@@ -13,15 +13,16 @@ IPointerDownHandler, IDragHandler, IPointerUpHandler
 
 
 
-    private const float OUTER_CIRCLE_SIZE = 350f;
-    private const float HANDLE_SIZE = 170f;
+    // GEneralizing the variables instead of hard coding the values
+    private float OUTER_CIRCLE_SIZE; //= 350f;
+    private float HANDLE_SIZE;// = 170f;
 
     // Prevents tiny joystick movements from triggering movement.
     private const float THRESHOLD = 0.2f; // THRESHOLDING THE BUTTON's MOVEMENT
 
     // The handle's center can move 90 pixels from the center.
-    private const float MAX_DISTANCE =
-        (OUTER_CIRCLE_SIZE - HANDLE_SIZE) / 2f;
+    private float MAX_DISTANCE;//=
+        // (OUTER_CIRCLE_SIZE - HANDLE_SIZE) / 2f;
 
     // 90 pixels
 
@@ -37,7 +38,9 @@ IPointerDownHandler, IDragHandler, IPointerUpHandler
     
     void Start()
     {
-        
+        OUTER_CIRCLE_SIZE =  joystickRect.rect.width;
+        HANDLE_SIZE = CircleButton.rect.width;
+        MAX_DISTANCE = (OUTER_CIRCLE_SIZE - HANDLE_SIZE) / 2f;
     }
 
     // Update is called once per frame

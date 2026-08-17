@@ -30017,6 +30017,9 @@ struct Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A  : public MonoBehaviou
 {
 	PlayerBehavior_t4EDF2DF37B1C7A7B49BF88A7921C5A260C2AE1D2* ___playerBehavior;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___CircleButton;
+	float ___OUTER_CIRCLE_SIZE;
+	float ___HANDLE_SIZE;
+	float ___MAX_DISTANCE;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CInputU3Ek__BackingField;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___joystickRect;
 };
@@ -38854,7 +38857,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8412[5] =
 	static_cast<int32_t>(offsetof(GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D, ___gameOverPanel)),static_cast<int32_t>(offsetof(GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D, ___scoreScript)),static_cast<int32_t>(offsetof(GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D, ___tap2startText)),static_cast<int32_t>(offsetof(GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D, ___gameOverScoreText)),static_cast<int32_t>(offsetof(GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D, ___score)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8413[8] = 
 {
-	static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___playerBehavior)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___CircleButton)),0,0,0,0,static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___U3CInputU3Ek__BackingField)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___joystickRect)),};
+	static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___playerBehavior)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___CircleButton)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___OUTER_CIRCLE_SIZE)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___HANDLE_SIZE)),0,static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___MAX_DISTANCE)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___U3CInputU3Ek__BackingField)),static_cast<int32_t>(offsetof(Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A, ___joystickRect)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8414[1] = 
 {
 	static_cast<int32_t>(offsetof(LevelComplete_t86DC0DA93C81F3C433559F27DD6C1B15E3021532, ___levelCompletePanel)),};
