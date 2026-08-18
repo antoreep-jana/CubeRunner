@@ -41,6 +41,8 @@ IPointerDownHandler, IDragHandler, IPointerUpHandler
         OUTER_CIRCLE_SIZE =  joystickRect.rect.width;
         HANDLE_SIZE = CircleButton.rect.width;
         MAX_DISTANCE = (OUTER_CIRCLE_SIZE - HANDLE_SIZE) / 2f;
+
+        playerBehavior.moveSpeed = 3f; // Set the moveSpeed to 5f
     }
 
     // Update is called once per frame
