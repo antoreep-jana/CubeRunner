@@ -55,6 +55,10 @@ extern void MobileViewControllerBtn_Update_m802F148299B7D183383838F773B573525D8B
 extern void MobileViewControllerBtn_onButtonClicked_mE3CDD0B0EAE86068C25525B5677CD60776ED4DA4 (void);
 extern void MobileViewControllerBtn_updateButtonImages_m6C5EB0055E18FE94D081E66DCB56705967067F9E (void);
 extern void MobileViewControllerBtn__ctor_m5D90EBF03C0B82BE1BA350285B644DE6AAEE13BD (void);
+extern void PauseAndroidScript_Start_mC9C4F175628B11E5E17C40238DDE09CE09645C76 (void);
+extern void PauseAndroidScript_Update_mE0821CD11CC6F89192E60DDB257FC42A11C79957 (void);
+extern void PauseAndroidScript_onPauseButtonPressed_m483A72A1AF03394854EDF51063D9EB790EC51B80 (void);
+extern void PauseAndroidScript__ctor_m36EEB0BA0A9214DB005FC7DE7D6247C5A3D0F7BF (void);
 extern void PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E (void);
 extern void PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999 (void);
 extern void PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7 (void);
@@ -78,7 +82,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[71] = 
+static Il2CppMethodPointer s_methodPointers[75] = 
 {
 	FollowPlayher_Start_mD9881F29CE2F164FC9F49789FC16A6A5536ECED2,
 	FollowPlayher_Update_mC9E7BEC7C546E19CEC4F99DFCBD85553F014317C,
@@ -128,6 +132,10 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	MobileViewControllerBtn_onButtonClicked_mE3CDD0B0EAE86068C25525B5677CD60776ED4DA4,
 	MobileViewControllerBtn_updateButtonImages_m6C5EB0055E18FE94D081E66DCB56705967067F9E,
 	MobileViewControllerBtn__ctor_m5D90EBF03C0B82BE1BA350285B644DE6AAEE13BD,
+	PauseAndroidScript_Start_mC9C4F175628B11E5E17C40238DDE09CE09645C76,
+	PauseAndroidScript_Update_mE0821CD11CC6F89192E60DDB257FC42A11C79957,
+	PauseAndroidScript_onPauseButtonPressed_m483A72A1AF03394854EDF51063D9EB790EC51B80,
+	PauseAndroidScript__ctor_m36EEB0BA0A9214DB005FC7DE7D6247C5A3D0F7BF,
 	PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E,
 	PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999,
 	PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7,
@@ -152,7 +160,7 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[71] = 
+static const int32_t s_InvokerIndices[75] = 
 {
 	13946,
 	13946,
@@ -209,6 +217,10 @@ static const int32_t s_InvokerIndices[71] =
 	13946,
 	13946,
 	13946,
+	13946,
+	13946,
+	13946,
+	13946,
 	10357,
 	13946,
 	13946,
@@ -230,7 +242,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	71,
+	75,
 	s_methodPointers,
 	0,
 	NULL,
