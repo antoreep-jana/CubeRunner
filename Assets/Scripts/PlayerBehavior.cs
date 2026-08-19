@@ -2,37 +2,27 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
-
-
     // Mobile input
-
     public bool mobileW;
     public bool mobileA;
-
     public bool mobileS;
-
     public bool mobileD;
-
     public bool mobileJump;
 
-
-
     public Rigidbody playerRigidbody;
-
-
     public Animator animator;
 
     [Header("Movement Parameters")]
     [Space(10)]
-    public float jumpForce = 5f;
+    public float jumpForce = 15f;
     public float moveSpeed = 5f;
     public float minZ;
     public float maxZ;
+    public float rotationSpeed = 360f;
 
     [Header("SoundsFx")]
     [Space(5)]
     public AudioSource runningSound;
-
 
     void Start()
     {
@@ -56,15 +46,17 @@ public class PlayerBehavior : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp(transform.position.z, minZ, maxZ));
 
         bool isMoving =
-    Input.GetKey(KeyCode.W) ||
-    Input.GetKey(KeyCode.A) ||
-    Input.GetKey(KeyCode.S) ||
-    Input.GetKey(KeyCode.D) ||
-    Input.GetKey(KeyCode.UpArrow) ||
-    Input.GetKey(KeyCode.DownArrow) ||
-    Input.GetKey(KeyCode.LeftArrow) ||
-    Input.GetKey(KeyCode.RightArrow) ||
-    mobileW || mobileA || mobileS || mobileD;
+            Input.GetKey(KeyCode.W) ||
+            Input.GetKey(KeyCode.A) ||
+            Input.GetKey(KeyCode.S) ||
+            Input.GetKey(KeyCode.D) ||
+            Input.GetKey(KeyCode.UpArrow) ||
+            Input.GetKey(KeyCode.DownArrow) ||
+            Input.GetKey(KeyCode.LeftArrow) ||
+            Input.GetKey(KeyCode.RightArrow) ||
+            mobileW || mobileA || mobileS || mobileD;
+
+    bool isJumping = Input.GetKey(KeyCode.Space) || mobileJump;
 
         if (isMoving)
         {
@@ -85,7 +77,14 @@ public class PlayerBehavior : MonoBehaviour
             }
         }
 
-
+        if (isJumping)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
 
         // JUMP
         if (Input.GetKey(KeyCode.Space) || mobileJump)
@@ -94,35 +93,36 @@ public class PlayerBehavior : MonoBehaviour
             transform.Translate(0, jumpForce * Time.deltaTime, 0, Space.World);
         }
 
-
         // Adding Four more directions
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) || mobileW && mobileD)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, 135, 0);
+            // transform.rotation = Quaternion.Euler(0, 135, 0);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 135, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
-
-
         }
         else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) || mobileW && mobileA)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, 45, 0);
+            // transform.rotation = Quaternion.Euler(0, 45, 0);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 45, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
         }
         else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) || mobileS && mobileD)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, -135, 0);
+            // transform.rotation = Quaternion.Euler(0, -135, 0);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, -135, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
         }
         else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) || mobileS && mobileA)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, -45, 0);
+            // transform.rotation = Quaternion.Euler(0, -45, 0);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, -45, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
         }
@@ -132,7 +132,8 @@ public class PlayerBehavior : MonoBehaviour
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime);
             // transform.Translate(moveSpeed * Time.deltaTime, 0, -moveSpeed * Time.deltaTime, Space.World);
             transform.Translate(0, 0, -moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            // transform.rotation = Quaternion.Euler(0, 180, 0);  
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 180, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
         }
@@ -141,40 +142,33 @@ public class PlayerBehavior : MonoBehaviour
         {
             // transform.Translate(moveSpeed * Time.deltaTime, 0, moveSpeed * Time.deltaTime, Space.World);
             transform.Translate(0, 0, moveSpeed * Time.deltaTime, Space.World);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            // transform.rotation = Quaternion.Euler(0, 0, 0);  
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
-
         }
+        // GO UP
         else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || mobileW)
         {
             transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
-            transform.rotation = Quaternion.Euler(0, 90, 0);
+            // transform.rotation = Quaternion.Euler(0, 90, 0);  
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 90, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
-
         }
+        // Go DOWN
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || mobileS)
         {
             transform.Translate(-moveSpeed * Time.deltaTime, 0, 0, Space.World);
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            // transform.rotation = Quaternion.Euler(0, -90, 0);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, -90, 0), rotationSpeed * Time.deltaTime);
             // animator.SetBool("IsRunning", true);
             // runningSound.Play();
-
         }
-
-
         else
         {
-
             animator.SetBool("IsRunning", false);
         }
-        // {
-        // else
-        // {
-        //     transform.Translate(moveSpeed * Time.deltaTime, 0, 0, Space.World);
-        // }
-
 
     }
 }
