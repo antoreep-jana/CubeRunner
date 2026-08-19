@@ -9,6 +9,8 @@
 
 extern void FollowPlayher_Start_mD9881F29CE2F164FC9F49789FC16A6A5536ECED2 (void);
 extern void FollowPlayher_Update_mC9E7BEC7C546E19CEC4F99DFCBD85553F014317C (void);
+extern void FollowPlayher_ToggleView_m6AA81CA64BB8120011E5C0CFCFCE3FD85C0AE35B (void);
+extern void FollowPlayher_IsFPS_mE2AC9824655DDB145EFBC387E5D8ED88DBAF9602 (void);
 extern void FollowPlayher__ctor_m293372FDEADE39C9E1A6E0C902DFE7A8DC81DFC3 (void);
 extern void GameOver_Start_m69F2EA72A4C2B7A2292169AECAEE630860C57B89 (void);
 extern void GameOver_Update_m35F0FF76707BE934347A7C99461A8CD25B32A58F (void);
@@ -48,6 +50,11 @@ extern void MobileInputScript_OnPointerUp_mB7BD8C37A5ED43E4CA6DE75F294C866B64F7C
 extern void MobileInputScript_Start_m5CADF3750C55B20F20FEA2DBF77CBF090D26734D (void);
 extern void MobileInputScript_Update_m1EC4FBC544975C67F6D377EDF247C6306AD6AA3F (void);
 extern void MobileInputScript__ctor_mD13E3A8CA3766854C84E6C590C6F639F4CE92A10 (void);
+extern void MobileViewControllerBtn_Start_m8F8850CD2C3183F94792AD854537D9D87F57CB45 (void);
+extern void MobileViewControllerBtn_Update_m802F148299B7D183383838F773B573525D8B4CFC (void);
+extern void MobileViewControllerBtn_onButtonClicked_mE3CDD0B0EAE86068C25525B5677CD60776ED4DA4 (void);
+extern void MobileViewControllerBtn_updateButtonImages_m6C5EB0055E18FE94D081E66DCB56705967067F9E (void);
+extern void MobileViewControllerBtn__ctor_m5D90EBF03C0B82BE1BA350285B644DE6AAEE13BD (void);
 extern void PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E (void);
 extern void PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999 (void);
 extern void PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7 (void);
@@ -71,10 +78,12 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[64] = 
+static Il2CppMethodPointer s_methodPointers[71] = 
 {
 	FollowPlayher_Start_mD9881F29CE2F164FC9F49789FC16A6A5536ECED2,
 	FollowPlayher_Update_mC9E7BEC7C546E19CEC4F99DFCBD85553F014317C,
+	FollowPlayher_ToggleView_m6AA81CA64BB8120011E5C0CFCFCE3FD85C0AE35B,
+	FollowPlayher_IsFPS_mE2AC9824655DDB145EFBC387E5D8ED88DBAF9602,
 	FollowPlayher__ctor_m293372FDEADE39C9E1A6E0C902DFE7A8DC81DFC3,
 	GameOver_Start_m69F2EA72A4C2B7A2292169AECAEE630860C57B89,
 	GameOver_Update_m35F0FF76707BE934347A7C99461A8CD25B32A58F,
@@ -114,6 +123,11 @@ static Il2CppMethodPointer s_methodPointers[64] =
 	MobileInputScript_Start_m5CADF3750C55B20F20FEA2DBF77CBF090D26734D,
 	MobileInputScript_Update_m1EC4FBC544975C67F6D377EDF247C6306AD6AA3F,
 	MobileInputScript__ctor_mD13E3A8CA3766854C84E6C590C6F639F4CE92A10,
+	MobileViewControllerBtn_Start_m8F8850CD2C3183F94792AD854537D9D87F57CB45,
+	MobileViewControllerBtn_Update_m802F148299B7D183383838F773B573525D8B4CFC,
+	MobileViewControllerBtn_onButtonClicked_mE3CDD0B0EAE86068C25525B5677CD60776ED4DA4,
+	MobileViewControllerBtn_updateButtonImages_m6C5EB0055E18FE94D081E66DCB56705967067F9E,
+	MobileViewControllerBtn__ctor_m5D90EBF03C0B82BE1BA350285B644DE6AAEE13BD,
 	PauseMenuScript_Start_m23801BF8BF739B3044B04656C47DE83FB3D9F04E,
 	PauseMenuScript_Update_mBF313789858FA17452271301B3DB71EA3F419999,
 	PauseMenuScript_PauseGame_mEACC3C78101745F357549EF89DBAC7FAD95CBEC7,
@@ -138,10 +152,12 @@ static Il2CppMethodPointer s_methodPointers[64] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[64] = 
+static const int32_t s_InvokerIndices[71] = 
 {
 	13946,
 	13946,
+	13946,
+	13544,
 	13946,
 	13946,
 	13946,
@@ -188,6 +204,11 @@ static const int32_t s_InvokerIndices[64] =
 	13946,
 	13946,
 	13946,
+	13946,
+	13946,
+	13946,
+	13946,
+	13946,
 	10357,
 	13946,
 	13946,
@@ -209,7 +230,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	64,
+	71,
 	s_methodPointers,
 	0,
 	NULL,

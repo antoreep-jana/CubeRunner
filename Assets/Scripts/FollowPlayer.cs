@@ -25,7 +25,8 @@ public class FollowPlayher : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.V))
         {
-            isFPS = !isFPS;
+            // isFPS = !isFPS;
+            ToggleView();
         }
 
 
@@ -51,4 +52,17 @@ public class FollowPlayher : MonoBehaviour
         transform.position = cameraPosition;
         }
     }
+
+    public void ToggleView()
+    {
+        isFPS = !isFPS;
+    }
+
+    public bool IsFPS()
+        {
+            return isFPS;
+        }
+
+
+        
 }
