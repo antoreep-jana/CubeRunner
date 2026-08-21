@@ -47,6 +47,12 @@
             "icon": null
           },
           {
+            "name": "AvatarMask",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Motion",
             "scenes": [],
             "dependencyType": 1,
@@ -57,6 +63,12 @@
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          },
+          {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
           }
         ]
       },
@@ -131,6 +143,12 @@
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          },
+          {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
           }
         ]
       },
@@ -601,6 +619,12 @@
             "icon": "package/com.unity.modules.crashreporting"
           },
           {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
+          },
+          {
             "name": "Required by GraphicsStateCollectionSerializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -659,6 +683,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
@@ -796,6 +826,17 @@
             "scenes": [],
             "dependencyType": 3,
             "icon": "class/PlayerSettings"
+          }
+        ]
+      },
+      {
+        "name": "Director",
+        "dependencies": [
+          {
+            "name": "PlayableDirector",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
           }
         ]
       },
@@ -1000,6 +1041,23 @@
         ]
       },
       {
+        "name": "ParticleSystem",
+        "dependencies": [
+          {
+            "name": "ParticleSystem",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "ParticleSystemRenderer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "Physics",
         "dependencies": [
           {
@@ -1026,6 +1084,14 @@
             "name": "Collider",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "MeshCollider",
+            "scenes": [
+              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1164,6 +1230,12 @@
             "icon": "package/com.unity.modules.crashreporting"
           },
           {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
+          },
+          {
             "name": "Required by GraphicsStateCollectionSerializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1222,6 +1294,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",

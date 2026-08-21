@@ -4,6 +4,9 @@ public class PlayerCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+    [Header("Player Collectable Prefabs")]
+    [Space(10)]
+    public GameObject breakableCollectablePrefab; // Reference to the collectable prefab
 
     [Header("Script References")]
     [Space(10)]
@@ -91,8 +94,20 @@ public class PlayerCollision : MonoBehaviour
 
             scoreScript.AddScore(1); // Add 1 to the score when collecting a collectable
 
+            Instantiate(
+    breakableCollectablePrefab,
+    new Vector3(
+        other.transform.position.x,
+        other.transform.position.y + 0.2f,
+        other.transform.position.z
+    ),
+    other.transform.rotation
+);
+
 
             Destroy(other.gameObject); // Example: Destroy the collectable object
+
+            
         }
     }
 

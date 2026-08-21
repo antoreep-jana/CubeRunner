@@ -3,8 +3,8 @@
 # min_api: 25
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: 51de240668eb6a88ac115ee01bc5f74203fe8c675efb1972b32b4fc53a40482f
-# pg_map_hash: SHA-256 51de240668eb6a88ac115ee01bc5f74203fe8c675efb1972b32b4fc53a40482f
+# pg_map_id: e6fa0357a0b28b9efcb43995805e7b3dba64801614ecb45452568a92d7e2cc8d
+# pg_map_hash: SHA-256 e6fa0357a0b28b9efcb43995805e7b3dba64801614ecb45452568a92d7e2cc8d
 android.app.AppComponentFactory -> android.app.AppComponentFactory:
 # {"id":"com.android.tools.r8.synthesized"}
     void <clinit>() -> <clinit>
@@ -24420,13 +24420,12 @@ androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
     android.app.PendingIntent mActionIntent -> d
     boolean mEnabled -> e
     boolean mShouldShowIcon -> f
+    1:4:void <init>():105:105 -> <init>
 androidx.core.app.RemoteActionCompatParcelizer -> androidx.core.app.RemoteActionCompatParcelizer:
 # {"id":"sourceFile","fileName":"RemoteActionCompatParcelizer.java"}
     1:4:void <init>():11:11 -> <init>
-    1:2:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):14:14 -> read
+    1:5:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):14:14 -> read
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lj0/a;)Landroidx/core/app/RemoteActionCompat;"}
-    3:5:void androidx.core.app.RemoteActionCompat.<init>():105:105 -> read
-    3:5:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
     6:8:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):15:15 -> read
     9:15:androidx.versionedparcelable.VersionedParcelable androidx.versionedparcelable.VersionedParcel.readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int):1493:1493 -> read
     9:15:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
@@ -27248,6 +27247,15 @@ androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.Ic
     java.lang.String mString1 -> j
     android.graphics.PorterDuff$Mode DEFAULT_TINT_MODE -> k
     1:5:void <clinit>():213:213 -> <clinit>
+    1:4:void <init>():376:376 -> <init>
+    5:7:void <init>():157:157 -> <init>
+    8:9:void <init>():176:176 -> <init>
+    10:12:void <init>():183:183 -> <init>
+    13:14:void <init>():193:193 -> <init>
+    15:16:void <init>():201:201 -> <init>
+    17:18:void <init>():208:208 -> <init>
+    19:22:void <init>():214:214 -> <init>
+    23:25:void <init>():219:219 -> <init>
     1:5:java.lang.String toString():809:809 -> toString
     6:12:java.lang.String toString():810:810 -> toString
     13:24:java.lang.String toString():812:812 -> toString
@@ -27323,121 +27331,103 @@ androidx.core.graphics.drawable.IconCompat$Api28Impl -> q.d:
 androidx.core.graphics.drawable.IconCompatParcelizer -> androidx.core.graphics.drawable.IconCompatParcelizer:
 # {"id":"sourceFile","fileName":"IconCompatParcelizer.java"}
     1:4:void <init>():11:11 -> <init>
-    1:2:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14:14 -> read
+    1:5:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14:14 -> read
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lj0/a;)Landroidx/core/graphics/drawable/IconCompat;"}
-    3:6:void androidx.versionedparcelable.CustomVersionedParcelable.<init>():27:27 -> read
-    3:6:void androidx.core.graphics.drawable.IconCompat.<init>():376 -> read
-    3:6:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    7:9:void androidx.core.graphics.drawable.IconCompat.<init>():157:157 -> read
-    7:9:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    10:11:void androidx.core.graphics.drawable.IconCompat.<init>():176:176 -> read
-    10:11:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    12:14:void androidx.core.graphics.drawable.IconCompat.<init>():183:183 -> read
-    12:14:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    15:16:void androidx.core.graphics.drawable.IconCompat.<init>():193:193 -> read
-    15:16:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    17:18:void androidx.core.graphics.drawable.IconCompat.<init>():201:201 -> read
-    17:18:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    19:20:void androidx.core.graphics.drawable.IconCompat.<init>():208:208 -> read
-    19:20:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    21:24:void androidx.core.graphics.drawable.IconCompat.<init>():214:214 -> read
-    21:24:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    25:27:void androidx.core.graphics.drawable.IconCompat.<init>():219:219 -> read
-    25:27:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):14 -> read
-    28:35:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
-    28:35:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
+    6:8:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15:15 -> read
+    9:15:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
+    9:15:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    36:38:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
-    36:38:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
-    39:44:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
-    39:44:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
-    39:44:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
-    45:46:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15:15 -> read
-    47:49:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16:16 -> read
-    50:57:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):472:472 -> read
-    50:57:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
-    58:60:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475:475 -> read
-    58:60:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
-    61:69:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():236:236 -> read
-    61:69:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
-    61:69:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
-    70:71:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():240:240 -> read
-    70:71:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
-    70:71:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
-    72:74:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():241:241 -> read
-    72:74:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
-    72:74:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
-    75:76:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16:16 -> read
-    77:85:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):17:17 -> read
-    86:88:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18:18 -> read
-    89:95:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
-    89:95:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
-    96:98:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
-    96:98:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
-    99:104:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
-    99:104:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
-    99:104:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
-    105:106:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18:18 -> read
-    107:109:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19:19 -> read
-    110:116:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
-    110:116:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
-    117:119:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
-    117:119:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
-    120:125:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
-    120:125:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
-    120:125:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
-    126:127:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19:19 -> read
-    128:138:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):20:20 -> read
-    139:141:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21:21 -> read
-    142:148:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):451:451 -> read
-    142:148:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
-    149:151:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454:454 -> read
-    149:151:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
-    152:157:java.lang.String androidx.versionedparcelable.VersionedParcelParcel.readString():226:226 -> read
-    152:157:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454 -> read
-    152:157:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
-    158:159:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21:21 -> read
-    160:163:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22:22 -> read
-    164:170:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):451:451 -> read
-    164:170:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
-    171:172:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454:454 -> read
-    171:172:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
-    173:178:java.lang.String androidx.versionedparcelable.VersionedParcelParcel.readString():226:226 -> read
-    173:178:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454 -> read
-    173:178:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
-    179:180:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22:22 -> read
-    181:188:void androidx.core.graphics.drawable.IconCompat.onPostParceling():888:888 -> read
-    181:188:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    189:194:void androidx.core.graphics.drawable.IconCompat.onPostParceling():889:889 -> read
-    189:194:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    195:199:void androidx.core.graphics.drawable.IconCompat.onPostParceling():924:924 -> read
-    195:199:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    200:214:void androidx.core.graphics.drawable.IconCompat.onPostParceling():912:912 -> read
-    200:214:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    215:218:void androidx.core.graphics.drawable.IconCompat.onPostParceling():917:917 -> read
-    215:218:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    219:222:void androidx.core.graphics.drawable.IconCompat.onPostParceling():918:918 -> read
-    219:222:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    223:233:void androidx.core.graphics.drawable.IconCompat.onPostParceling():919:919 -> read
-    223:233:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    234:237:void androidx.core.graphics.drawable.IconCompat.onPostParceling():899:899 -> read
-    234:237:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    238:240:void androidx.core.graphics.drawable.IconCompat.onPostParceling():900:900 -> read
-    238:240:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    241:244:void androidx.core.graphics.drawable.IconCompat.onPostParceling():903:903 -> read
-    241:244:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    245:246:void androidx.core.graphics.drawable.IconCompat.onPostParceling():904:904 -> read
-    245:246:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    247:248:void androidx.core.graphics.drawable.IconCompat.onPostParceling():905:905 -> read
-    247:248:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    249:252:void androidx.core.graphics.drawable.IconCompat.onPostParceling():906:906 -> read
-    249:252:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    253:256:void androidx.core.graphics.drawable.IconCompat.onPostParceling():891:891 -> read
-    253:256:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    257:259:void androidx.core.graphics.drawable.IconCompat.onPostParceling():892:892 -> read
-    257:259:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
-    260:266:void androidx.core.graphics.drawable.IconCompat.onPostParceling():894:894 -> read
-    260:266:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    16:18:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
+    16:18:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
+    19:24:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
+    19:24:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
+    19:24:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15 -> read
+    25:26:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):15:15 -> read
+    27:29:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16:16 -> read
+    30:36:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):472:472 -> read
+    30:36:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
+    37:39:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475:475 -> read
+    37:39:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
+    40:49:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():236:236 -> read
+    40:49:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
+    40:49:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
+    50:51:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():240:240 -> read
+    50:51:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
+    50:51:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
+    52:55:byte[] androidx.versionedparcelable.VersionedParcelParcel.readByteArray():241:241 -> read
+    52:55:byte[] androidx.versionedparcelable.VersionedParcel.readByteArray(byte[],int):475 -> read
+    52:55:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16 -> read
+    56:57:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):16:16 -> read
+    58:66:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):17:17 -> read
+    67:69:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18:18 -> read
+    70:76:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
+    70:76:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
+    77:79:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
+    77:79:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
+    80:85:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
+    80:85:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
+    80:85:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18 -> read
+    86:87:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):18:18 -> read
+    88:90:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19:19 -> read
+    91:97:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):409:409 -> read
+    91:97:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
+    98:100:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412:412 -> read
+    98:100:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
+    101:106:int androidx.versionedparcelable.VersionedParcelParcel.readInt():206:206 -> read
+    101:106:int androidx.versionedparcelable.VersionedParcel.readInt(int,int):412 -> read
+    101:106:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19 -> read
+    107:108:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):19:19 -> read
+    109:119:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):20:20 -> read
+    120:122:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21:21 -> read
+    123:129:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):451:451 -> read
+    123:129:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
+    130:132:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454:454 -> read
+    130:132:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
+    133:138:java.lang.String androidx.versionedparcelable.VersionedParcelParcel.readString():226:226 -> read
+    133:138:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454 -> read
+    133:138:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21 -> read
+    139:140:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):21:21 -> read
+    141:144:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22:22 -> read
+    145:151:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):451:451 -> read
+    145:151:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
+    152:153:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454:454 -> read
+    152:153:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
+    154:159:java.lang.String androidx.versionedparcelable.VersionedParcelParcel.readString():226:226 -> read
+    154:159:java.lang.String androidx.versionedparcelable.VersionedParcel.readString(java.lang.String,int):454 -> read
+    154:159:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22 -> read
+    160:161:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):22:22 -> read
+    162:169:void androidx.core.graphics.drawable.IconCompat.onPostParceling():888:888 -> read
+    162:169:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    170:176:void androidx.core.graphics.drawable.IconCompat.onPostParceling():889:889 -> read
+    170:176:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    177:181:void androidx.core.graphics.drawable.IconCompat.onPostParceling():924:924 -> read
+    177:181:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    182:196:void androidx.core.graphics.drawable.IconCompat.onPostParceling():912:912 -> read
+    182:196:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    197:200:void androidx.core.graphics.drawable.IconCompat.onPostParceling():917:917 -> read
+    197:200:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    201:204:void androidx.core.graphics.drawable.IconCompat.onPostParceling():918:918 -> read
+    201:204:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    205:216:void androidx.core.graphics.drawable.IconCompat.onPostParceling():919:919 -> read
+    205:216:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    217:220:void androidx.core.graphics.drawable.IconCompat.onPostParceling():899:899 -> read
+    217:220:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    221:223:void androidx.core.graphics.drawable.IconCompat.onPostParceling():900:900 -> read
+    221:223:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    224:227:void androidx.core.graphics.drawable.IconCompat.onPostParceling():903:903 -> read
+    224:227:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    228:229:void androidx.core.graphics.drawable.IconCompat.onPostParceling():904:904 -> read
+    228:229:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    230:231:void androidx.core.graphics.drawable.IconCompat.onPostParceling():905:905 -> read
+    230:231:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    232:235:void androidx.core.graphics.drawable.IconCompat.onPostParceling():906:906 -> read
+    232:235:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    236:239:void androidx.core.graphics.drawable.IconCompat.onPostParceling():891:891 -> read
+    236:239:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    240:242:void androidx.core.graphics.drawable.IconCompat.onPostParceling():892:892 -> read
+    240:242:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
+    243:250:void androidx.core.graphics.drawable.IconCompat.onPostParceling():894:894 -> read
+    243:250:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel):23 -> read
     1:3:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel):29:29 -> write
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroidx/core/graphics/drawable/IconCompat;Lj0/a;)V"}
     4:5:void androidx.core.graphics.drawable.IconCompat.onPreParceling(boolean):851:851 -> write
@@ -39488,6 +39478,7 @@ androidx.tracing.TraceApi18Impl -> R8$$REMOVED$$CLASS$$86:
 # {"id":"sourceFile","fileName":"TraceApi18Impl.java"}
 androidx.versionedparcelable.CustomVersionedParcelable -> androidx.versionedparcelable.CustomVersionedParcelable:
 # {"id":"sourceFile","fileName":"CustomVersionedParcelable.java"}
+    1:4:void <init>():27:27 -> <init>
 androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
 # {"id":"sourceFile","fileName":"ParcelImpl.java"}
     androidx.versionedparcelable.VersionedParcelable mParcel -> a
@@ -40779,9 +40770,9 @@ com.unity3d.player.J0 -> com.unity3d.player.J0:
     10:15:void run():206:206 -> run
 com.unity3d.player.K -> com.unity3d.player.K:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:11:void <init>(com.unity3d.player.O,com.unity3d.player.UnityPlayer,int):387:387 -> <init>
-    1:8:void a():390:390 -> a
-    9:19:void a():392:392 -> a
+    1:11:void <init>(com.unity3d.player.O,com.unity3d.player.UnityPlayer,int):389:389 -> <init>
+    1:8:void a():392:392 -> a
+    9:19:void a():394:394 -> a
 com.unity3d.player.K0 -> com.unity3d.player.K0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForActivityOrService):252:252 -> <init>
@@ -40792,20 +40783,20 @@ com.unity3d.player.K0 -> com.unity3d.player.K0:
     50:55:void run():264:264 -> run
 com.unity3d.player.L -> com.unity3d.player.L:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:13:void <init>(com.unity3d.player.O,com.unity3d.player.UnityPlayer,int,int):409:409 -> <init>
-    1:2:void a():412:412 -> a
-    3:8:void a():418:418 -> a
-    9:12:void a():414:414 -> a
-    13:15:void a():418:418 -> a
-    16:26:void a():422:422 -> a
+    1:13:void <init>(com.unity3d.player.O,com.unity3d.player.UnityPlayer,int,int):411:411 -> <init>
+    1:2:void a():414:414 -> a
+    3:8:void a():420:420 -> a
+    9:12:void a():416:416 -> a
+    13:15:void a():420:420 -> a
+    16:26:void a():424:424 -> a
 com.unity3d.player.L0 -> com.unity3d.player.L0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForActivityOrService):302:302 -> <init>
     1:6:void run():303:303 -> run
 com.unity3d.player.M -> com.unity3d.player.M:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:11:void <init>(com.unity3d.player.UnityPlayer,int,int):435:435 -> <init>
-    1:8:void a():438:438 -> a
+    1:11:void <init>(com.unity3d.player.UnityPlayer,int,int):437:437 -> <init>
+    1:8:void a():440:440 -> a
 com.unity3d.player.M0 -> com.unity3d.player.M0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForActivityOrService):317:317 -> <init>
@@ -40824,8 +40815,8 @@ com.unity3d.player.MultiWindowSupport -> com.unity3d.player.MultiWindowSupport:
     1:7:void saveMultiWindowMode(android.app.Activity):19:19 -> saveMultiWindowMode
 com.unity3d.player.N -> com.unity3d.player.N:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:9:void <init>(com.unity3d.player.UnityPlayer,int):456:456 -> <init>
-    1:6:void a():459:459 -> a
+    1:9:void <init>(com.unity3d.player.UnityPlayer,int):458:458 -> <init>
+    1:6:void a():461:461 -> a
 com.unity3d.player.N0 -> com.unity3d.player.N0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:8:void <init>(com.unity3d.player.UnityPlayerForActivityOrService,float):335:335 -> <init>
@@ -40854,19 +40845,19 @@ com.unity3d.player.O -> com.unity3d.player.O:
     59:62:android.view.accessibility.AccessibilityNodeInfo createAccessibilityNodeInfo(int):354:354 -> createAccessibilityNodeInfo
     63:77:android.view.accessibility.AccessibilityNodeInfo createAccessibilityNodeInfo(int):356:356 -> createAccessibilityNodeInfo
     5:18:boolean performAction(int,int,android.os.Bundle):369:369 -> performAction
-    19:32:boolean performAction(int,int,android.os.Bundle):375:375 -> performAction
-    33:40:boolean performAction(int,int,android.os.Bundle):381:381 -> performAction
-    41:54:boolean performAction(int,int,android.os.Bundle):386:386 -> performAction
-    55:72:boolean performAction(int,int,android.os.Bundle):398:398 -> performAction
-    73:78:boolean performAction(int,int,android.os.Bundle):406:406 -> performAction
-    79:92:boolean performAction(int,int,android.os.Bundle):408:408 -> performAction
-    93:102:boolean performAction(int,int,android.os.Bundle):427:427 -> performAction
-    103:108:boolean performAction(int,int,android.os.Bundle):432:432 -> performAction
-    109:122:boolean performAction(int,int,android.os.Bundle):434:434 -> performAction
-    123:136:boolean performAction(int,int,android.os.Bundle):442:442 -> performAction
-    137:143:boolean performAction(int,int,android.os.Bundle):450:450 -> performAction
-    144:157:boolean performAction(int,int,android.os.Bundle):455:455 -> performAction
-    158:169:boolean performAction(int,int,android.os.Bundle):463:463 -> performAction
+    19:49:boolean performAction(int,int,android.os.Bundle):375:375 -> performAction
+    50:55:boolean performAction(int,int,android.os.Bundle):408:408 -> performAction
+    56:69:boolean performAction(int,int,android.os.Bundle):410:410 -> performAction
+    70:79:boolean performAction(int,int,android.os.Bundle):429:429 -> performAction
+    80:85:boolean performAction(int,int,android.os.Bundle):434:434 -> performAction
+    86:99:boolean performAction(int,int,android.os.Bundle):436:436 -> performAction
+    100:113:boolean performAction(int,int,android.os.Bundle):444:444 -> performAction
+    114:120:boolean performAction(int,int,android.os.Bundle):452:452 -> performAction
+    121:134:boolean performAction(int,int,android.os.Bundle):457:457 -> performAction
+    135:144:boolean performAction(int,int,android.os.Bundle):465:465 -> performAction
+    145:152:boolean performAction(int,int,android.os.Bundle):383:383 -> performAction
+    153:166:boolean performAction(int,int,android.os.Bundle):388:388 -> performAction
+    167:176:boolean performAction(int,int,android.os.Bundle):400:400 -> performAction
 com.unity3d.player.O0 -> com.unity3d.player.O0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.P0):376:376 -> <init>
@@ -40885,8 +40876,8 @@ com.unity3d.player.OrientationLockListener -> com.unity3d.player.OrientationLock
     48:64:void <init>(android.content.Context):51:51 -> <init>
 com.unity3d.player.P -> com.unity3d.player.P:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:9:void <init>(com.unity3d.player.UnityPlayer,boolean):544:544 -> <init>
-    1:6:void a():547:547 -> a
+    1:9:void <init>(com.unity3d.player.UnityPlayer,boolean):546:546 -> <init>
+    1:6:void a():549:549 -> a
 com.unity3d.player.P0 -> com.unity3d.player.P0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:1:void <init>(com.unity3d.player.UnityPlayerForActivityOrService,com.unity3d.player.UnityPlayerForActivityOrService,java.lang.String,int,boolean,boolean,boolean,boolean,java.lang.String,int,boolean,boolean,java.util.concurrent.Semaphore):364:364 -> <init>
@@ -40984,28 +40975,28 @@ com.unity3d.player.PlayAssetDeliveryUnityWrapper -> com.unity3d.player.PlayAsset
     14:21:void unregisterDownloadStatusListener(java.lang.Object):122:122 -> unregisterDownloadStatusListener
 com.unity3d.player.Q -> com.unity3d.player.Q:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:5:void <init>(com.unity3d.player.UnityAccessibilityDelegate):476:476 -> <init>
-    6:12:void <init>(com.unity3d.player.UnityAccessibilityDelegate):477:477 -> <init>
-    13:19:void <init>(com.unity3d.player.UnityAccessibilityDelegate):478:478 -> <init>
-    20:30:void <init>(com.unity3d.player.UnityAccessibilityDelegate):480:480 -> <init>
-    31:34:void <init>(com.unity3d.player.UnityAccessibilityDelegate):482:482 -> <init>
-    1:9:void cleanup():489:489 -> cleanup
-    10:19:void cleanup():490:490 -> cleanup
-    1:5:void onAccessibilityStateChanged(boolean):508:508 -> onAccessibilityStateChanged
-    6:12:void onAccessibilityStateChanged(boolean):498:498 -> onAccessibilityStateChanged
-    13:21:void onAccessibilityStateChanged(boolean):501:501 -> onAccessibilityStateChanged
-    22:35:void onAccessibilityStateChanged(boolean):504:504 -> onAccessibilityStateChanged
-    36:43:void onAccessibilityStateChanged(boolean):508:508 -> onAccessibilityStateChanged
-    44:53:void onAccessibilityStateChanged(boolean):509:509 -> onAccessibilityStateChanged
-    54:57:void onAccessibilityStateChanged(boolean):512:512 -> onAccessibilityStateChanged
-    1:17:void onTouchExplorationStateChanged(boolean):519:519 -> onTouchExplorationStateChanged
-    18:21:void onTouchExplorationStateChanged(boolean):527:527 -> onTouchExplorationStateChanged
-    22:34:void onTouchExplorationStateChanged(boolean):523:523 -> onTouchExplorationStateChanged
-    35:42:void onTouchExplorationStateChanged(boolean):527:527 -> onTouchExplorationStateChanged
-    43:51:void onTouchExplorationStateChanged(boolean):534:534 -> onTouchExplorationStateChanged
-    52:54:void onTouchExplorationStateChanged(boolean):539:539 -> onTouchExplorationStateChanged
-    55:66:void onTouchExplorationStateChanged(boolean):543:543 -> onTouchExplorationStateChanged
-    67:76:void onTouchExplorationStateChanged(boolean):551:551 -> onTouchExplorationStateChanged
+    1:5:void <init>(com.unity3d.player.UnityAccessibilityDelegate):478:478 -> <init>
+    6:12:void <init>(com.unity3d.player.UnityAccessibilityDelegate):479:479 -> <init>
+    13:19:void <init>(com.unity3d.player.UnityAccessibilityDelegate):480:480 -> <init>
+    20:30:void <init>(com.unity3d.player.UnityAccessibilityDelegate):482:482 -> <init>
+    31:34:void <init>(com.unity3d.player.UnityAccessibilityDelegate):484:484 -> <init>
+    1:9:void cleanup():491:491 -> cleanup
+    10:19:void cleanup():492:492 -> cleanup
+    1:5:void onAccessibilityStateChanged(boolean):510:510 -> onAccessibilityStateChanged
+    6:12:void onAccessibilityStateChanged(boolean):500:500 -> onAccessibilityStateChanged
+    13:21:void onAccessibilityStateChanged(boolean):503:503 -> onAccessibilityStateChanged
+    22:35:void onAccessibilityStateChanged(boolean):506:506 -> onAccessibilityStateChanged
+    36:43:void onAccessibilityStateChanged(boolean):510:510 -> onAccessibilityStateChanged
+    44:53:void onAccessibilityStateChanged(boolean):511:511 -> onAccessibilityStateChanged
+    54:57:void onAccessibilityStateChanged(boolean):514:514 -> onAccessibilityStateChanged
+    1:17:void onTouchExplorationStateChanged(boolean):521:521 -> onTouchExplorationStateChanged
+    18:21:void onTouchExplorationStateChanged(boolean):529:529 -> onTouchExplorationStateChanged
+    22:34:void onTouchExplorationStateChanged(boolean):525:525 -> onTouchExplorationStateChanged
+    35:42:void onTouchExplorationStateChanged(boolean):529:529 -> onTouchExplorationStateChanged
+    43:51:void onTouchExplorationStateChanged(boolean):536:536 -> onTouchExplorationStateChanged
+    52:54:void onTouchExplorationStateChanged(boolean):541:541 -> onTouchExplorationStateChanged
+    55:66:void onTouchExplorationStateChanged(boolean):545:545 -> onTouchExplorationStateChanged
+    67:76:void onTouchExplorationStateChanged(boolean):553:553 -> onTouchExplorationStateChanged
 com.unity3d.player.Q0 -> com.unity3d.player.Q0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForGameActivity):66:66 -> <init>
@@ -41173,8 +41164,8 @@ com.unity3d.player.RequiredByNative -> com.unity3d.player.RequiredByNative:
 # {"id":"sourceFile","fileName":"SourceFile"}
 com.unity3d.player.S -> com.unity3d.player.S:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:9:void <init>(com.unity3d.player.UnityPlayer,boolean):601:601 -> <init>
-    1:6:void a():604:604 -> a
+    1:9:void <init>(com.unity3d.player.UnityPlayer,boolean):603:603 -> <init>
+    1:6:void a():606:606 -> a
 com.unity3d.player.S0 -> com.unity3d.player.S0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForGameActivity):138:138 -> <init>
@@ -41188,12 +41179,12 @@ com.unity3d.player.SoftInputProvider -> com.unity3d.player.SoftInputProvider:
     33:43:int a():30:30 -> a
 com.unity3d.player.T -> com.unity3d.player.T:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:5:void <init>(com.unity3d.player.UnityAccessibilityDelegate):592:592 -> <init>
-    6:12:void <init>(com.unity3d.player.UnityAccessibilityDelegate):593:593 -> <init>
-    13:24:void <init>(com.unity3d.player.UnityAccessibilityDelegate):594:594 -> <init>
-    1:10:void cleanup():614:614 -> cleanup
-    1:14:void onEnabledChanged(boolean):600:600 -> onEnabledChanged
-    15:24:void onEnabledChanged(boolean):608:608 -> onEnabledChanged
+    1:5:void <init>(com.unity3d.player.UnityAccessibilityDelegate):594:594 -> <init>
+    6:12:void <init>(com.unity3d.player.UnityAccessibilityDelegate):595:595 -> <init>
+    13:24:void <init>(com.unity3d.player.UnityAccessibilityDelegate):596:596 -> <init>
+    1:10:void cleanup():616:616 -> cleanup
+    1:14:void onEnabledChanged(boolean):602:602 -> onEnabledChanged
+    15:24:void onEnabledChanged(boolean):610:610 -> onEnabledChanged
 com.unity3d.player.T0 -> com.unity3d.player.T0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayerForGameActivity):149:149 -> <init>
@@ -41333,15 +41324,15 @@ com.unity3d.player.UnityAccessibilityDelegate -> com.unity3d.player.UnityAccessi
       # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.UnityAccessibilityDelegate$a -> com.unity3d.player.UnityAccessibilityDelegate$a:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityAccessibilityDelegate):555:555 -> <init>
-    1:18:boolean onHover(android.view.View,android.view.MotionEvent):560:560 -> onHover
-    19:42:boolean onHover(android.view.View,android.view.MotionEvent):579:579 -> onHover
-    43:44:boolean onHover(android.view.View,android.view.MotionEvent):574:574 -> onHover
+    1:6:void <init>(com.unity3d.player.UnityAccessibilityDelegate):557:557 -> <init>
+    1:18:boolean onHover(android.view.View,android.view.MotionEvent):562:562 -> onHover
+    19:42:boolean onHover(android.view.View,android.view.MotionEvent):581:581 -> onHover
+    43:44:boolean onHover(android.view.View,android.view.MotionEvent):576:576 -> onHover
     45:51:boolean onHover(android.view.View,android.view.MotionEvent):159:159 -> onHover
     52:56:boolean onHover(android.view.View,android.view.MotionEvent):165:165 -> onHover
     57:60:boolean onHover(android.view.View,android.view.MotionEvent):174:174 -> onHover
-    61:72:boolean onHover(android.view.View,android.view.MotionEvent):566:566 -> onHover
-    73:74:boolean onHover(android.view.View,android.view.MotionEvent):568:568 -> onHover
+    61:72:boolean onHover(android.view.View,android.view.MotionEvent):568:568 -> onHover
+    73:74:boolean onHover(android.view.View,android.view.MotionEvent):570:570 -> onHover
     75:81:boolean onHover(android.view.View,android.view.MotionEvent):159:159 -> onHover
     82:88:boolean onHover(android.view.View,android.view.MotionEvent):165:165 -> onHover
     89:93:boolean onHover(android.view.View,android.view.MotionEvent):169:169 -> onHover
@@ -41416,18 +41407,18 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ll0/h0;"}
     com.unity3d.player.a.K m_SplashScreen -> m_SplashScreen
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ll0/i;"}
-    1:2:void <clinit>():994:994 -> <clinit>
+    1:2:void <clinit>():995:995 -> <clinit>
     3:5:void com.unity3d.player.a.Q.<init>():10:10 -> <clinit>
-    3:5:void <clinit>():994 -> <clinit>
-    6:6:void <clinit>():994:994 -> <clinit>
+    3:5:void <clinit>():995 -> <clinit>
+    6:6:void <clinit>():995:995 -> <clinit>
     7:12:void <clinit>():18:18 -> <clinit>
     13:14:void <clinit>():19:19 -> <clinit>
     15:16:void <clinit>():22:22 -> <clinit>
     17:20:void <clinit>():23:23 -> <clinit>
     21:23:void <clinit>():25:25 -> <clinit>
     24:26:void <clinit>():26:26 -> <clinit>
-    27:28:void <clinit>():995:995 -> <clinit>
-    1:3:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):169:169 -> <init>
+    27:28:void <clinit>():996:996 -> <clinit>
+    1:3:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):170:170 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;Ll0/a0;Lcom/unity3d/player/IUnityPlayerLifecycleEvents;)V"}
     4:11:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):80:80 -> <init>
     12:14:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):91:91 -> <init>
@@ -41458,388 +41449,391 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
     66:67:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):130:130 -> <init>
     68:69:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):131:131 -> <init>
     70:71:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):133:133 -> <init>
-    72:73:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):136:136 -> <init>
-    74:75:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):140:140 -> <init>
-    76:77:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):142:142 -> <init>
-    78:79:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):143:143 -> <init>
-    80:86:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):151:151 -> <init>
-    87:92:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):170:170 -> <init>
-    93:94:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):171:171 -> <init>
-    95:96:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):172:172 -> <init>
-    97:108:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):173:173 -> <init>
-    109:110:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):174:174 -> <init>
-    111:114:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):175:175 -> <init>
-    115:118:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):83:83 -> <init>
-    119:122:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):84:84 -> <init>
-    123:130:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):86:86 -> <init>
-    131:138:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):101:101 -> <init>
-    139:142:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):105:105 -> <init>
-    143:146:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):106:106 -> <init>
-    147:152:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):86:86 -> <init>
-    153:154:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):177:177 -> <init>
-    155:158:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):178:178 -> <init>
-    159:162:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):180:180 -> <init>
-    163:164:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):181:181 -> <init>
-    165:171:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):182:182 -> <init>
-    1:10:void EarlyEnableFullScreenIfEnabled():370:370 -> EarlyEnableFullScreenIfEnabled
-    11:32:void EarlyEnableFullScreenIfEnabled():371:371 -> EarlyEnableFullScreenIfEnabled
-    33:35:void EarlyEnableFullScreenIfEnabled():372:372 -> EarlyEnableFullScreenIfEnabled
-    36:41:void EarlyEnableFullScreenIfEnabled():374:374 -> EarlyEnableFullScreenIfEnabled
-    1:25:java.lang.String GetGlViewContentDescription(android.content.Context):349:349 -> GetGlViewContentDescription
+    72:75:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):136:136 -> <init>
+    76:77:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):139:139 -> <init>
+    78:79:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):141:141 -> <init>
+    80:81:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):143:143 -> <init>
+    82:83:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):144:144 -> <init>
+    84:90:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):152:152 -> <init>
+    91:96:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):171:171 -> <init>
+    97:98:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):172:172 -> <init>
+    99:100:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):173:173 -> <init>
+    101:112:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):174:174 -> <init>
+    113:114:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):175:175 -> <init>
+    115:118:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):176:176 -> <init>
+    119:122:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):83:83 -> <init>
+    123:126:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):84:84 -> <init>
+    127:134:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):86:86 -> <init>
+    135:142:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):101:101 -> <init>
+    143:146:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):105:105 -> <init>
+    147:150:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):106:106 -> <init>
+    151:156:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):86:86 -> <init>
+    157:158:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):178:178 -> <init>
+    159:162:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):179:179 -> <init>
+    163:166:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):181:181 -> <init>
+    167:168:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):182:182 -> <init>
+    169:175:void <init>(android.content.Context,com.unity3d.player.a.o,com.unity3d.player.IUnityPlayerLifecycleEvents):183:183 -> <init>
+    1:10:void EarlyEnableFullScreenIfEnabled():371:371 -> EarlyEnableFullScreenIfEnabled
+    11:32:void EarlyEnableFullScreenIfEnabled():372:372 -> EarlyEnableFullScreenIfEnabled
+    33:35:void EarlyEnableFullScreenIfEnabled():373:373 -> EarlyEnableFullScreenIfEnabled
+    36:41:void EarlyEnableFullScreenIfEnabled():375:375 -> EarlyEnableFullScreenIfEnabled
+    1:25:java.lang.String GetGlViewContentDescription(android.content.Context):350:350 -> GetGlViewContentDescription
     1:4:void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String):21:21 -> UnitySendMessage
-    5:35:void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String):404:404 -> UnitySendMessage
-    36:45:void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String):410:410 -> UnitySendMessage
+    5:35:void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String):405:405 -> UnitySendMessage
+    36:45:void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String):411:411 -> UnitySendMessage
     1:3:int -$$Nest$fgetmInitialScreenOrientation(com.unity3d.player.UnityPlayer):0:0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    2:5:void addPermissionRequest(com.unity3d.player.PermissionRequest):784:784 -> addPermissionRequest
-    6:17:void addPermissionRequest(com.unity3d.player.PermissionRequest):785:785 -> addPermissionRequest
-    18:21:void addPermissionRequest(com.unity3d.player.PermissionRequest):789:789 -> addPermissionRequest
-    22:29:void addPermissionRequest(com.unity3d.player.PermissionRequest):790:790 -> addPermissionRequest
-    30:34:void addPermissionRequest(com.unity3d.player.PermissionRequest):792:792 -> addPermissionRequest
-    35:42:void addPermissionRequest(com.unity3d.player.PermissionRequest):794:794 -> addPermissionRequest
-    43:58:void addPermissionRequest(com.unity3d.player.PermissionRequest):795:795 -> addPermissionRequest
-    2:3:void addPhoneCallListener():978:978 -> addPhoneCallListener
-    4:13:void addPhoneCallListener():979:979 -> addPhoneCallListener
-    1:8:boolean addViewToPlayer(android.view.View,boolean):1392:1392 -> addViewToPlayer
-    9:17:boolean addViewToPlayer(android.view.View,boolean):1396:1396 -> addViewToPlayer
-    18:20:boolean addViewToPlayer(android.view.View,boolean):1397:1397 -> addViewToPlayer
-    21:32:boolean addViewToPlayer(android.view.View,boolean):1399:1399 -> addViewToPlayer
-    33:41:boolean addViewToPlayer(android.view.View,boolean):1400:1400 -> addViewToPlayer
-    42:62:boolean addViewToPlayer(android.view.View,boolean):1401:1401 -> addViewToPlayer
-    63:71:boolean addViewToPlayer(android.view.View,boolean):1407:1407 -> addViewToPlayer
-    72:77:boolean addViewToPlayer(android.view.View,boolean):1412:1412 -> addViewToPlayer
-    1:6:void applySurfaceViewSettings(android.view.SurfaceView):389:389 -> applySurfaceViewSettings
-    7:15:void applySurfaceViewSettings(android.view.SurfaceView):391:391 -> applySurfaceViewSettings
-    16:19:void applySurfaceViewSettings(android.view.SurfaceView):392:392 -> applySurfaceViewSettings
-    20:28:void applySurfaceViewSettings(android.view.SurfaceView):396:396 -> applySurfaceViewSettings
-    1:11:void applyWindowInsets():1718:1718 -> applyWindowInsets
-    12:20:void applyWindowInsets():1720:1720 -> applyWindowInsets
-    1:11:void applyWindowUIChanges(boolean):1706:1706 -> applyWindowUIChanges
-    12:20:void applyWindowUIChanges(boolean):1709:1709 -> applyWindowUIChanges
-    1:2:void applyWindowUIChangesOnUiThread(boolean):1699:1699 -> applyWindowUIChangesOnUiThread
-    3:17:void applyWindowUIChangesOnUiThread(boolean):1700:1700 -> applyWindowUIChangesOnUiThread
-    18:21:void applyWindowUIChangesOnUiThread(boolean):1701:1701 -> applyWindowUIChangesOnUiThread
+    2:5:void addPermissionRequest(com.unity3d.player.PermissionRequest):785:785 -> addPermissionRequest
+    6:17:void addPermissionRequest(com.unity3d.player.PermissionRequest):786:786 -> addPermissionRequest
+    18:21:void addPermissionRequest(com.unity3d.player.PermissionRequest):790:790 -> addPermissionRequest
+    22:29:void addPermissionRequest(com.unity3d.player.PermissionRequest):791:791 -> addPermissionRequest
+    30:34:void addPermissionRequest(com.unity3d.player.PermissionRequest):793:793 -> addPermissionRequest
+    35:42:void addPermissionRequest(com.unity3d.player.PermissionRequest):795:795 -> addPermissionRequest
+    43:58:void addPermissionRequest(com.unity3d.player.PermissionRequest):796:796 -> addPermissionRequest
+    2:3:void addPhoneCallListener():979:979 -> addPhoneCallListener
+    4:13:void addPhoneCallListener():980:980 -> addPhoneCallListener
+    1:8:boolean addViewToPlayer(android.view.View,boolean):1393:1393 -> addViewToPlayer
+    9:17:boolean addViewToPlayer(android.view.View,boolean):1397:1397 -> addViewToPlayer
+    18:20:boolean addViewToPlayer(android.view.View,boolean):1398:1398 -> addViewToPlayer
+    21:32:boolean addViewToPlayer(android.view.View,boolean):1400:1400 -> addViewToPlayer
+    33:41:boolean addViewToPlayer(android.view.View,boolean):1401:1401 -> addViewToPlayer
+    42:62:boolean addViewToPlayer(android.view.View,boolean):1402:1402 -> addViewToPlayer
+    63:71:boolean addViewToPlayer(android.view.View,boolean):1408:1408 -> addViewToPlayer
+    72:77:boolean addViewToPlayer(android.view.View,boolean):1413:1413 -> addViewToPlayer
+    1:6:void applySurfaceViewSettings(android.view.SurfaceView):390:390 -> applySurfaceViewSettings
+    7:15:void applySurfaceViewSettings(android.view.SurfaceView):392:392 -> applySurfaceViewSettings
+    16:19:void applySurfaceViewSettings(android.view.SurfaceView):393:393 -> applySurfaceViewSettings
+    20:28:void applySurfaceViewSettings(android.view.SurfaceView):397:397 -> applySurfaceViewSettings
+    1:11:void applyWindowInsets():1724:1724 -> applyWindowInsets
+    12:20:void applyWindowInsets():1726:1726 -> applyWindowInsets
+    1:11:void applyWindowUIChanges(boolean):1712:1712 -> applyWindowUIChanges
+    12:20:void applyWindowUIChanges(boolean):1715:1715 -> applyWindowUIChanges
+    1:2:void applyWindowUIChangesOnUiThread(boolean):1705:1705 -> applyWindowUIChangesOnUiThread
+    3:17:void applyWindowUIChangesOnUiThread(boolean):1706:1706 -> applyWindowUIChangesOnUiThread
+    18:21:void applyWindowUIChangesOnUiThread(boolean):1707:1707 -> applyWindowUIChangesOnUiThread
     1:3:l0.K -$$Nest$fgetm_SplashScreen(com.unity3d.player.UnityPlayer):0:0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/unity3d/player/UnityPlayer;)Ll0/i;"}
     1:4:void -$$Nest$fputmVideoPlayerProxy(com.unity3d.player.UnityPlayer):0:0 -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    1:2:boolean canPauseUnity():630:630 -> canPauseUnity
+    1:2:boolean canPauseUnity():631:631 -> canPauseUnity
     3:6:boolean canPauseUnity():73:73 -> canPauseUnity
     7:15:boolean canPauseUnity():46:46 -> canPauseUnity
-    1:5:boolean canResumeUnity():645:645 -> canResumeUnity
-    6:11:boolean canResumeUnity():646:646 -> canResumeUnity
-    12:13:boolean canResumeUnity():648:648 -> canResumeUnity
+    1:5:boolean canResumeUnity():646:646 -> canResumeUnity
+    6:11:boolean canResumeUnity():647:647 -> canResumeUnity
+    12:13:boolean canResumeUnity():649:649 -> canResumeUnity
     14:35:boolean canResumeUnity():68:68 -> canResumeUnity
-    36:39:boolean canResumeUnity():648:648 -> canResumeUnity
-    1:22:void configurationChanged(android.content.res.Configuration):891:891 -> configurationChanged
-    23:25:void configurationChanged(android.content.res.Configuration):896:896 -> configurationChanged
-    26:32:void configurationChanged(android.content.res.Configuration):898:898 -> configurationChanged
-    33:36:void configurationChanged(android.content.res.Configuration):901:901 -> configurationChanged
+    36:39:boolean canResumeUnity():649:649 -> canResumeUnity
+    1:9:float clamp(float,float,float):1624:1624 -> clamp
+    1:22:void configurationChanged(android.content.res.Configuration):892:892 -> configurationChanged
+    23:25:void configurationChanged(android.content.res.Configuration):897:897 -> configurationChanged
+    26:32:void configurationChanged(android.content.res.Configuration):899:899 -> configurationChanged
+    33:36:void configurationChanged(android.content.res.Configuration):902:902 -> configurationChanged
     37:41:void configurationChanged(android.content.res.Configuration):171:171 -> configurationChanged
     42:45:void configurationChanged(android.content.res.Configuration):172:172 -> configurationChanged
     46:48:void configurationChanged(android.content.res.Configuration):173:173 -> configurationChanged
     49:53:void configurationChanged(android.content.res.Configuration):174:174 -> configurationChanged
-    54:57:void configurationChanged(android.content.res.Configuration):904:904 -> configurationChanged
-    58:61:void configurationChanged(android.content.res.Configuration):905:905 -> configurationChanged
+    54:57:void configurationChanged(android.content.res.Configuration):905:905 -> configurationChanged
+    58:61:void configurationChanged(android.content.res.Configuration):906:906 -> configurationChanged
     1:4:void -$$Nest$fputm_SplashScreen(com.unity3d.player.UnityPlayer):0:0 -> d
       # {"id":"com.android.tools.r8.synthesized"}
-    1:5:void destroy():482:482 -> destroy
+    1:5:void destroy():483:483 -> destroy
     6:8:void destroy():20:20 -> destroy
-    9:10:void destroy():485:485 -> destroy
-    11:14:void destroy():488:488 -> destroy
-    15:17:void destroy():490:490 -> destroy
-    18:19:void destroy():491:491 -> destroy
-    20:23:void destroy():494:494 -> destroy
-    24:26:void destroy():495:495 -> destroy
-    27:30:void destroy():497:497 -> destroy
+    9:10:void destroy():486:486 -> destroy
+    11:14:void destroy():489:489 -> destroy
+    15:17:void destroy():491:491 -> destroy
+    18:19:void destroy():492:492 -> destroy
+    20:23:void destroy():495:495 -> destroy
+    24:26:void destroy():496:496 -> destroy
+    27:30:void destroy():498:498 -> destroy
     31:35:void com.unity3d.player.a.v.a():89:89 -> destroy
-    31:35:void destroy():499 -> destroy
+    31:35:void destroy():500 -> destroy
     36:40:void com.unity3d.player.a.v.a():91:91 -> destroy
-    36:40:void destroy():499 -> destroy
-    41:42:void destroy():500:500 -> destroy
-    43:46:void destroy():503:503 -> destroy
+    36:40:void destroy():500 -> destroy
+    41:42:void destroy():501:501 -> destroy
+    43:46:void destroy():504:504 -> destroy
     47:49:void destroy():65:65 -> destroy
-    50:52:void destroy():506:506 -> destroy
-    53:54:void destroy():509:509 -> destroy
-    55:56:void destroy():510:510 -> destroy
+    50:52:void destroy():507:507 -> destroy
+    53:54:void destroy():510:510 -> destroy
+    55:56:void destroy():511:511 -> destroy
     57:60:void destroy():46:46 -> destroy
-    61:63:void destroy():511:511 -> destroy
-    64:66:void destroy():513:513 -> destroy
-    67:70:void destroy():515:515 -> destroy
+    61:63:void destroy():512:512 -> destroy
+    64:66:void destroy():514:514 -> destroy
+    67:70:void destroy():516:516 -> destroy
     1:1:void developmentPlayerInitialize():0:0 -> developmentPlayerInitialize
-    2:4:void disableLogger():1314:1314 -> disableLogger
-    1:7:void disableStaticSplashScreen():354:354 -> disableStaticSplashScreen
-    8:16:void disableStaticSplashScreen():358:358 -> disableStaticSplashScreen
-    1:4:void dispatchFrameLayoutPadding():1692:1692 -> dispatchFrameLayoutPadding
+    2:4:void disableLogger():1315:1315 -> disableLogger
+    1:7:void disableStaticSplashScreen():355:355 -> disableStaticSplashScreen
+    8:16:void disableStaticSplashScreen():359:359 -> disableStaticSplashScreen
+    1:4:void dispatchFrameLayoutPadding():1698:1698 -> dispatchFrameLayoutPadding
     5:11:void dispatchFrameLayoutPadding():21:21 -> dispatchFrameLayoutPadding
-    12:33:void dispatchFrameLayoutPadding():1695:1695 -> dispatchFrameLayoutPadding
+    12:33:void dispatchFrameLayoutPadding():1701:1701 -> dispatchFrameLayoutPadding
     1:4:void -$$Nest$mapplyWindowUIChangesOnUiThread(com.unity3d.player.UnityPlayer,boolean):0:0 -> e
       # {"id":"com.android.tools.r8.synthesized"}
-    1:10:void executeMainThreadJobs():1553:1553 -> executeMainThreadJobs
-    11:15:void executeMainThreadJobs():1554:1554 -> executeMainThreadJobs
+    1:10:void executeMainThreadJobs():1554:1554 -> executeMainThreadJobs
+    11:15:void executeMainThreadJobs():1555:1555 -> executeMainThreadJobs
     1:4:void -$$Nest$mdispatchFrameLayoutPadding(com.unity3d.player.UnityPlayer):0:0 -> f
       # {"id":"com.android.tools.r8.synthesized"}
-    1:4:void finish():423:423 -> finish
-    5:10:void finish():425:425 -> finish
-    11:16:void finish():426:426 -> finish
+    1:4:void finish():424:424 -> finish
+    5:10:void finish():426:426 -> finish
+    11:16:void finish():427:427 -> finish
     1:4:void -$$Nest$minvokeOnMainThread(com.unity3d.player.UnityPlayer,com.unity3d.player.p0):0:0 -> g
       # {"id":"com.android.tools.r8.synthesized"}
-    1:15:boolean getARCoreEnabled():1241:1241 -> getARCoreEnabled
-    1:3:android.app.Activity getActivity():160:160 -> getActivity
-    1:19:android.content.pm.ActivityInfo getActivityInfo():1216:1216 -> getActivityInfo
-    1:19:android.content.pm.ApplicationInfo getApplicationInfo():1211:1211 -> getApplicationInfo
-    1:15:boolean getAutoReportFullyDrawnEnabled():1292:1292 -> getAutoReportFullyDrawnEnabled
-    1:15:boolean getAutoSetGameStateEnabled():1272:1272 -> getAutoSetGameStateEnabled
-    1:9:java.lang.String getClipboardText():1096:1096 -> getClipboardText
-    10:27:java.lang.String getClipboardText():1098:1098 -> getClipboardText
-    1:3:android.content.Context getContext():155:155 -> getContext
-    1:3:com.unity3d.player.a.o getContextType():165:165 -> getContextType
+    1:15:boolean getARCoreEnabled():1242:1242 -> getARCoreEnabled
+    1:3:android.app.Activity getActivity():161:161 -> getActivity
+    1:19:android.content.pm.ActivityInfo getActivityInfo():1217:1217 -> getActivityInfo
+    1:19:android.content.pm.ApplicationInfo getApplicationInfo():1212:1212 -> getApplicationInfo
+    1:15:boolean getAutoReportFullyDrawnEnabled():1293:1293 -> getAutoReportFullyDrawnEnabled
+    1:15:boolean getAutoSetGameStateEnabled():1273:1273 -> getAutoSetGameStateEnabled
+    1:9:java.lang.String getClipboardText():1097:1097 -> getClipboardText
+    10:27:java.lang.String getClipboardText():1099:1099 -> getClipboardText
+    1:3:android.content.Context getContext():156:156 -> getContext
+    1:3:com.unity3d.player.a.o getContextType():166:166 -> getContextType
       # {"id":"com.android.tools.r8.residualsignature","signature":"()Ll0/a0;"}
-    1:3:android.widget.FrameLayout getFrameLayout():1590:1590 -> getFrameLayout
-    1:10:java.lang.String getKeyboardLayout():1559:1559 -> getKeyboardLayout
-    11:18:java.lang.String getKeyboardLayout():1560:1560 -> getKeyboardLayout
+    1:3:android.widget.FrameLayout getFrameLayout():1591:1591 -> getFrameLayout
+    1:10:java.lang.String getKeyboardLayout():1560:1560 -> getKeyboardLayout
+    11:18:java.lang.String getKeyboardLayout():1561:1561 -> getKeyboardLayout
     19:24:java.lang.String com.unity3d.player.a.s.a(android.view.inputmethod.InputMethodSubtype):9:9 -> getKeyboardLayout
-    19:24:java.lang.String getKeyboardLayout():1564 -> getKeyboardLayout
-    25:33:java.lang.String getKeyboardLayout():1565:1565 -> getKeyboardLayout
-    34:37:java.lang.String getKeyboardLayout():1569:1569 -> getKeyboardLayout
-    38:41:java.lang.String getKeyboardLayout():1570:1570 -> getKeyboardLayout
-    42:62:java.lang.String getKeyboardLayout():1571:1571 -> getKeyboardLayout
-    1:15:boolean getLaunchFullscreen():1251:1251 -> getLaunchFullscreen
-    1:6:java.lang.String getLaunchURL():1104:1104 -> getLaunchURL
-    7:16:java.lang.String getLaunchURL():1106:1106 -> getLaunchURL
-    17:22:java.lang.String getLaunchURL():1107:1107 -> getLaunchURL
-    1:13:boolean getMetaDataValue(java.lang.String):1221:1221 -> getMetaDataValue
-    1:37:int getNaturalOrientation(int):304:304 -> getNaturalOrientation
-    1:4:int getNetworkConnectivity():876:876 -> getNetworkConnectivity
+    19:24:java.lang.String getKeyboardLayout():1565 -> getKeyboardLayout
+    25:33:java.lang.String getKeyboardLayout():1566:1566 -> getKeyboardLayout
+    34:37:java.lang.String getKeyboardLayout():1570:1570 -> getKeyboardLayout
+    38:41:java.lang.String getKeyboardLayout():1571:1571 -> getKeyboardLayout
+    42:62:java.lang.String getKeyboardLayout():1572:1572 -> getKeyboardLayout
+    1:15:boolean getLaunchFullscreen():1252:1252 -> getLaunchFullscreen
+    1:6:java.lang.String getLaunchURL():1105:1105 -> getLaunchURL
+    7:16:java.lang.String getLaunchURL():1107:1107 -> getLaunchURL
+    17:22:java.lang.String getLaunchURL():1108:1108 -> getLaunchURL
+    1:13:boolean getMetaDataValue(java.lang.String):1222:1222 -> getMetaDataValue
+    1:37:int getNaturalOrientation(int):305:305 -> getNaturalOrientation
+    1:4:int getNetworkConnectivity():877:877 -> getNetworkConnectivity
     5:7:int getNetworkConnectivity():84:84 -> getNetworkConnectivity
-    8:16:int getNetworkConnectivity():880:880 -> getNetworkConnectivity
+    8:16:int getNetworkConnectivity():881:881 -> getNetworkConnectivity
     17:19:int getNetworkConnectivity():84:84 -> getNetworkConnectivity
-    1:9:java.lang.String getNetworkProxySettings(java.lang.String):1461:1461 -> getNetworkProxySettings
-    10:14:java.lang.String getNetworkProxySettings(java.lang.String):1464:1464 -> getNetworkProxySettings
-    15:22:java.lang.String getNetworkProxySettings(java.lang.String):1467:1467 -> getNetworkProxySettings
-    23:26:java.lang.String getNetworkProxySettings(java.lang.String):1470:1470 -> getNetworkProxySettings
-    27:36:java.lang.String getNetworkProxySettings(java.lang.String):1475:1475 -> getNetworkProxySettings
-    37:45:java.lang.String getNetworkProxySettings(java.lang.String):1476:1476 -> getNetworkProxySettings
-    46:50:java.lang.String getNetworkProxySettings(java.lang.String):1478:1478 -> getNetworkProxySettings
-    51:60:java.lang.String getNetworkProxySettings(java.lang.String):1479:1479 -> getNetworkProxySettings
-    61:66:java.lang.String getNetworkProxySettings(java.lang.String):1480:1480 -> getNetworkProxySettings
-    67:74:java.lang.String getNetworkProxySettings(java.lang.String):1481:1481 -> getNetworkProxySettings
-    75:86:java.lang.String getNetworkProxySettings(java.lang.String):1482:1482 -> getNetworkProxySettings
-    87:94:java.lang.String getNetworkProxySettings(java.lang.String):1483:1483 -> getNetworkProxySettings
-    95:100:java.lang.String getNetworkProxySettings(java.lang.String):1484:1484 -> getNetworkProxySettings
-    101:106:java.lang.String getNetworkProxySettings(java.lang.String):1485:1485 -> getNetworkProxySettings
-    1:4:java.lang.String getProcessName():1189:1189 -> getProcessName
-    5:14:java.lang.String getProcessName():1190:1190 -> getProcessName
-    15:22:java.lang.String getProcessName():1191:1191 -> getProcessName
-    23:38:java.lang.String getProcessName():1198:1198 -> getProcessName
-    39:42:java.lang.String getProcessName():1200:1200 -> getProcessName
-    43:46:java.lang.String getProcessName():1202:1202 -> getProcessName
-    1:7:float getScreenBrightness():1649:1649 -> getScreenBrightness
-    8:18:float getScreenBrightness():1651:1651 -> getScreenBrightness
-    19:26:float getScreenBrightness():1657:1657 -> getScreenBrightness
-    27:34:float getScreenBrightness():1656:1656 -> getScreenBrightness
-    35:39:float getScreenBrightness():1661:1661 -> getScreenBrightness
-    40:60:float getScreenBrightness():1665:1665 -> getScreenBrightness
-    61:77:float getScreenBrightness():1666:1666 -> getScreenBrightness
-    1:15:boolean getSplashEnabled():1231:1231 -> getSplashEnabled
-    1:15:int getSplashMode():1262:1262 -> getSplashMode
-    1:5:java.lang.String getState():1596:1596 -> getState
-    6:31:java.lang.String getState():1597:1597 -> getState
-    32:50:java.lang.String getState():1598:1598 -> getState
-    51:69:java.lang.String getState():1599:1599 -> getState
-    70:74:java.lang.String getState():1600:1600 -> getState
-    1:6:int getUaaLLaunchProcessType():1175:1175 -> getUaaLLaunchProcessType
-    7:22:int getUaaLLaunchProcessType():1176:1176 -> getUaaLLaunchProcessType
-    1:7:java.lang.String getUnityNativeLibraryPath(android.content.Context):1085:1085 -> getUnityNativeLibraryPath
+    1:9:java.lang.String getNetworkProxySettings(java.lang.String):1462:1462 -> getNetworkProxySettings
+    10:14:java.lang.String getNetworkProxySettings(java.lang.String):1465:1465 -> getNetworkProxySettings
+    15:22:java.lang.String getNetworkProxySettings(java.lang.String):1468:1468 -> getNetworkProxySettings
+    23:26:java.lang.String getNetworkProxySettings(java.lang.String):1471:1471 -> getNetworkProxySettings
+    27:36:java.lang.String getNetworkProxySettings(java.lang.String):1476:1476 -> getNetworkProxySettings
+    37:45:java.lang.String getNetworkProxySettings(java.lang.String):1477:1477 -> getNetworkProxySettings
+    46:50:java.lang.String getNetworkProxySettings(java.lang.String):1479:1479 -> getNetworkProxySettings
+    51:60:java.lang.String getNetworkProxySettings(java.lang.String):1480:1480 -> getNetworkProxySettings
+    61:66:java.lang.String getNetworkProxySettings(java.lang.String):1481:1481 -> getNetworkProxySettings
+    67:74:java.lang.String getNetworkProxySettings(java.lang.String):1482:1482 -> getNetworkProxySettings
+    75:86:java.lang.String getNetworkProxySettings(java.lang.String):1483:1483 -> getNetworkProxySettings
+    87:94:java.lang.String getNetworkProxySettings(java.lang.String):1484:1484 -> getNetworkProxySettings
+    95:100:java.lang.String getNetworkProxySettings(java.lang.String):1485:1485 -> getNetworkProxySettings
+    101:106:java.lang.String getNetworkProxySettings(java.lang.String):1486:1486 -> getNetworkProxySettings
+    1:4:java.lang.String getProcessName():1190:1190 -> getProcessName
+    5:14:java.lang.String getProcessName():1191:1191 -> getProcessName
+    15:22:java.lang.String getProcessName():1192:1192 -> getProcessName
+    23:38:java.lang.String getProcessName():1199:1199 -> getProcessName
+    39:42:java.lang.String getProcessName():1201:1201 -> getProcessName
+    43:46:java.lang.String getProcessName():1203:1203 -> getProcessName
+    1:7:float getScreenBrightness():1655:1655 -> getScreenBrightness
+    8:18:float getScreenBrightness():1657:1657 -> getScreenBrightness
+    19:26:float getScreenBrightness():1663:1663 -> getScreenBrightness
+    27:34:float getScreenBrightness():1662:1662 -> getScreenBrightness
+    35:39:float getScreenBrightness():1667:1667 -> getScreenBrightness
+    40:60:float getScreenBrightness():1671:1671 -> getScreenBrightness
+    61:77:float getScreenBrightness():1672:1672 -> getScreenBrightness
+    1:15:boolean getSplashEnabled():1232:1232 -> getSplashEnabled
+    1:15:int getSplashMode():1263:1263 -> getSplashMode
+    1:5:java.lang.String getState():1597:1597 -> getState
+    6:31:java.lang.String getState():1598:1598 -> getState
+    32:50:java.lang.String getState():1599:1599 -> getState
+    51:69:java.lang.String getState():1600:1600 -> getState
+    70:74:java.lang.String getState():1601:1601 -> getState
+    1:6:int getUaaLLaunchProcessType():1176:1176 -> getUaaLLaunchProcessType
+    7:22:int getUaaLLaunchProcessType():1177:1177 -> getUaaLLaunchProcessType
+    1:7:java.lang.String getUnityNativeLibraryPath(android.content.Context):1086:1086 -> getUnityNativeLibraryPath
     1:5:boolean -$$Nest$mnativeIsAutorotationOn(com.unity3d.player.UnityPlayer):0:0 -> h
       # {"id":"com.android.tools.r8.synthesized"}
-    1:5:void handleDeferredPauseOnSurfaceDestroyed():575:575 -> handleDeferredPauseOnSurfaceDestroyed
-    6:9:void handleDeferredPauseOnSurfaceDestroyed():579:579 -> handleDeferredPauseOnSurfaceDestroyed
-    1:4:void hideStatusBar():1330:1330 -> hideStatusBar
-    5:10:void hideStatusBar():1332:1332 -> hideStatusBar
-    11:14:void hideStatusBar():1333:1333 -> hideStatusBar
+    1:5:void handleDeferredPauseOnSurfaceDestroyed():576:576 -> handleDeferredPauseOnSurfaceDestroyed
+    6:9:void handleDeferredPauseOnSurfaceDestroyed():580:580 -> handleDeferredPauseOnSurfaceDestroyed
+    1:4:void hideStatusBar():1331:1331 -> hideStatusBar
+    5:10:void hideStatusBar():1333:1333 -> hideStatusBar
+    11:14:void hideStatusBar():1334:1334 -> hideStatusBar
     1:5:boolean -$$Nest$mshouldRunWithoutFocus(com.unity3d.player.UnityPlayer):0:0 -> i
       # {"id":"com.android.tools.r8.synthesized"}
-    3:4:void initialize(android.widget.FrameLayout,java.lang.String):194:194 -> initialize
-    5:7:void initialize(android.widget.FrameLayout,java.lang.String):195:195 -> initialize
-    8:19:void initialize(android.widget.FrameLayout,java.lang.String):198:198 -> initialize
-    20:27:void initialize(android.widget.FrameLayout,java.lang.String):199:199 -> initialize
-    28:32:void initialize(android.widget.FrameLayout,java.lang.String):201:201 -> initialize
-    33:38:void initialize(android.widget.FrameLayout,java.lang.String):206:206 -> initialize
-    39:43:void initialize(android.widget.FrameLayout,java.lang.String):208:208 -> initialize
+    3:4:void initialize(android.widget.FrameLayout,java.lang.String):195:195 -> initialize
+    5:7:void initialize(android.widget.FrameLayout,java.lang.String):196:196 -> initialize
+    8:19:void initialize(android.widget.FrameLayout,java.lang.String):199:199 -> initialize
+    20:27:void initialize(android.widget.FrameLayout,java.lang.String):200:200 -> initialize
+    28:32:void initialize(android.widget.FrameLayout,java.lang.String):202:202 -> initialize
+    33:38:void initialize(android.widget.FrameLayout,java.lang.String):207:207 -> initialize
+    39:43:void initialize(android.widget.FrameLayout,java.lang.String):209:209 -> initialize
     44:50:int[] com.unity3d.player.a.k.b(int):0:0 -> initialize
     44:50:void initialize(android.widget.FrameLayout,java.lang.String):16 -> initialize
-    51:61:void initialize(android.widget.FrameLayout,java.lang.String):208:208 -> initialize
-    62:66:void initialize(android.widget.FrameLayout,java.lang.String):209:209 -> initialize
-    67:73:void initialize(android.widget.FrameLayout,java.lang.String):210:210 -> initialize
-    74:76:void initialize(android.widget.FrameLayout,java.lang.String):213:213 -> initialize
-    77:86:void initialize(android.widget.FrameLayout,java.lang.String):214:214 -> initialize
+    51:61:void initialize(android.widget.FrameLayout,java.lang.String):209:209 -> initialize
+    62:66:void initialize(android.widget.FrameLayout,java.lang.String):210:210 -> initialize
+    67:73:void initialize(android.widget.FrameLayout,java.lang.String):211:211 -> initialize
+    74:76:void initialize(android.widget.FrameLayout,java.lang.String):214:214 -> initialize
+    77:86:void initialize(android.widget.FrameLayout,java.lang.String):215:215 -> initialize
     87:91:void initialize(android.widget.FrameLayout,java.lang.String):21:21 -> initialize
-    92:96:void initialize(android.widget.FrameLayout,java.lang.String):221:221 -> initialize
-    97:103:void initialize(android.widget.FrameLayout,java.lang.String):223:223 -> initialize
-    104:114:void initialize(android.widget.FrameLayout,java.lang.String):224:224 -> initialize
-    115:139:void initialize(android.widget.FrameLayout,java.lang.String):225:225 -> initialize
-    140:143:void initialize(android.widget.FrameLayout,java.lang.String):232:232 -> initialize
-    144:147:void initialize(android.widget.FrameLayout,java.lang.String):233:233 -> initialize
-    148:150:void initialize(android.widget.FrameLayout,java.lang.String):234:234 -> initialize
-    151:154:void initialize(android.widget.FrameLayout,java.lang.String):235:235 -> initialize
-    155:163:void initialize(android.widget.FrameLayout,java.lang.String):239:239 -> initialize
-    164:166:void initialize(android.widget.FrameLayout,java.lang.String):240:240 -> initialize
+    92:96:void initialize(android.widget.FrameLayout,java.lang.String):222:222 -> initialize
+    97:103:void initialize(android.widget.FrameLayout,java.lang.String):224:224 -> initialize
+    104:114:void initialize(android.widget.FrameLayout,java.lang.String):225:225 -> initialize
+    115:139:void initialize(android.widget.FrameLayout,java.lang.String):226:226 -> initialize
+    140:143:void initialize(android.widget.FrameLayout,java.lang.String):233:233 -> initialize
+    144:147:void initialize(android.widget.FrameLayout,java.lang.String):234:234 -> initialize
+    148:150:void initialize(android.widget.FrameLayout,java.lang.String):235:235 -> initialize
+    151:154:void initialize(android.widget.FrameLayout,java.lang.String):236:236 -> initialize
+    155:163:void initialize(android.widget.FrameLayout,java.lang.String):240:240 -> initialize
+    164:166:void initialize(android.widget.FrameLayout,java.lang.String):241:241 -> initialize
     167:168:void initialize(android.widget.FrameLayout,java.lang.String):51:51 -> initialize
-    169:170:void initialize(android.widget.FrameLayout,java.lang.String):242:242 -> initialize
-    171:173:void initialize(android.widget.FrameLayout,java.lang.String):243:243 -> initialize
-    174:176:void initialize(android.widget.FrameLayout,java.lang.String):245:245 -> initialize
-    177:188:void initialize(android.widget.FrameLayout,java.lang.String):247:247 -> initialize
-    189:200:void initialize(android.widget.FrameLayout,java.lang.String):249:249 -> initialize
-    201:209:void initialize(android.widget.FrameLayout,java.lang.String):251:251 -> initialize
-    210:218:void initialize(android.widget.FrameLayout,java.lang.String):253:253 -> initialize
-    219:225:void initialize(android.widget.FrameLayout,java.lang.String):255:255 -> initialize
-    226:231:void initialize(android.widget.FrameLayout,java.lang.String):257:257 -> initialize
-    232:236:void initialize(android.widget.FrameLayout,java.lang.String):258:258 -> initialize
-    237:241:void initialize(android.widget.FrameLayout,java.lang.String):260:260 -> initialize
-    242:245:void initialize(android.widget.FrameLayout,java.lang.String):273:273 -> initialize
-    246:251:void initialize(android.widget.FrameLayout,java.lang.String):272:272 -> initialize
-    252:255:void initialize(android.widget.FrameLayout,java.lang.String):278:278 -> initialize
-    256:262:void initialize(android.widget.FrameLayout,java.lang.String):279:279 -> initialize
-    263:263:void initialize(android.widget.FrameLayout):188:188 -> initialize
-    1:14:boolean initializeGoogleAr():1125:1125 -> initializeGoogleAr
-    15:21:boolean initializeGoogleAr():1127:1127 -> initializeGoogleAr
-    22:26:boolean initializeGoogleAr():1129:1129 -> initializeGoogleAr
-    27:28:boolean initializeGoogleAr():1131:1131 -> initializeGoogleAr
+    169:170:void initialize(android.widget.FrameLayout,java.lang.String):243:243 -> initialize
+    171:173:void initialize(android.widget.FrameLayout,java.lang.String):244:244 -> initialize
+    174:176:void initialize(android.widget.FrameLayout,java.lang.String):246:246 -> initialize
+    177:188:void initialize(android.widget.FrameLayout,java.lang.String):248:248 -> initialize
+    189:200:void initialize(android.widget.FrameLayout,java.lang.String):250:250 -> initialize
+    201:209:void initialize(android.widget.FrameLayout,java.lang.String):252:252 -> initialize
+    210:218:void initialize(android.widget.FrameLayout,java.lang.String):254:254 -> initialize
+    219:225:void initialize(android.widget.FrameLayout,java.lang.String):256:256 -> initialize
+    226:231:void initialize(android.widget.FrameLayout,java.lang.String):258:258 -> initialize
+    232:236:void initialize(android.widget.FrameLayout,java.lang.String):259:259 -> initialize
+    237:241:void initialize(android.widget.FrameLayout,java.lang.String):261:261 -> initialize
+    242:245:void initialize(android.widget.FrameLayout,java.lang.String):274:274 -> initialize
+    246:251:void initialize(android.widget.FrameLayout,java.lang.String):273:273 -> initialize
+    252:255:void initialize(android.widget.FrameLayout,java.lang.String):279:279 -> initialize
+    256:262:void initialize(android.widget.FrameLayout,java.lang.String):280:280 -> initialize
+    263:263:void initialize(android.widget.FrameLayout):189:189 -> initialize
+    1:14:boolean initializeGoogleAr():1126:1126 -> initializeGoogleAr
+    15:21:boolean initializeGoogleAr():1128:1128 -> initializeGoogleAr
+    22:26:boolean initializeGoogleAr():1130:1130 -> initializeGoogleAr
+    27:28:boolean initializeGoogleAr():1132:1132 -> initializeGoogleAr
     29:32:boolean initializeGoogleAr():46:46 -> initializeGoogleAr
-    33:39:boolean initializeGoogleAr():1133:1133 -> initializeGoogleAr
+    33:39:boolean initializeGoogleAr():1134:1134 -> initializeGoogleAr
     1:6:boolean injectEvent(android.view.InputEvent,int):21:21 -> injectEvent
-    7:11:boolean injectEvent(android.view.InputEvent,int):1346:1346 -> injectEvent
-    12:12:boolean injectEvent(android.view.InputEvent):1339:1339 -> injectEvent
+    7:11:boolean injectEvent(android.view.InputEvent,int):1347:1347 -> injectEvent
+    12:12:boolean injectEvent(android.view.InputEvent):1340:1340 -> injectEvent
     1:5:void invokeOnMainThread(java.lang.Runnable):21:21 -> invokeOnMainThread
-    6:18:void invokeOnMainThread(java.lang.Runnable):1534:1534 -> invokeOnMainThread
-    19:22:void invokeOnMainThread(java.lang.Runnable):1537:1537 -> invokeOnMainThread
-    23:28:void invokeOnMainThread(java.lang.Runnable):1535:1535 -> invokeOnMainThread
-    29:29:void invokeOnMainThread(com.unity3d.player.UnityPlayer$b):1544:1544 -> invokeOnMainThread
-    30:30:void invokeOnMainThread(com.unity3d.player.UnityPlayer$b):1547:1547 -> invokeOnMainThread
-    1:6:boolean isFinishing():1319:1319 -> isFinishing
-    7:10:boolean isFinishing():1322:1322 -> isFinishing
-    11:16:boolean isFinishing():1323:1323 -> isFinishing
-    17:19:boolean isFinishing():1325:1325 -> isFinishing
+    6:18:void invokeOnMainThread(java.lang.Runnable):1535:1535 -> invokeOnMainThread
+    19:22:void invokeOnMainThread(java.lang.Runnable):1538:1538 -> invokeOnMainThread
+    23:28:void invokeOnMainThread(java.lang.Runnable):1536:1536 -> invokeOnMainThread
+    29:29:void invokeOnMainThread(com.unity3d.player.UnityPlayer$b):1545:1545 -> invokeOnMainThread
+    30:30:void invokeOnMainThread(com.unity3d.player.UnityPlayer$b):1548:1548 -> invokeOnMainThread
+    1:6:boolean isFinishing():1320:1320 -> isFinishing
+    7:10:boolean isFinishing():1323:1323 -> isFinishing
+    11:16:boolean isFinishing():1324:1324 -> isFinishing
+    17:19:boolean isFinishing():1326:1326 -> isFinishing
     1:4:boolean isNativeInitialized():21:21 -> isNativeInitialized
-    5:6:boolean isNativeInitialized():299:299 -> isNativeInitialized
+    5:6:boolean isNativeInitialized():300:300 -> isNativeInitialized
     7:14:boolean isNativeInitialized():56:56 -> isNativeInitialized
-    1:5:boolean isUaaLUseCase():1165:1165 -> isUaaLUseCase
-    6:11:boolean isUaaLUseCase():1167:1167 -> isUaaLUseCase
-    12:26:boolean isUaaLUseCase():1168:1168 -> isUaaLUseCase
-    1:6:boolean isWindowTranslucent():379:379 -> isWindowTranslucent
-    7:21:boolean isWindowTranslucent():381:381 -> isWindowTranslucent
-    22:25:boolean isWindowTranslucent():382:382 -> isWindowTranslucent
-    26:29:boolean isWindowTranslucent():383:383 -> isWindowTranslucent
+    1:5:boolean isUaaLUseCase():1166:1166 -> isUaaLUseCase
+    6:11:boolean isUaaLUseCase():1168:1168 -> isUaaLUseCase
+    12:26:boolean isUaaLUseCase():1169:1169 -> isUaaLUseCase
+    1:6:boolean isWindowTranslucent():380:380 -> isWindowTranslucent
+    7:21:boolean isWindowTranslucent():382:382 -> isWindowTranslucent
+    22:25:boolean isWindowTranslucent():383:383 -> isWindowTranslucent
+    26:29:boolean isWindowTranslucent():384:384 -> isWindowTranslucent
     1:4:void -$$Nest$smnativeSetLaunchURL(java.lang.String):0:0 -> j
       # {"id":"com.android.tools.r8.synthesized"}
-    2:6:void kill():521:521 -> kill
-    7:14:void kill():522:522 -> kill
-    2:7:boolean loadLibrary(java.lang.String):962:962 -> loadLibrary
-    1:17:java.lang.String loadNative(java.lang.String):1027:1027 -> loadNative
-    18:23:java.lang.String loadNative(java.lang.String):1033:1033 -> loadNative
-    24:28:java.lang.String loadNative(java.lang.String):1039:1039 -> loadNative
-    29:35:java.lang.String loadNative(java.lang.String):1051:1051 -> loadNative
+    2:6:void kill():522:522 -> kill
+    7:14:void kill():523:523 -> kill
+    2:7:boolean loadLibrary(java.lang.String):963:963 -> loadLibrary
+    1:17:java.lang.String loadNative(java.lang.String):1028:1028 -> loadNative
+    18:23:java.lang.String loadNative(java.lang.String):1034:1034 -> loadNative
+    24:28:java.lang.String loadNative(java.lang.String):1040:1040 -> loadNative
+    29:35:java.lang.String loadNative(java.lang.String):1052:1052 -> loadNative
     36:37:java.lang.String loadNative(java.lang.String):11:11 -> loadNative
-    38:41:java.lang.String loadNative(java.lang.String):1060:1060 -> loadNative
-    42:49:java.lang.String loadNative(java.lang.String):1057:1057 -> loadNative
-    50:58:java.lang.String loadNative(java.lang.String):1048:1048 -> loadNative
-    59:67:java.lang.String loadNative(java.lang.String):1044:1044 -> loadNative
-    1:15:java.lang.String logLoadLibMainError(java.lang.String,java.lang.String):999:999 -> logLoadLibMainError
-    16:19:java.lang.String logLoadLibMainError(java.lang.String,java.lang.String):1001:1001 -> logLoadLibMainError
-    1:8:void newIntent(android.content.Intent):475:475 -> newIntent
-    1:5:void onPause():551:551 -> onPause
-    6:12:void onPause():552:552 -> onPause
-    13:15:void onPause():554:554 -> onPause
-    16:19:void onPause():558:558 -> onPause
-    2:3:void onResume():565:565 -> onResume
-    4:5:void onResume():567:567 -> onResume
+    38:41:java.lang.String loadNative(java.lang.String):1061:1061 -> loadNative
+    42:49:java.lang.String loadNative(java.lang.String):1058:1058 -> loadNative
+    50:58:java.lang.String loadNative(java.lang.String):1049:1049 -> loadNative
+    59:67:java.lang.String loadNative(java.lang.String):1045:1045 -> loadNative
+    1:15:java.lang.String logLoadLibMainError(java.lang.String,java.lang.String):1000:1000 -> logLoadLibMainError
+    16:19:java.lang.String logLoadLibMainError(java.lang.String,java.lang.String):1002:1002 -> logLoadLibMainError
+    1:8:void newIntent(android.content.Intent):476:476 -> newIntent
+    1:5:void onPause():552:552 -> onPause
+    6:12:void onPause():553:553 -> onPause
+    13:15:void onPause():555:555 -> onPause
+    16:19:void onPause():559:559 -> onPause
+    2:3:void onResume():566:566 -> onResume
+    4:5:void onResume():568:568 -> onResume
     6:9:void onResume():73:73 -> onResume
     10:14:void onResume():46:46 -> onResume
-    15:18:void onResume():570:570 -> onResume
-    1:7:void onStart():541:541 -> onStart
-    8:11:void onStart():544:544 -> onStart
-    1:7:void onStop():533:533 -> onStop
-    8:11:void onStop():536:536 -> onStop
+    15:18:void onResume():571:571 -> onResume
+    1:7:void onStart():542:542 -> onStart
+    8:11:void onStart():545:545 -> onStart
+    1:7:void onStop():534:534 -> onStop
+    8:11:void onStop():537:537 -> onStop
     1:1:void onUnityPlayerQuitted():0:0 -> onUnityPlayerQuitted
     1:1:void onUnityPlayerUnloaded():0:0 -> onUnityPlayerUnloaded
-    1:4:void pause():589:589 -> pause
-    1:9:void pauseJavaAndCallUnloadCallback():1676:1676 -> pauseJavaAndCallUnloadCallback
-    1:3:void pauseUnity():636:636 -> pauseUnity
+    1:4:void pause():590:590 -> pause
+    1:9:void pauseJavaAndCallUnloadCallback():1682:1682 -> pauseJavaAndCallUnloadCallback
+    1:3:void pauseUnity():637:637 -> pauseUnity
     4:6:void pauseUnity():61:61 -> pauseUnity
     7:9:void pauseUnity():41:41 -> pauseUnity
-    2:6:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):822:822 -> permissionResponse
-    7:10:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):824:824 -> permissionResponse
-    11:22:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):825:825 -> permissionResponse
-    23:27:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):828:828 -> permissionResponse
-    28:31:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):831:831 -> permissionResponse
-    32:36:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):832:832 -> permissionResponse
-    37:39:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):833:833 -> permissionResponse
-    40:42:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):835:835 -> permissionResponse
-    43:45:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):837:837 -> permissionResponse
-    46:62:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):838:838 -> permissionResponse
-    63:81:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):846:846 -> permissionResponse
-    82:87:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):851:851 -> permissionResponse
-    88:94:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):853:853 -> permissionResponse
-    95:103:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):855:855 -> permissionResponse
-    104:108:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):860:860 -> permissionResponse
-    109:116:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):863:863 -> permissionResponse
-    117:123:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):871:871 -> permissionResponse
-    1:13:void postOnUiThread(java.lang.Runnable):460:460 -> postOnUiThread
-    1:7:void preloadJavaPlugins():1009:1009 -> preloadJavaPlugins
-    8:30:void preloadJavaPlugins():1017:1017 -> preloadJavaPlugins
-    1:5:void releasePointerCapture():1612:1612 -> releasePointerCapture
+    2:6:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):823:823 -> permissionResponse
+    7:10:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):825:825 -> permissionResponse
+    11:22:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):826:826 -> permissionResponse
+    23:27:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):829:829 -> permissionResponse
+    28:31:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):832:832 -> permissionResponse
+    32:36:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):833:833 -> permissionResponse
+    37:39:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):834:834 -> permissionResponse
+    40:42:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):836:836 -> permissionResponse
+    43:45:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):838:838 -> permissionResponse
+    46:62:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):839:839 -> permissionResponse
+    63:81:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):847:847 -> permissionResponse
+    82:87:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):852:852 -> permissionResponse
+    88:94:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):854:854 -> permissionResponse
+    95:103:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):856:856 -> permissionResponse
+    104:108:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):861:861 -> permissionResponse
+    109:116:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):864:864 -> permissionResponse
+    117:123:void permissionResponse(android.app.Activity,int,java.lang.String[],int[]):872:872 -> permissionResponse
+    1:13:void postOnUiThread(java.lang.Runnable):461:461 -> postOnUiThread
+    1:7:void preloadJavaPlugins():1010:1010 -> preloadJavaPlugins
+    8:30:void preloadJavaPlugins():1018:1018 -> preloadJavaPlugins
+    1:5:void releasePointerCapture():1613:1613 -> releasePointerCapture
     6:10:void releasePointerCapture():31:31 -> releasePointerCapture
     11:22:void releasePointerCapture():34:34 -> releasePointerCapture
-    1:7:void removeViewFromPlayer(android.view.View):1421:1421 -> removeViewFromPlayer
-    8:11:void removeViewFromPlayer(android.view.View):1425:1425 -> removeViewFromPlayer
-    12:14:void removeViewFromPlayer(android.view.View):1426:1426 -> removeViewFromPlayer
-    15:25:void removeViewFromPlayer(android.view.View):1427:1427 -> removeViewFromPlayer
-    26:40:void removeViewFromPlayer(android.view.View):1428:1428 -> removeViewFromPlayer
-    41:47:void removeViewFromPlayer(android.view.View):1434:1434 -> removeViewFromPlayer
-    48:53:void removeViewFromPlayer(android.view.View):1439:1439 -> removeViewFromPlayer
-    1:5:void reportError(java.lang.String,java.lang.String):1448:1448 -> reportError
-    6:8:void reportError(java.lang.String,java.lang.String):1449:1449 -> reportError
-    9:13:void reportError(java.lang.String,java.lang.String):1450:1450 -> reportError
-    14:16:void reportError(java.lang.String,java.lang.String):1451:1451 -> reportError
-    17:25:void reportError(java.lang.String,java.lang.String):1452:1452 -> reportError
-    1:6:void reportFullyDrawn():1309:1309 -> reportFullyDrawn
-    1:6:void requestPermissionsFromActivity(java.lang.String[],int):804:804 -> requestPermissionsFromActivity
-    1:5:void requestPointerCapture():1606:1606 -> requestPointerCapture
+    1:7:void removeViewFromPlayer(android.view.View):1422:1422 -> removeViewFromPlayer
+    8:11:void removeViewFromPlayer(android.view.View):1426:1426 -> removeViewFromPlayer
+    12:14:void removeViewFromPlayer(android.view.View):1427:1427 -> removeViewFromPlayer
+    15:25:void removeViewFromPlayer(android.view.View):1428:1428 -> removeViewFromPlayer
+    26:40:void removeViewFromPlayer(android.view.View):1429:1429 -> removeViewFromPlayer
+    41:47:void removeViewFromPlayer(android.view.View):1435:1435 -> removeViewFromPlayer
+    48:53:void removeViewFromPlayer(android.view.View):1440:1440 -> removeViewFromPlayer
+    1:5:void reportError(java.lang.String,java.lang.String):1449:1449 -> reportError
+    6:8:void reportError(java.lang.String,java.lang.String):1450:1450 -> reportError
+    9:13:void reportError(java.lang.String,java.lang.String):1451:1451 -> reportError
+    14:16:void reportError(java.lang.String,java.lang.String):1452:1452 -> reportError
+    17:25:void reportError(java.lang.String,java.lang.String):1453:1453 -> reportError
+    1:6:void reportFullyDrawn():1310:1310 -> reportFullyDrawn
+    1:6:void requestPermissionsFromActivity(java.lang.String[],int):805:805 -> requestPermissionsFromActivity
+    1:5:void requestPointerCapture():1607:1607 -> requestPointerCapture
     6:10:void requestPointerCapture():19:19 -> requestPointerCapture
     11:22:void requestPointerCapture():22:22 -> requestPointerCapture
-    3:18:void requestUserAuthorization(java.lang.String,long):725:725 -> requestUserAuthorization
-    19:25:void requestUserAuthorization(java.lang.String,long):729:729 -> requestUserAuthorization
-    26:33:void requestUserAuthorization(java.lang.String,long):730:730 -> requestUserAuthorization
-    1:4:void resume():666:666 -> resume
-    1:3:void resumeUnity():656:656 -> resumeUnity
+    3:18:void requestUserAuthorization(java.lang.String,long):726:726 -> requestUserAuthorization
+    19:25:void requestUserAuthorization(java.lang.String,long):730:730 -> requestUserAuthorization
+    26:33:void requestUserAuthorization(java.lang.String,long):731:731 -> requestUserAuthorization
+    1:4:void resume():667:667 -> resume
+    1:3:void resumeUnity():657:657 -> resumeUnity
     4:6:void resumeUnity():61:61 -> resumeUnity
-    1:9:void runOnAnonymousThread(java.lang.Runnable):436:436 -> runOnAnonymousThread
-    1:4:void runOnUiThread(java.lang.Runnable):441:441 -> runOnUiThread
-    5:8:void runOnUiThread(java.lang.Runnable):443:443 -> runOnUiThread
-    9:22:void runOnUiThread(java.lang.Runnable):447:447 -> runOnUiThread
-    23:28:void runOnUiThread(java.lang.Runnable):449:449 -> runOnUiThread
-    29:32:void runOnUiThread(java.lang.Runnable):453:453 -> runOnUiThread
-    1:12:boolean runningOnUIThread():1581:1581 -> runningOnUIThread
-    1:2:void saveFocusState(boolean):933:933 -> saveFocusState
+    1:9:void runOnAnonymousThread(java.lang.Runnable):437:437 -> runOnAnonymousThread
+    1:4:void runOnUiThread(java.lang.Runnable):442:442 -> runOnUiThread
+    5:8:void runOnUiThread(java.lang.Runnable):444:444 -> runOnUiThread
+    9:22:void runOnUiThread(java.lang.Runnable):448:448 -> runOnUiThread
+    23:28:void runOnUiThread(java.lang.Runnable):450:450 -> runOnUiThread
+    29:32:void runOnUiThread(java.lang.Runnable):454:454 -> runOnUiThread
+    1:12:boolean runningOnUIThread():1582:1582 -> runningOnUIThread
+    1:2:void saveFocusState(boolean):934:934 -> saveFocusState
     3:5:void saveFocusState(boolean):31:31 -> saveFocusState
-    1:3:void setAccessibilityDelegate(com.unity3d.player.UnityAccessibilityDelegate):886:886 -> setAccessibilityDelegate
-    1:6:void setBackButtonLeavesApp(boolean):1618:1618 -> setBackButtonLeavesApp
+    1:3:void setAccessibilityDelegate(com.unity3d.player.UnityAccessibilityDelegate):887:887 -> setAccessibilityDelegate
+    1:6:void setBackButtonLeavesApp(boolean):1619:1619 -> setBackButtonLeavesApp
     7:10:void setBackButtonLeavesApp(boolean):41:41 -> setBackButtonLeavesApp
     11:14:void setBackButtonLeavesApp(boolean):43:43 -> setBackButtonLeavesApp
-    1:6:void setClipboardText(java.lang.String):1090:1090 -> setClipboardText
-    7:12:void setClipboardText(java.lang.String):1091:1091 -> setClipboardText
-    3:8:void setLaunchURL(android.net.Uri):1112:1112 -> setLaunchURL
-    9:17:void setLaunchURL(android.net.Uri):1113:1113 -> setLaunchURL
-    1:9:void setRunWithoutFocus(boolean):939:939 -> setRunWithoutFocus
-    4:7:void setScreenBrightness(float):1630:1630 -> setScreenBrightness
-    8:20:void setScreenBrightness(float):1633:1633 -> setScreenBrightness
-    21:29:void setScreenBrightness(float):1635:1635 -> setScreenBrightness
-    2:3:void setupUnityToBePaused():594:594 -> setupUnityToBePaused
-    4:7:void setupUnityToBePaused():596:596 -> setupUnityToBePaused
-    8:10:void setupUnityToBePaused():598:598 -> setupUnityToBePaused
-    11:14:void setupUnityToBePaused():601:601 -> setupUnityToBePaused
+    1:6:void setClipboardText(java.lang.String):1091:1091 -> setClipboardText
+    7:12:void setClipboardText(java.lang.String):1092:1092 -> setClipboardText
+    3:8:void setLaunchURL(android.net.Uri):1113:1113 -> setLaunchURL
+    9:17:void setLaunchURL(android.net.Uri):1114:1114 -> setLaunchURL
+    1:9:void setRunWithoutFocus(boolean):940:940 -> setRunWithoutFocus
+    9:20:void setScreenBrightness(float):1635:1635 -> setScreenBrightness
+    21:31:void setScreenBrightness(float):1638:1638 -> setScreenBrightness
+    32:33:void setScreenBrightness(float):1640:1640 -> setScreenBrightness
+    34:42:void setScreenBrightness(float):1641:1641 -> setScreenBrightness
+    2:3:void setupUnityToBePaused():595:595 -> setupUnityToBePaused
+    4:7:void setupUnityToBePaused():597:597 -> setupUnityToBePaused
+    8:10:void setupUnityToBePaused():599:599 -> setupUnityToBePaused
+    11:14:void setupUnityToBePaused():602:602 -> setupUnityToBePaused
     15:19:void setupUnityToBePaused():139:139 -> setupUnityToBePaused
     20:23:void setupUnityToBePaused():140:140 -> setupUnityToBePaused
     24:27:void setupUnityToBePaused():143:143 -> setupUnityToBePaused
@@ -41848,55 +41842,55 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
     36:43:void setupUnityToBePaused():150:150 -> setupUnityToBePaused
     44:48:void setupUnityToBePaused():152:152 -> setupUnityToBePaused
     49:53:void setupUnityToBePaused():155:155 -> setupUnityToBePaused
-    54:58:void setupUnityToBePaused():604:604 -> setupUnityToBePaused
+    54:58:void setupUnityToBePaused():605:605 -> setupUnityToBePaused
     59:60:void setupUnityToBePaused():20:20 -> setupUnityToBePaused
     61:64:void setupUnityToBePaused():73:73 -> setupUnityToBePaused
     65:75:void setupUnityToBePaused():75:75 -> setupUnityToBePaused
     76:77:void setupUnityToBePaused():76:76 -> setupUnityToBePaused
     78:79:void setupUnityToBePaused():21:21 -> setupUnityToBePaused
-    80:81:void setupUnityToBePaused():607:607 -> setupUnityToBePaused
-    82:85:void setupUnityToBePaused():610:610 -> setupUnityToBePaused
+    80:81:void setupUnityToBePaused():608:608 -> setupUnityToBePaused
+    82:85:void setupUnityToBePaused():611:611 -> setupUnityToBePaused
     86:87:void setupUnityToBePaused():25:25 -> setupUnityToBePaused
     88:91:void setupUnityToBePaused():56:56 -> setupUnityToBePaused
     92:102:void setupUnityToBePaused():58:58 -> setupUnityToBePaused
     103:104:void setupUnityToBePaused():59:59 -> setupUnityToBePaused
     105:106:void setupUnityToBePaused():26:26 -> setupUnityToBePaused
-    107:108:void setupUnityToBePaused():613:613 -> setupUnityToBePaused
-    109:112:void setupUnityToBePaused():616:616 -> setupUnityToBePaused
+    107:108:void setupUnityToBePaused():614:614 -> setupUnityToBePaused
+    109:112:void setupUnityToBePaused():617:617 -> setupUnityToBePaused
     113:117:void setupUnityToBePaused():48:48 -> setupUnityToBePaused
     118:119:void setupUnityToBePaused():53:53 -> setupUnityToBePaused
     120:122:void setupUnityToBePaused():54:54 -> setupUnityToBePaused
-    123:128:void setupUnityToBePaused():621:621 -> setupUnityToBePaused
-    129:132:void setupUnityToBePaused():623:623 -> setupUnityToBePaused
-    1:4:void setupUnityToBeResumed():671:671 -> setupUnityToBeResumed
-    5:7:void setupUnityToBeResumed():673:673 -> setupUnityToBeResumed
-    8:10:void setupUnityToBeResumed():676:676 -> setupUnityToBeResumed
+    123:128:void setupUnityToBePaused():622:622 -> setupUnityToBePaused
+    129:132:void setupUnityToBePaused():624:624 -> setupUnityToBePaused
+    1:4:void setupUnityToBeResumed():672:672 -> setupUnityToBeResumed
+    5:7:void setupUnityToBeResumed():674:674 -> setupUnityToBeResumed
+    8:10:void setupUnityToBeResumed():677:677 -> setupUnityToBeResumed
     11:12:void setupUnityToBeResumed():41:41 -> setupUnityToBeResumed
-    13:16:void setupUnityToBeResumed():678:678 -> setupUnityToBeResumed
+    13:16:void setupUnityToBeResumed():679:679 -> setupUnityToBeResumed
     17:21:void setupUnityToBeResumed():160:160 -> setupUnityToBeResumed
     22:29:void setupUnityToBeResumed():161:161 -> setupUnityToBeResumed
     30:33:void setupUnityToBeResumed():163:163 -> setupUnityToBeResumed
     34:36:void setupUnityToBeResumed():164:164 -> setupUnityToBeResumed
     37:41:void setupUnityToBeResumed():166:166 -> setupUnityToBeResumed
-    42:47:void setupUnityToBeResumed():681:681 -> setupUnityToBeResumed
-    48:50:void setupUnityToBeResumed():682:682 -> setupUnityToBeResumed
-    51:54:void setupUnityToBeResumed():684:684 -> setupUnityToBeResumed
-    55:63:void setupUnityToBeResumed():686:686 -> setupUnityToBeResumed
-    64:67:void setupUnityToBeResumed():689:689 -> setupUnityToBeResumed
+    42:47:void setupUnityToBeResumed():682:682 -> setupUnityToBeResumed
+    48:50:void setupUnityToBeResumed():683:683 -> setupUnityToBeResumed
+    51:54:void setupUnityToBeResumed():685:685 -> setupUnityToBeResumed
+    55:63:void setupUnityToBeResumed():687:687 -> setupUnityToBeResumed
+    64:67:void setupUnityToBeResumed():690:690 -> setupUnityToBeResumed
     68:71:void setupUnityToBeResumed():21:21 -> setupUnityToBeResumed
-    72:80:void setupUnityToBeResumed():692:692 -> setupUnityToBeResumed
-    81:84:void setupUnityToBeResumed():695:695 -> setupUnityToBeResumed
+    72:80:void setupUnityToBeResumed():693:693 -> setupUnityToBeResumed
+    81:84:void setupUnityToBeResumed():696:696 -> setupUnityToBeResumed
     85:88:void setupUnityToBeResumed():59:59 -> setupUnityToBeResumed
     89:92:void setupUnityToBeResumed():60:60 -> setupUnityToBeResumed
-    1:6:boolean shouldReportFullyDrawn():1301:1301 -> shouldReportFullyDrawn
-    7:11:boolean shouldReportFullyDrawn():1303:1303 -> shouldReportFullyDrawn
-    1:17:boolean shouldRunWithoutFocus():527:527 -> shouldRunWithoutFocus
-    1:6:boolean shouldSetGameState():1281:1281 -> shouldSetGameState
-    7:11:boolean shouldSetGameState():1283:1283 -> shouldSetGameState
-    12:34:boolean shouldSetGameState():1285:1285 -> shouldSetGameState
-    1:4:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1144:1144 -> showVideoPlayer
-    5:11:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1145:1145 -> showVideoPlayer
-    12:26:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1146:1146 -> showVideoPlayer
+    1:6:boolean shouldReportFullyDrawn():1302:1302 -> shouldReportFullyDrawn
+    7:11:boolean shouldReportFullyDrawn():1304:1304 -> shouldReportFullyDrawn
+    1:17:boolean shouldRunWithoutFocus():528:528 -> shouldRunWithoutFocus
+    1:6:boolean shouldSetGameState():1282:1282 -> shouldSetGameState
+    7:11:boolean shouldSetGameState():1284:1284 -> shouldSetGameState
+    12:34:boolean shouldSetGameState():1286:1286 -> shouldSetGameState
+    1:4:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1145:1145 -> showVideoPlayer
+    5:11:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1146:1146 -> showVideoPlayer
+    12:26:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1147:1147 -> showVideoPlayer
     27:31:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):38:38 -> showVideoPlayer
     32:33:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):39:39 -> showVideoPlayer
     34:35:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):40:40 -> showVideoPlayer
@@ -41912,60 +41906,60 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
     95:103:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):103:103 -> showVideoPlayer
     104:111:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):114:114 -> showVideoPlayer
     112:118:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):120:120 -> showVideoPlayer
-    119:127:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1152:1152 -> showVideoPlayer
-    1:3:void shutdown():703:703 -> shutdown
+    119:127:boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int):1153:1153 -> showVideoPlayer
+    1:3:void shutdown():704:704 -> shutdown
     4:6:void shutdown():51:51 -> shutdown
-    1:4:boolean skipPermissionsDialog():714:714 -> skipPermissionsDialog
-    5:11:boolean skipPermissionsDialog():716:716 -> skipPermissionsDialog
-    1:9:void startActivityIndicator(int):1730:1730 -> startActivityIndicator
-    1:6:boolean startOrientationListener(int):1490:1490 -> startOrientationListener
-    7:12:boolean startOrientationListener(int):1492:1492 -> startOrientationListener
-    13:21:boolean startOrientationListener(int):1495:1495 -> startOrientationListener
-    22:27:boolean startOrientationListener(int):1504:1504 -> startOrientationListener
-    28:34:boolean startOrientationListener(int):1506:1506 -> startOrientationListener
-    35:40:boolean startOrientationListener(int):1511:1511 -> startOrientationListener
-    1:9:void stopActivityIndicator():1745:1745 -> stopActivityIndicator
-    1:5:boolean stopOrientationListener():1518:1518 -> stopOrientationListener
-    6:12:boolean stopOrientationListener():1520:1520 -> stopOrientationListener
-    13:16:boolean stopOrientationListener():1524:1524 -> stopOrientationListener
-    17:20:boolean stopOrientationListener():1525:1525 -> stopOrientationListener
+    1:4:boolean skipPermissionsDialog():715:715 -> skipPermissionsDialog
+    5:11:boolean skipPermissionsDialog():717:717 -> skipPermissionsDialog
+    1:9:void startActivityIndicator(int):1736:1736 -> startActivityIndicator
+    1:6:boolean startOrientationListener(int):1491:1491 -> startOrientationListener
+    7:12:boolean startOrientationListener(int):1493:1493 -> startOrientationListener
+    13:21:boolean startOrientationListener(int):1496:1496 -> startOrientationListener
+    22:27:boolean startOrientationListener(int):1505:1505 -> startOrientationListener
+    28:34:boolean startOrientationListener(int):1507:1507 -> startOrientationListener
+    35:40:boolean startOrientationListener(int):1512:1512 -> startOrientationListener
+    1:9:void stopActivityIndicator():1751:1751 -> stopActivityIndicator
+    1:5:boolean stopOrientationListener():1519:1519 -> stopOrientationListener
+    6:12:boolean stopOrientationListener():1521:1521 -> stopOrientationListener
+    13:16:boolean stopOrientationListener():1525:1525 -> stopOrientationListener
+    17:20:boolean stopOrientationListener():1526:1526 -> stopOrientationListener
     1:3:boolean supportsWindowInsetController():52:52 -> supportsWindowInsetController
-    1:2:void swapViews(android.view.View,android.view.View):1354:1354 -> swapViews
+    1:2:void swapViews(android.view.View,android.view.View):1355:1355 -> swapViews
     3:7:void swapViews(android.view.View,android.view.View):46:46 -> swapViews
-    8:13:void swapViews(android.view.View,android.view.View):1356:1356 -> swapViews
-    14:21:void swapViews(android.view.View,android.view.View):1360:1360 -> swapViews
-    22:27:void swapViews(android.view.View,android.view.View):1363:1363 -> swapViews
-    28:31:void swapViews(android.view.View,android.view.View):1365:1365 -> swapViews
-    32:36:void swapViews(android.view.View,android.view.View):1366:1366 -> swapViews
-    37:39:void swapViews(android.view.View,android.view.View):1367:1367 -> swapViews
-    40:42:void swapViews(android.view.View,android.view.View):1368:1368 -> swapViews
-    43:47:void swapViews(android.view.View,android.view.View):1369:1369 -> swapViews
-    48:55:void swapViews(android.view.View,android.view.View):1374:1374 -> swapViews
-    56:58:void swapViews(android.view.View,android.view.View):1376:1376 -> swapViews
-    59:63:void swapViews(android.view.View,android.view.View):1377:1377 -> swapViews
-    64:67:void swapViews(android.view.View,android.view.View):1384:1384 -> swapViews
-    1:12:void toggleGyroscopeSensor(boolean):338:338 -> toggleGyroscopeSensor
-    13:16:void toggleGyroscopeSensor(boolean):339:339 -> toggleGyroscopeSensor
-    17:21:void toggleGyroscopeSensor(boolean):343:343 -> toggleGyroscopeSensor
-    22:25:void toggleGyroscopeSensor(boolean):341:341 -> toggleGyroscopeSensor
-    26:29:void toggleGyroscopeSensor(boolean):343:343 -> toggleGyroscopeSensor
-    2:5:void triggerNextPermissionRequest():809:809 -> triggerNextPermissionRequest
-    6:15:void triggerNextPermissionRequest():811:811 -> triggerNextPermissionRequest
-    16:21:void triggerNextPermissionRequest():812:812 -> triggerNextPermissionRequest
-    22:27:void triggerNextPermissionRequest():814:814 -> triggerNextPermissionRequest
-    28:58:void triggerNextPermissionRequest():815:815 -> triggerNextPermissionRequest
-    1:4:void unload():709:709 -> unload
+    8:13:void swapViews(android.view.View,android.view.View):1357:1357 -> swapViews
+    14:21:void swapViews(android.view.View,android.view.View):1361:1361 -> swapViews
+    22:27:void swapViews(android.view.View,android.view.View):1364:1364 -> swapViews
+    28:31:void swapViews(android.view.View,android.view.View):1366:1366 -> swapViews
+    32:36:void swapViews(android.view.View,android.view.View):1367:1367 -> swapViews
+    37:39:void swapViews(android.view.View,android.view.View):1368:1368 -> swapViews
+    40:42:void swapViews(android.view.View,android.view.View):1369:1369 -> swapViews
+    43:47:void swapViews(android.view.View,android.view.View):1370:1370 -> swapViews
+    48:55:void swapViews(android.view.View,android.view.View):1375:1375 -> swapViews
+    56:58:void swapViews(android.view.View,android.view.View):1377:1377 -> swapViews
+    59:63:void swapViews(android.view.View,android.view.View):1378:1378 -> swapViews
+    64:67:void swapViews(android.view.View,android.view.View):1385:1385 -> swapViews
+    1:12:void toggleGyroscopeSensor(boolean):339:339 -> toggleGyroscopeSensor
+    13:16:void toggleGyroscopeSensor(boolean):340:340 -> toggleGyroscopeSensor
+    17:21:void toggleGyroscopeSensor(boolean):344:344 -> toggleGyroscopeSensor
+    22:25:void toggleGyroscopeSensor(boolean):342:342 -> toggleGyroscopeSensor
+    26:29:void toggleGyroscopeSensor(boolean):344:344 -> toggleGyroscopeSensor
+    2:5:void triggerNextPermissionRequest():810:810 -> triggerNextPermissionRequest
+    6:15:void triggerNextPermissionRequest():812:812 -> triggerNextPermissionRequest
+    16:21:void triggerNextPermissionRequest():813:813 -> triggerNextPermissionRequest
+    22:27:void triggerNextPermissionRequest():815:815 -> triggerNextPermissionRequest
+    28:58:void triggerNextPermissionRequest():816:816 -> triggerNextPermissionRequest
+    1:4:void unload():710:710 -> unload
     1:5:void unloadNative():21:21 -> unloadNative
-    6:12:void unloadNative():1066:1066 -> unloadNative
+    6:12:void unloadNative():1067:1067 -> unloadNative
     13:15:void unloadNative():16:16 -> unloadNative
-    16:23:void unloadNative():1067:1067 -> unloadNative
-    1:5:void windowFocusChanged(boolean):913:913 -> windowFocusChanged
-    6:14:void windowFocusChanged(boolean):916:916 -> windowFocusChanged
-    15:20:void windowFocusChanged(boolean):919:919 -> windowFocusChanged
-    21:30:void windowFocusChanged(boolean):920:920 -> windowFocusChanged
-    31:37:void windowFocusChanged(boolean):924:924 -> windowFocusChanged
-    38:43:void windowFocusChanged(boolean):927:927 -> windowFocusChanged
-    44:47:void windowFocusChanged(boolean):928:928 -> windowFocusChanged
+    16:23:void unloadNative():1068:1068 -> unloadNative
+    1:5:void windowFocusChanged(boolean):914:914 -> windowFocusChanged
+    6:14:void windowFocusChanged(boolean):917:917 -> windowFocusChanged
+    15:20:void windowFocusChanged(boolean):920:920 -> windowFocusChanged
+    21:30:void windowFocusChanged(boolean):921:921 -> windowFocusChanged
+    31:37:void windowFocusChanged(boolean):925:925 -> windowFocusChanged
+    38:43:void windowFocusChanged(boolean):928:928 -> windowFocusChanged
+    44:47:void windowFocusChanged(boolean):929:929 -> windowFocusChanged
 com.unity3d.player.UnityPlayer$a -> com.unity3d.player.UnityPlayer$a:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.UnityPlayer):98:98 -> <init>
@@ -41974,8 +41968,8 @@ com.unity3d.player.UnityPlayer$a -> com.unity3d.player.UnityPlayer$a:
     3:13:void onCallStateChanged(int,java.lang.String):110:110 -> onCallStateChanged
 com.unity3d.player.UnityPlayer$b -> com.unity3d.player.UnityPlayer$b:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):145:145 -> <init>
-    1:12:void run():147:147 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):146:146 -> <init>
+    1:12:void run():148:148 -> run
 com.unity3d.player.UnityPlayerConfiguration -> com.unity3d.player.UnityPlayerConfiguration:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:4:void <init>():3:3 -> <init>
@@ -42680,10 +42674,10 @@ com.unity3d.player.Y0 -> com.unity3d.player.Y0:
     34:45:void run():68:68 -> run
 com.unity3d.player.Z -> com.unity3d.player.Z:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:8:void <init>(com.unity3d.player.UnityPlayer,float):1636:1636 -> <init>
-    1:8:void run():1639:1639 -> run
-    9:12:void run():1640:1640 -> run
-    13:20:void run():1641:1641 -> run
+    1:8:void <init>(com.unity3d.player.UnityPlayer,float):1642:1642 -> <init>
+    1:8:void run():1645:1645 -> run
+    9:12:void run():1646:1646 -> run
+    13:20:void run():1647:1647 -> run
 com.unity3d.player.Z0 -> com.unity3d.player.Z0:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.a1):58:58 -> <init>
@@ -43179,10 +43173,10 @@ com.unity3d.player.a.y -> l0.i0:
 # {"id":"sourceFile","fileName":"SourceFile"}
 com.unity3d.player.a0 -> com.unity3d.player.a0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):1676:1676 -> <init>
-    1:5:void run():1678:1678 -> run
-    6:11:void run():1679:1679 -> run
-    12:19:void run():1680:1680 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):1682:1682 -> <init>
+    1:5:void run():1684:1684 -> run
+    6:11:void run():1685:1685 -> run
+    12:19:void run():1686:1686 -> run
 com.unity3d.player.a1 -> com.unity3d.player.a1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:20:void <init>(com.unity3d.player.e1,java.lang.String,int,int,int,boolean,long,long):43:43 -> <init>
@@ -43203,8 +43197,8 @@ com.unity3d.player.b -> com.unity3d.player.b:
     19:22:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]):89:89 -> invoke
 com.unity3d.player.b0 -> com.unity3d.player.b0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:8:void <init>(com.unity3d.player.UnityPlayer,boolean):1709:1709 -> <init>
-    1:8:void run():1711:1711 -> run
+    1:8:void <init>(com.unity3d.player.UnityPlayer,boolean):1715:1715 -> <init>
+    1:8:void run():1717:1717 -> run
 com.unity3d.player.b1 -> com.unity3d.player.b1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.e1):95:95 -> <init>
@@ -43223,9 +43217,9 @@ com.unity3d.player.c -> com.unity3d.player.c:
     20:36:void run():368:368 -> run
 com.unity3d.player.c0 -> com.unity3d.player.c0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):1720:1720 -> <init>
-    1:11:void run():1722:1722 -> run
-    12:17:void run():1723:1723 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):1726:1726 -> <init>
+    1:11:void run():1728:1728 -> run
+    12:17:void run():1729:1729 -> run
 com.unity3d.player.c1 -> com.unity3d.player.c1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.e1):103:103 -> <init>
@@ -43265,9 +43259,9 @@ com.unity3d.player.d -> com.unity3d.player.d:
     128:131:void onStateUpdate(java.lang.Object):406:406 -> onStateUpdate
 com.unity3d.player.d0 -> com.unity3d.player.d0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:8:void <init>(com.unity3d.player.UnityPlayer,int):1730:1730 -> <init>
-    1:15:void run():1733:1733 -> run
-    16:34:void run():1737:1737 -> run
+    1:8:void <init>(com.unity3d.player.UnityPlayer,int):1736:1736 -> <init>
+    1:15:void run():1739:1739 -> run
+    16:34:void run():1743:1743 -> run
 com.unity3d.player.d1 -> com.unity3d.player.d1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.e1):114:114 -> <init>
@@ -43288,7 +43282,7 @@ com.unity3d.player.e -> com.unity3d.player.e:
     1:8:void run():452:452 -> run
 com.unity3d.player.e0 -> com.unity3d.player.e0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:4:void <init>():1745:1745 -> <init>
+    1:4:void <init>():1751:1751 -> <init>
     1:4:void run():27:27 -> run
     5:8:void run():35:35 -> run
     9:16:void run():36:36 -> run
@@ -43297,7 +43291,7 @@ com.unity3d.player.e0 -> com.unity3d.player.e0:
     31:32:void run():41:41 -> run
     33:35:void run():42:42 -> run
     36:38:void run():44:44 -> run
-    39:57:void run():1751:1751 -> run
+    39:57:void run():1757:1757 -> run
 com.unity3d.player.e1 -> com.unity3d.player.e1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:4:void <init>(com.unity3d.player.UnityPlayer):30:30 -> <init>
@@ -43323,8 +43317,8 @@ com.unity3d.player.f -> com.unity3d.player.f:
     7:27:void onSuccess(java.lang.Object):470:470 -> onSuccess
 com.unity3d.player.f0 -> com.unity3d.player.f0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):226:226 -> <init>
-    1:6:void onClick(android.content.DialogInterface,int):229:229 -> onClick
+    1:6:void <init>(com.unity3d.player.UnityPlayer):227:227 -> <init>
+    1:6:void onClick(android.content.DialogInterface,int):230:230 -> onClick
 com.unity3d.player.f1 -> com.unity3d.player.f1:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:4:void a(android.app.Activity,android.widget.FrameLayout,boolean,boolean):52:52 -> a
@@ -43394,12 +43388,12 @@ com.unity3d.player.g -> com.unity3d.player.g:
     242:269:void onComplete(com.google.android.gms.tasks.Task):82:82 -> onComplete
 com.unity3d.player.g0 -> com.unity3d.player.g0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):260:260 -> <init>
-    1:4:void run():263:263 -> run
-    5:20:void run():264:264 -> run
-    21:29:void run():265:265 -> run
-    30:38:void run():267:267 -> run
-    39:48:void run():268:268 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):261:261 -> <init>
+    1:4:void run():264:264 -> run
+    5:20:void run():265:265 -> run
+    21:29:void run():266:266 -> run
+    30:38:void run():268:268 -> run
+    39:48:void run():269:269 -> run
 com.unity3d.player.h -> com.unity3d.player.h:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:3:void <init>(com.unity3d.player.IAssetPackManagerStatusQueryCallback,long,java.lang.String[],int[],int[]):245:245 -> <init>
@@ -43411,9 +43405,9 @@ com.unity3d.player.h -> com.unity3d.player.h:
     1:14:void run():256:256 -> run
 com.unity3d.player.h0 -> com.unity3d.player.h0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):359:359 -> <init>
-    1:15:void run():362:362 -> run
-    16:21:void run():363:363 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):360:360 -> <init>
+    1:15:void run():363:363 -> run
+    16:21:void run():364:364 -> run
 com.unity3d.player.i -> com.unity3d.player.i:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:3:void <init>(com.unity3d.player.UnityPlayer,com.unity3d.player.IAssetPackManagerStatusQueryCallback,java.lang.String[]):265:265 -> <init>
@@ -43456,8 +43450,8 @@ com.unity3d.player.i -> com.unity3d.player.i:
     195:209:void onComplete(com.google.android.gms.tasks.Task):311:311 -> onComplete
 com.unity3d.player.i0 -> com.unity3d.player.i0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:10:void <init>(com.unity3d.player.PermissionRequest,java.lang.String[],int[]):864:864 -> <init>
-    1:10:void run():867:867 -> run
+    1:10:void <init>(com.unity3d.player.PermissionRequest,java.lang.String[],int[]):865:865 -> <init>
+    1:10:void run():868:868 -> run
 com.unity3d.player.j -> com.unity3d.player.j:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:3:void <init>(com.unity3d.player.UnityPlayer,android.content.Context):37:37 -> <init>
@@ -43468,13 +43462,13 @@ com.unity3d.player.j -> com.unity3d.player.j:
     24:31:void <init>(com.unity3d.player.UnityPlayer,android.content.Context):40:40 -> <init>
 com.unity3d.player.j0 -> com.unity3d.player.j0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:8:void <init>(com.unity3d.player.UnityPlayer,boolean):939:939 -> <init>
-    1:9:void run():942:942 -> run
-    10:13:void run():944:944 -> run
-    14:25:void run():946:946 -> run
+    1:8:void <init>(com.unity3d.player.UnityPlayer,boolean):940:940 -> <init>
+    1:9:void run():943:943 -> run
+    10:13:void run():945:945 -> run
+    14:25:void run():947:947 -> run
     26:29:void run():36:36 -> run
     30:33:void run():46:46 -> run
-    34:37:void run():948:948 -> run
+    34:37:void run():949:949 -> run
 com.unity3d.player.k -> com.unity3d.player.k:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.p):653:653 -> <init>
@@ -43492,8 +43486,8 @@ com.unity3d.player.k -> com.unity3d.player.k:
     92:95:void onConfigured(android.hardware.camera2.CameraCaptureSession):683:683 -> onConfigured
 com.unity3d.player.k0 -> com.unity3d.player.k0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(java.lang.String):1113:1113 -> <init>
-    1:6:void run():1115:1115 -> run
+    1:6:void <init>(java.lang.String):1114:1114 -> <init>
+    1:6:void run():1116:1116 -> run
 com.unity3d.player.l -> com.unity3d.player.l:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.p):757:757 -> <init>
@@ -43508,8 +43502,8 @@ com.unity3d.player.l -> com.unity3d.player.l:
     5:10:void onOpened(android.hardware.camera2.CameraDevice):764:764 -> onOpened
 com.unity3d.player.l0 -> com.unity3d.player.l0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):1147:1147 -> <init>
-    1:6:void a():1148:1148 -> a
+    1:6:void <init>(com.unity3d.player.UnityPlayer):1148:1148 -> <init>
+    1:6:void a():1149:1149 -> a
 com.unity3d.player.m -> com.unity3d.player.m:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.p):793:793 -> <init>
@@ -43527,17 +43521,17 @@ com.unity3d.player.m -> com.unity3d.player.m:
     102:105:void onImageAvailable(android.media.ImageReader):819:819 -> onImageAvailable
 com.unity3d.player.m0 -> com.unity3d.player.m0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer):1152:1152 -> <init>
-    1:14:void run():1154:1154 -> run
-    15:22:void run():1156:1156 -> run
+    1:6:void <init>(com.unity3d.player.UnityPlayer):1153:1153 -> <init>
+    1:14:void run():1155:1155 -> run
+    15:22:void run():1157:1157 -> run
 com.unity3d.player.n -> com.unity3d.player.n:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.p):826:826 -> <init>
     1:10:void onFrameAvailable(android.graphics.SurfaceTexture):830:830 -> onFrameAvailable
 com.unity3d.player.n0 -> com.unity3d.player.n0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:6:void <init>(com.unity3d.player.UnityPlayer,android.content.Context,int):1496:1496 -> <init>
-    1:8:void onOrientationChanged(int):1500:1500 -> onOrientationChanged
+    1:6:void <init>(com.unity3d.player.UnityPlayer,android.content.Context,int):1497:1497 -> <init>
+    1:8:void onOrientationChanged(int):1501:1501 -> onOrientationChanged
 com.unity3d.player.o -> com.unity3d.player.o:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:6:void <init>(com.unity3d.player.p):515:515 -> <init>
@@ -43548,7 +43542,7 @@ com.unity3d.player.o -> com.unity3d.player.o:
     1:1:void onCaptureSequenceCompleted(android.hardware.camera2.CameraCaptureSession,int,long):0:0 -> onCaptureSequenceCompleted
 com.unity3d.player.o0 -> com.unity3d.player.o0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:4:void <init>():326:326 -> <init>
+    1:4:void <init>():327:327 -> <init>
     1:1:void onAccuracyChanged(android.hardware.Sensor,int):0:0 -> onAccuracyChanged
     1:1:void onSensorChanged(android.hardware.SensorEvent):0:0 -> onSensorChanged
 com.unity3d.player.p -> com.unity3d.player.p:
@@ -43736,8 +43730,8 @@ com.unity3d.player.p -> com.unity3d.player.p:
     12:14:android.hardware.camera2.CameraCaptureSession$CaptureCallback getCaptureCallback():549:549 -> getCaptureCallback
 com.unity3d.player.p0 -> com.unity3d.player.p0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:10:void <init>(com.unity3d.player.q0,boolean):771:771 -> <init>
-    1:10:void a():774:774 -> a
+    1:10:void <init>(com.unity3d.player.q0,boolean):772:772 -> <init>
+    1:10:void a():775:775 -> a
 com.unity3d.player.q -> com.unity3d.player.q:
 # {"id":"sourceFile","fileName":"SourceFile"}
     1:4:void <init>():37:37 -> <init>
@@ -43747,13 +43741,13 @@ com.unity3d.player.q -> com.unity3d.player.q:
     18:21:void onComplete(com.google.android.gms.tasks.Task):44:44 -> onComplete
 com.unity3d.player.q0 -> com.unity3d.player.q0:
 # {"id":"sourceFile","fileName":"SourceFile"}
-    1:5:void <init>(long,com.unity3d.player.UnityPlayer):739:739 -> <init>
-    6:8:void <init>(long,com.unity3d.player.UnityPlayer):740:740 -> <init>
-    1:8:void onPermissionResult(java.lang.String[],int[]):746:746 -> onPermissionResult
-    9:14:void onPermissionResult(java.lang.String[],int[]):755:755 -> onPermissionResult
-    15:19:void onPermissionResult(java.lang.String[],int[]):752:752 -> onPermissionResult
-    20:28:void onPermissionResult(java.lang.String[],int[]):769:769 -> onPermissionResult
-    29:39:void onPermissionResult(java.lang.String[],int[]):771:771 -> onPermissionResult
+    1:5:void <init>(long,com.unity3d.player.UnityPlayer):740:740 -> <init>
+    6:8:void <init>(long,com.unity3d.player.UnityPlayer):741:741 -> <init>
+    1:8:void onPermissionResult(java.lang.String[],int[]):747:747 -> onPermissionResult
+    9:14:void onPermissionResult(java.lang.String[],int[]):756:756 -> onPermissionResult
+    15:19:void onPermissionResult(java.lang.String[],int[]):753:753 -> onPermissionResult
+    20:28:void onPermissionResult(java.lang.String[],int[]):770:770 -> onPermissionResult
+    29:39:void onPermissionResult(java.lang.String[],int[]):772:772 -> onPermissionResult
 com.unity3d.player.r -> com.unity3d.player.r:
 # {"id":"sourceFile","fileName":"SourceFile"}
     com.unity3d.player.a.e d -> d
