@@ -35,9 +35,19 @@ public class MenuScript : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 
-    public void ResumePlayerGame()
+    public void Continue()
     {
-        
+        if (PlayerSaveManager.HasSave())
+        {   
+
+            Debug.Log("Found Stored JSON File.");
+             GameManager.Instance.continueGame = true;
+             SceneManager.LoadScene("Level 1 - Pedestrial Walk");
+        }
+        else
+        {
+             Debug.Log("No saved game!");
+        }
     }
     
 

@@ -20,6 +20,9 @@ public class PlayerBehavior : MonoBehaviour
     public float maxZ;
     public float rotationSpeed = 360f;
 
+    public int score = 0;
+    public float health = 100f;
+
     [Header("SoundsFx")]
     [Space(5)]
     public AudioSource runningSound;
@@ -27,6 +30,13 @@ public class PlayerBehavior : MonoBehaviour
     void Start()
     {
         // runningSound.loop = true;
+         if (GameManager.Instance.continueGame)
+        {
+            LoadPlayer();
+        }
+        
+
+
     }
 
     // Saving and Loading Player data
@@ -43,6 +53,25 @@ public class PlayerBehavior : MonoBehaviour
         );
 
         PlayerSaveManager.Save(playerData);
+    }
+
+    private void LoadPlayer()
+    {
+        PlayerData data = PlayerSaveManager.Load();
+
+        if (data == null)
+        {
+            Debug.LogWarning("Save data could not be loaded");
+            return;
+        }
+
+        score = data.score;
+
+        health = data.health;
+
+        transform.position = new Vector3( data.posX, data.posY, data.posZ);
+
+        Debug.Log("Player Loaded");
     }
 
     public void SetWallCollision(bool value)

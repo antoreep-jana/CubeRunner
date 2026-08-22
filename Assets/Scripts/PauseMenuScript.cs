@@ -6,10 +6,17 @@ public class PauseMenuScript : MonoBehaviour
 
     [SerializeField] GameObject gameObject;
 
+    public PlayerBehavior playerBehaviorScript;
+
     private bool isPaused = false;
     void Start()
     {
         
+    }
+
+    public void SaveGame()
+    {
+        playerBehaviorScript.SavePlayerData();
     }
 
     // Update is called once per frame
