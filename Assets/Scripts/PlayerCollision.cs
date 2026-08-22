@@ -11,6 +11,7 @@ public class PlayerCollision : MonoBehaviour
     [Header("Script References")]
     [Space(10)]
     public PlayerBehavior playerScript;
+    public PlayerHealthScript playerHealthScript;
 
     public GameOver gameOverScript;
 
@@ -60,11 +61,27 @@ public class PlayerCollision : MonoBehaviour
             //  More sophisticated collision handling can be done here, such as reducing player health, playing a sound effect, or triggering an animation.
             // playerScript.HandleCollisionWithObstacle();
 
-            Debug.Log("Player has collided with an obstacle! Game Over!");
+
+            //  Old scripting had to game over
+            // Debug.Log("Player has collided with an obstacle! Game Over!");
            
+            // collisionSound.Play(); // Play the collision sound effect
+            // gameOverScript.GameOverScreen(); // Call the GameOverScreen method to display the game over panel
+            //  playerScript.enabled = false; // Disable the PlayerScript to stop player movement
+
+            // New scripting to handle obstacle collision without immediate game over
             collisionSound.Play(); // Play the collision sound effect
-            gameOverScript.GameOverScreen(); // Call the GameOverScreen method to display the game over panel
-             playerScript.enabled = false; // Disable the PlayerScript to stop player movement
+            // You can add additional logic here, such as reducing player health or triggering an animation.
+            playerHealthScript.TakeDamage(20f); // Call a method to handle player damage or other effects
+
+            if (playerHealthScript.GetHealth() <= 0)
+            {
+                Debug.Log("Player health is zero or below. Game Over!");
+                gameOverScript.GameOverScreen(); // Call the GameOverScreen method to display the game over panel
+                playerScript.enabled = false; // Disable the PlayerScript to stop player movement
+            }
+
+
         }
         else if (other.gameObject.CompareTag("Wall Collidables"))
         {

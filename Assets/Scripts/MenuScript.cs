@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
@@ -25,5 +26,19 @@ public class MenuScript : MonoBehaviour
         // Quit the application
         Application.Quit();
     }
+
+    public void Settings(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SettingsPage");
+    }
+
+    public void BackToMenu(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ResumePlayerGame()
+    {
+        
+    }
+    
 
 }

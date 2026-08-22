@@ -14,6 +14,10 @@ public class GameOver : MonoBehaviour
 
     public GameObject score;
 
+    public GameObject health;
+
+    public TMP_Text healthTextLabel;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +25,10 @@ public class GameOver : MonoBehaviour
     {
 
         score.SetActive(false); // Ensure the score is visible at the start
+        
+        health.SetActive(false); // Ensure the health is not visible at the start
+        healthTextLabel.gameObject.SetActive(false); // Ensure the health text label is not visible at the start
+
         gameOverPanel.SetActive(false); // Ensure the game over panel is hidden at the start
         PauseGame(); // Pause the game at the start
     }
@@ -47,7 +55,8 @@ public class GameOver : MonoBehaviour
         Time.timeScale = 1f; // Resume the game
         tap2startText.gameObject.SetActive(false); // Hide the "Tap to Start" text
         score.SetActive(true); // Show the score when the game starts
-
+        health.SetActive(true); // Show the health when the game starts
+        healthTextLabel.gameObject.SetActive(true); // Show the health text label when the game starts
     }
 
 
@@ -55,6 +64,10 @@ public class GameOver : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         score.SetActive(false); // Hide the score when the game is over
+       
+        health.SetActive(false);
+        healthTextLabel.gameObject.SetActive(false);
+
         gameOverScoreText.text =  scoreScript.GetScore().ToString(); // Display the final score
         Time.timeScale = 0f; // Pause the game
     }

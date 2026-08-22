@@ -29,6 +29,22 @@ public class PlayerBehavior : MonoBehaviour
         // runningSound.loop = true;
     }
 
+    // Saving and Loading Player data
+
+    public void SavePlayerData()
+    {
+        PlayerData playerData = new PlayerData(
+            level: 1, // Example level
+            score: 100, // Example score
+            health: 100f, // Example health
+            posX: transform.position.x,
+            posY: transform.position.y,
+            posZ: transform.position.z
+        );
+
+        PlayerSaveManager.Save(playerData);
+    }
+
     public void SetWallCollision(bool value)
     {
         // Handle wall collision logic here
