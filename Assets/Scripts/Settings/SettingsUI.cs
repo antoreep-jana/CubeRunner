@@ -28,16 +28,33 @@ public class SettingsUI : MonoBehaviour
         {
             LoadSettingsData();
         }
+
+        // volumeSlider.interactable = false;
+        Debug.Log(volumeSlider.interactable);
+        Debug.Log(volumeSlider.gameObject.activeInHierarchy);
+
+
+        // volumeSlider.onValueChanged.AddListener(SetVolume);
+
     }
 
 
-    public void SetVolume(float volume)
-    {
+    public void SetVolume(float value)
+    {   
+
+        volume = value;
         Debug.Log("Volume set to: " + volume);
         volumeText.text = Mathf.RoundToInt(volume).ToString();
 
         // Adjust & Update the slider
-        volumeSlider.value = Mathf.RoundToInt(volume);
+        // volumeSlider.value = Mathf.RoundToInt(volume);
+        // volumeSlider.SetValueWithoutNotify(volume);
+
+    }
+
+    private void OnDestroy()
+    {
+        volumeSlider.onValueChanged.RemoveListener(SetVolume);
     }
 
     public void SetBrightness(float brightness)
@@ -110,6 +127,8 @@ public class SettingsUI : MonoBehaviour
         volume = data.Volume;
 
         // transform.position = new Vector3( data.posX, data.posY, data.posZ);
+        volumeSlider.SetValueWithoutNotify(volume);
+
         SetVolume(volume);
         Debug.Log("Volume Settings Loaded");
 
