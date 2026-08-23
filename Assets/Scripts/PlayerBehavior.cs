@@ -20,6 +20,8 @@ public class PlayerBehavior : MonoBehaviour
     public float maxZ;
     public float rotationSpeed = 360f;
 
+
+    // This needs to be generalized
     public int score = 0;
     public float health = 100f;
 
@@ -32,9 +34,12 @@ public class PlayerBehavior : MonoBehaviour
         // runningSound.loop = true;
          if (GameManager.Instance.continueGame)
         {
-            LoadPlayer();
+            LoadPlayer(); // Load Player Position
+
+          
         }
         
+          LoadPlayerGameSettings(); // Load Player's game Settings
 
 
     }
@@ -44,6 +49,8 @@ public class PlayerBehavior : MonoBehaviour
     public void SavePlayerData()
     {
         PlayerData playerData = new PlayerData(
+
+            // These 3 need to be generalized
             level: 1, // Example level
             score: 100, // Example score
             health: 100f, // Example health
@@ -72,6 +79,21 @@ public class PlayerBehavior : MonoBehaviour
         transform.position = new Vector3( data.posX, data.posY, data.posZ);
 
         Debug.Log("Player Loaded");
+    }
+
+    private void LoadPlayerGameSettings()
+    {
+        SettingsData data = SettingsSaveManager.Load();
+
+        if (data == null)
+        {
+            Debug.LogWarning("Game Settings Data could not be loaded");
+            return;
+        }
+
+        moveSpeed = data.playerSpeed;
+
+        Debug.Log("Loaded Player's Move Speed");
     }
 
     public void SetWallCollision(bool value)

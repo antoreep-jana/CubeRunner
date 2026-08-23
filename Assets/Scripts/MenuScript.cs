@@ -42,6 +42,8 @@ public class MenuScript : MonoBehaviour
 
             Debug.Log("Found Stored JSON File.");
              GameManager.Instance.continueGame = true;
+
+            //  This needs to be generalized. Which scene to load.
              SceneManager.LoadScene("Level 1 - Pedestrial Walk");
         }
         else
