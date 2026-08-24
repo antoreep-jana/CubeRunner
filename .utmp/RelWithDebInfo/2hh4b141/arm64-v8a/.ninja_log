@@ -1,10 +1,19 @@
 # ninja log v5
+28367	29640	8089439209953178	D:/UnityProjects/3D Level platformer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2hh4b141/obj/arm64-v8a/libgame.so	8249a6680d21ac58
 162	16259	8089439073793302	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	10540ba4aa42ed04
+16273	28365	8089439199602036	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dcf6e6dfd167b2c
 1	16293	8089439075516894	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c53c1fb4e87774f2
-296	16314	8089439076835248	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	d79eed0bd272475c
 146	17108	8089439084123187	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	28ff1f455e6665f8
+296	16314	8089439076835248	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	d79eed0bd272475c
 179	18897	8089439102525265	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	f428e3f0417214d9
 130	20671	8089439111732358	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	19a2d848d0cb5e6f
 16295	26978	8089439185195068	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7dc8d16b95b702f0
-16273	28365	8089439199602036	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dcf6e6dfd167b2c
-28367	29640	8089439209953178	D:/UnityProjects/3D Level platformer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2hh4b141/obj/arm64-v8a/libgame.so	8249a6680d21ac58
+186	5710	8092450389438097	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7dc8d16b95b702f0
+130	5786	8092450389776666	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c53c1fb4e87774f2
+160	5834	8092450390791850	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	d79eed0bd272475c
+120	6035	8092450391947383	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	28ff1f455e6665f8
+221	6685	8092450399259310	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	f428e3f0417214d9
+143	6953	8092450402198299	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	19a2d848d0cb5e6f
+5711	8220	8092450415181077	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	10540ba4aa42ed04
+5786	13006	8092450462660412	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dcf6e6dfd167b2c
+13006	15007	8092450482735440	D:/UnityProjects/3D Level platformer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2hh4b141/obj/arm64-v8a/libgame.so	8249a6680d21ac58
