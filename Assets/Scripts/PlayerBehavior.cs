@@ -91,7 +91,8 @@ public class PlayerBehavior : MonoBehaviour
             return;
         }
 
-        moveSpeed = data.playerSpeed;
+        // moveSpeed = data.playerSpeed;
+        moveSpeed = data.developer.playerSpeed;
 
         Debug.Log("Loaded Player's Move Speed");
     }

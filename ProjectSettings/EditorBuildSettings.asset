@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: ee143b55d206b3b4dad98f8c9ba06a94
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Main Menu/MainMenu.unity
     guid: 0b28eab19f7501b48abeda9b5680db0a
   - enabled: 1
     path: Assets/Scenes/Level 1 - Pedestrial Walk.unity
@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: 715e34cd9e3b7ab48b783182248ff363
   - enabled: 1
-    path: Assets/Scenes/SettingsPage.unity
+    path: Assets/Scenes/Main Menu/SettingsPage.unity
     guid: 474abe54a89aa284e860bc973ea2ce32
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Load Level Page.unity
+    guid: f7b82e4e33b40444f9187dce81c80d55
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

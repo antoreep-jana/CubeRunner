@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuScript : MonoBehaviour
 {
@@ -58,6 +59,12 @@ public class PauseMenuScript : MonoBehaviour
         // Load the main menu scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
+
+
+    // public void OpenSettings()
+    // {
+    //     SceneManager.LoadScene("Settings", LoadSceneMode.Additive);
+    // }
 
 
 }

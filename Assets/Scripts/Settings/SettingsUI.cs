@@ -8,7 +8,7 @@ public class SettingsUI : MonoBehaviour
     public TMP_InputField speedInputField;
     public Slider volumeSlider;
 
-    private float speed;
+    private float playerSpeed;
     private float volume;
 
 
@@ -16,10 +16,17 @@ public class SettingsUI : MonoBehaviour
     {
         if (SettingsSaveManager.HasSave() == false)
         {
-            speed = 4.5f;
-            volume = 50f;
-            SettingsData settingsData = new SettingsData(speed, volume);
-            SettingsSaveManager.Save(settingsData);         
+            // playerSpeed = 4.5f;
+            // volume = 50f;
+            // SettingsData settingsData = new SettingsData(playerSpeed, volume);
+            // SettingsSaveManager.Save(settingsData);         
+
+            SettingsData settings = new SettingsData();
+
+            settings.developer.playerSpeed = 5f;
+            settings.audio.volume = 50f;
+
+            SettingsSaveManager.Save(settings);
 
             Debug.Log("The Game Initialized the Settings Data File in the Settings Menu Page.");
 
@@ -38,6 +45,12 @@ public class SettingsUI : MonoBehaviour
 
     }
 
+
+//     public void BackToGame()
+// {
+//     SceneManager.UnloadSceneAsync("Settings");
+//     Time.timeScale = 1f;
+// }
 
     public void SetVolume(float value)
     {   
@@ -106,9 +119,12 @@ public class SettingsUI : MonoBehaviour
 
         
         // SettingsData settingsData = new SettingsData(speed, volume);
-        SettingsData settingsData = new SettingsData(GetSpeed(), GetVolume());
+        // SettingsData settingsData = new SettingsData(GetSpeed(), GetVolume());
+        SettingsData newSettingsData = new SettingsData();
+        newSettingsData.developer.playerSpeed = GetSpeed();
+        newSettingsData.audio.volume = GetVolume();
         
-        SettingsSaveManager.Save(settingsData);
+        SettingsSaveManager.Save(newSettingsData);
 
     }
 
@@ -122,9 +138,12 @@ public class SettingsUI : MonoBehaviour
             return;
         }
 
-        speed = data.playerSpeed;
+        // playerSpeed = data.playerSpeed;
 
-        volume = data.Volume;
+        // volume = data.Volume;
+
+        playerSpeed = data.developer.playerSpeed;
+        volume = data.audio.volume;
 
         // transform.position = new Vector3( data.posX, data.posY, data.posZ);
         volumeSlider.SetValueWithoutNotify(volume);
@@ -132,8 +151,8 @@ public class SettingsUI : MonoBehaviour
         SetVolume(volume);
         Debug.Log("Volume Settings Loaded");
 
-        SetSpeed(speed.ToString());
-        Debug.Log("Speed Settings Loaded");
+        SetSpeed(playerSpeed.ToString());
+        Debug.Log("playerSpeed Settings Loaded");
 
 
     }

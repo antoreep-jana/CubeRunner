@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+
+    public GameObject playBtnPanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +52,13 @@ public class MenuScript : MonoBehaviour
         {
              Debug.Log("No saved game!");
         }
+    }
+
+    public void OpenPlayPanel()
+    {
+        playBtnPanel.SetActive(true);
+        
+        
     }
     
 

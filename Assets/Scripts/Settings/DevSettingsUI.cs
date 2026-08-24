@@ -4,58 +4,52 @@ using UnityEngine.UI; // For Sliders
 
 public class DevSettingsUI : MonoBehaviour
 {
-    public TMP_Text volumeText;
     public TMP_InputField speedInputField;
-    public Slider volumeSlider;
-
-    private float speed;
-    private float volume;
+    private float playerSpeed;
+    // private float volume;
 
 
     public void Start()
     {
-        if (SettingsSaveManager.HasSave() == false)
-        {
-            speed = 4.5f;
-            volume = 50f;
-            SettingsData settingsData = new SettingsData(speed, volume);
-            SettingsSaveManager.Save(settingsData);         
+        // if (SettingsSaveManager.HasSave() == false)
+        // {
+        //     // playerSpeed = 4.5f;
+        //     // volume = 50f;
+        //     // SettingsData settingsData = new SettingsData(playerSpeed, volume);
+        //     // SettingsSaveManager.Save(settingsData);         
 
-            Debug.Log("The Game Initialized the Settings Data File in the Settings Menu Page.");
+        //     SettingsData settings = new SettingsData();
 
-        }
-        else
-        {
-            LoadSettingsData();
-        }
+        //     settings.developer.playerSpeed = 5f;
+        //     settings.audio.volume = 50f;
 
-        // volumeSlider.interactable = false;
-        Debug.Log(volumeSlider.interactable);
-        Debug.Log(volumeSlider.gameObject.activeInHierarchy);
+        //     SettingsSaveManager.Save(settings);
 
+        //     Debug.Log("The Game Initialized the Settings Data File in the Settings Menu Page.");
 
-        // volumeSlider.onValueChanged.AddListener(SetVolume);
+        // }
+        // else
+        // {
+        //     LoadSettingsData();
+        // }
 
+        LoadDevSettingsData();
+        
     }
 
 
-    public void SetVolume(float value)
-    {   
+    // public void SetVolume(float value)
+    // {   
 
-        volume = value;
-        Debug.Log("Volume set to: " + volume);
-        volumeText.text = Mathf.RoundToInt(volume).ToString();
+    //     volume = value;
+    //     Debug.Log("Volume set to: " + volume);
+    //     volumeText.text = Mathf.RoundToInt(volume).ToString();
 
-        // Adjust & Update the slider
-        // volumeSlider.value = Mathf.RoundToInt(volume);
-        // volumeSlider.SetValueWithoutNotify(volume);
+    //     // Adjust & Update the slider
+    //     // volumeSlider.value = Mathf.RoundToInt(volume);
+    //     // volumeSlider.SetValueWithoutNotify(volume);
 
-    }
-
-    private void OnDestroy()
-    {
-        volumeSlider.onValueChanged.RemoveListener(SetVolume);
-    }
+    // }
 
     public void SetBrightness(float brightness)
     {
@@ -94,25 +88,38 @@ public class DevSettingsUI : MonoBehaviour
         return speed;
     }
 
-    private float GetVolume()
-    {
-        float volume;
-        float.TryParse(volumeText.text, out volume);
-        return volume;
-    }
+    // private float GetVolume()
+    // {
+    //     float volume;
+    //     float.TryParse(volumeText.text, out volume);
+    //     return volume;
+    // }
 
     public void SaveSettingsData()
     {
 
         
         // SettingsData settingsData = new SettingsData(speed, volume);
-        SettingsData settingsData = new SettingsData(GetSpeed(), GetVolume());
+        // SettingsData settingsData = new SettingsData(GetSpeed(), GetVolume());
+        
+        
+        // SettingsData newSettingsData = new SettingsData();
+        // newSettingsData.developer.playerSpeed = GetSpeed();
+        // newSettingsData.audio.volume = GetVolume();
+        
+        // SettingsSaveManager.Save(newSettingsData);
+
+        SettingsData settingsData = SettingsSaveManager.Load();
+        settingsData.developer.playerSpeed = GetSpeed();
+        // newSettingsData.audio.volume = GetVolume();
         
         SettingsSaveManager.Save(settingsData);
 
+
+
     }
 
-    public void LoadSettingsData()
+    public void LoadDevSettingsData()
     {
         SettingsData data = SettingsSaveManager.Load();
 
@@ -122,18 +129,21 @@ public class DevSettingsUI : MonoBehaviour
             return;
         }
 
-        speed = data.playerSpeed;
+        // playerSpeed = data.playerSpeed;
 
-        volume = data.Volume;
+        // volume = data.Volume;
+
+        playerSpeed = data.developer.playerSpeed;
+        // volume = data.audio.volume;
 
         // transform.position = new Vector3( data.posX, data.posY, data.posZ);
-        volumeSlider.SetValueWithoutNotify(volume);
+        // volumeSlider.SetValueWithoutNotify(volume);
 
-        SetVolume(volume);
-        Debug.Log("Volume Settings Loaded");
+        // SetVolume(volume);
+        // Debug.Log("Volume Settings Loaded");
 
-        SetSpeed(speed.ToString());
-        Debug.Log("Speed Settings Loaded");
+        SetSpeed(playerSpeed.ToString());
+        Debug.Log("playerSpeed Settings Loaded");
 
 
     }
