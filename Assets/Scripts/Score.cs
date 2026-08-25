@@ -26,5 +26,10 @@ public class Score : MonoBehaviour
         return myScore;
     }
 
+    public void SetScore(int score)
+    {
+        myScore = score;
+    }
+
 
 }

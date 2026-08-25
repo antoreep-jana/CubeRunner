@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerBehavior : MonoBehaviour
 {
     // Mobile input
@@ -22,8 +22,13 @@ public class PlayerBehavior : MonoBehaviour
 
 
     // This needs to be generalized
-    public int score = 0;
-    public float health = 100f;
+    // public int score = 0;
+    // public float health = 100f;
+
+    [Header("Script Imports")]
+    [Space(10)]
+    public PlayerHealthScript playerHealthScript;
+    public Score scoreScript;
 
     [Header("SoundsFx")]
     [Space(5)]
@@ -48,16 +53,43 @@ public class PlayerBehavior : MonoBehaviour
 
     public void SavePlayerData()
     {
-        PlayerData playerData = new PlayerData(
 
-            // These 3 need to be generalized
-            level: 1, // Example level
-            score: 100, // Example score
-            health: 100f, // Example health
-            posX: transform.position.x,
-            posY: transform.position.y,
-            posZ: transform.position.z
+        PlayerData oldPlayerData = PlayerSaveManager.Load();
+
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        int maxLevel;
+
+        if (oldPlayerData != null)
+        {
+            maxLevel = Mathf.Max(oldPlayerData.maxLevel, currentLevel);
+        }
+        else
+        {
+            // In case, no progression saved yet.
+            maxLevel = currentLevel;
+        }
+
+        PlayerData playerData = new PlayerData(
+            currentLevel : currentLevel, 
+            maxLevel : maxLevel, 
+            score : scoreScript.GetScore(), 
+            health : playerHealthScript.GetHealth(),//100f, 
+            posX : transform.position.x,
+            posY : transform.position.y, 
+            posZ : transform.position.z
         );
+
+        // PlayerData playerData = new PlayerData(
+
+        //     // These 3 need to be generalized
+        //     level: 1, // Example level
+        //     score: 100, // Example score
+        //     health: 100f, // Example health
+        //     posX: transform.position.x,
+        //     posY: transform.position.y,
+        //     posZ: transform.position.z
+        // );
 
         PlayerSaveManager.Save(playerData);
     }
@@ -72,9 +104,13 @@ public class PlayerBehavior : MonoBehaviour
             return;
         }
 
-        score = data.score;
+        // score = data.score;
+        // Setting score using Score script's setter
+        scoreScript.SetScore(data.score);
 
-        health = data.health;
+        // health = data.health;
+        // Setting health in PlayerHealth script's setMethod
+        playerHealthScript.SetHealth(data.health);
 
         transform.position = new Vector3( data.posX, data.posY, data.posZ);
 

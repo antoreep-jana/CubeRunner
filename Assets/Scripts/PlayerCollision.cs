@@ -72,7 +72,7 @@ public class PlayerCollision : MonoBehaviour
             // New scripting to handle obstacle collision without immediate game over
             collisionSound.Play(); // Play the collision sound effect
             // You can add additional logic here, such as reducing player health or triggering an animation.
-            playerHealthScript.TakeDamage(20f); // Call a method to handle player damage or other effects
+            playerHealthScript.TakeDamage(20); // Call a method to handle player damage or other effects
 
             if (playerHealthScript.GetHealth() <= 0)
             {

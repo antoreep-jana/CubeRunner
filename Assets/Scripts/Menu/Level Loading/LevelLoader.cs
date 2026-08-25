@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement; // Required namespace
 
 public class LevelLoader : MonoBehaviour
 {
+
    public void LoadLevel1()
     {
         SceneManager.LoadScene("Level 1 - Pedestrial Walk");

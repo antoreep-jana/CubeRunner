@@ -18,4 +18,9 @@ public class PlayBtnPanelScript : MonoBehaviour
         // SceneManager.LoadScene("GamePlayLoader");
     }
 
+    public void ClosePlayPanel()
+    {
+        gameObject.SetActive(false);
+    }
+
 }

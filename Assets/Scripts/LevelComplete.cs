@@ -26,6 +26,13 @@ public class LevelComplete : MonoBehaviour
             Debug.Log("Level Complete!");
 
             levelCompletePanel.SetActive(true); // Show the level complete panel
+
+            // Auto Save the Player's progress
+            // PlayerData oldPlayerData = PlayerSaveManager().Load();
+
+            // int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+
                 Time.timeScale = 0f;
 
             // SceneManager.LoadNextLevel(); // Load the next level when the player reaches the finish line

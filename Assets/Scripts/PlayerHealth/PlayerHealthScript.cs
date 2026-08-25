@@ -6,14 +6,37 @@ public class PlayerHealthScript : MonoBehaviour
 {
     
     public TMP_Text healthText;
-    public float playerHealth = 100f;
+    public int playerHealth = 100;
 
     void Start()
     {
-       healthText.text = playerHealth.ToString();
+        // Check for any saved file
+        // PlayerData data = PlayerSaveManager.Load();
+
+        // if (data == null)
+        // {
+        //     Debug.LogWarning("Save data could not be loaded");
+        //     // return;
+        //     playerHealth = 100f;
+        // }
+        // else
+        // {
+        //     playerHealth = data.health;
+        // }
+
+
+
+    //    healthText.text = playerHealth.ToString();
     }
 
-    private void UpdateHealthText()
+
+
+    // private void UpdateHealthText()
+    // {
+    //     healthText.text = playerHealth.ToString();
+    // }
+
+    void Update()
     {
         healthText.text = playerHealth.ToString();
     }
@@ -24,24 +47,29 @@ public class PlayerHealthScript : MonoBehaviour
         return Mathf.RoundToInt(playerHealth);
     }
 
-    public void TakeDamage(float damageAmount)
+    public void SetHealth(int health)
+    {
+        playerHealth = health;
+    }
+
+    public void TakeDamage(int damageAmount)
     {
         playerHealth -= damageAmount;
         if (playerHealth < 0)
         {
             playerHealth = 0;
         }
-        UpdateHealthText();
+        // UpdateHealthText();
     }
 
-    public void Heal(float healAmount)
+    public void Heal(int healAmount)
     {
         playerHealth += healAmount;
-        if (playerHealth > 100f)
+        if (playerHealth > 100)
         {
-            playerHealth = 100f;
+            playerHealth = 100;
         }
-        UpdateHealthText();
+        // UpdateHealthText();
     }
 
 
