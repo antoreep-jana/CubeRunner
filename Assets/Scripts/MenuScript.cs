@@ -20,7 +20,7 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         // Load the main game scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 - Pedestrial Walk");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 - Carnivore");
     }
 
     public void QuitGame()
@@ -46,7 +46,7 @@ public class MenuScript : MonoBehaviour
              GameManager.Instance.continueGame = true;
 
             //  This needs to be generalized. Which scene to load.
-             SceneManager.LoadScene("Level 1 - Pedestrial Walk");
+             SceneManager.LoadScene("Level 1 - Carnivore");
         }
         else
         {

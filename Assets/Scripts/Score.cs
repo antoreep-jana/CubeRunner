@@ -5,9 +5,7 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    
     public TMP_Text scoreText;
-
     int myScore = 00;
     // Update is called once per frame
     void Update()

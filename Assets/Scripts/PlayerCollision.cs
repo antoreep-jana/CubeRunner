@@ -12,6 +12,7 @@ public class PlayerCollision : MonoBehaviour
     [Space(10)]
     public PlayerBehavior playerScript;
     public PlayerHealthScript playerHealthScript;
+    public LevelObjectives levelObjectivesScript;
 
     public GameOver gameOverScript;
 
@@ -111,15 +112,17 @@ public class PlayerCollision : MonoBehaviour
 
             scoreScript.AddScore(1); // Add 1 to the score when collecting a collectable
 
+            levelObjectivesScript.incrementDestroyCount();
+
             Instantiate(
-    breakableCollectablePrefab,
-    new Vector3(
-        other.transform.position.x,
-        other.transform.position.y + 0.2f,
-        other.transform.position.z
-    ),
-    other.transform.rotation
-);
+                    breakableCollectablePrefab,
+                    new Vector3(
+                        other.transform.position.x,
+                        other.transform.position.y + 0.2f,
+                        other.transform.position.z
+                    ),
+                    other.transform.rotation
+                    );
 
 
             Destroy(other.gameObject); // Example: Destroy the collectable object

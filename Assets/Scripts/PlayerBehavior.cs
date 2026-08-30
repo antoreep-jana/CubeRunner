@@ -40,8 +40,6 @@ public class PlayerBehavior : MonoBehaviour
          if (GameManager.Instance.continueGame)
         {
             LoadPlayer(); // Load Player Position
-
-          
         }
         
           LoadPlayerGameSettings(); // Load Player's game Settings

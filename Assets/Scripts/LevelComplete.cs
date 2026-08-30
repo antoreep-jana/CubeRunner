@@ -27,6 +27,8 @@ public class LevelComplete : MonoBehaviour
 
             levelCompletePanel.SetActive(true); // Show the level complete panel
 
+
+
             // Auto Save the Player's progress
             // PlayerData oldPlayerData = PlayerSaveManager().Load();
 

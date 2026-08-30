@@ -19,7 +19,6 @@ public class GameOver : MonoBehaviour
     public TMP_Text healthTextLabel;
 
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

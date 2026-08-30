@@ -11,7 +11,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -19,7 +19,7 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -27,7 +27,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -41,7 +41,7 @@
           {
             "name": "Avatar",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -77,7 +77,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -90,7 +90,7 @@
           {
             "name": "AudioClip",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -98,7 +98,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -117,7 +117,7 @@
           {
             "name": "AudioResource",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -125,7 +125,7 @@
           {
             "name": "AudioSource",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -156,7 +156,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -181,7 +181,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -206,7 +206,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -225,7 +225,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -262,7 +262,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -275,7 +275,7 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -306,7 +306,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -325,7 +325,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -338,7 +338,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -348,7 +348,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -358,7 +358,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -368,7 +368,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -387,7 +387,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -400,7 +400,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -443,7 +443,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
               "Assets/Scenes/Main Menu/MainMenu.unity",
               "Assets/Scenes/Main Menu/SettingsPage.unity"
@@ -460,7 +460,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -497,7 +497,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
@@ -516,7 +516,7 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -536,7 +536,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
               "Assets/Scenes/Main Menu/MainMenu.unity",
               "Assets/Scenes/Main Menu/SettingsPage.unity"
@@ -1039,7 +1039,7 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -1049,7 +1049,7 @@
           {
             "name": "CapsuleCollider",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -1065,7 +1065,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity"
+              "Assets/Scenes/Level 1 - Carnivore.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1079,7 +1079,7 @@
           {
             "name": "PhysicsMaterial",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -1089,7 +1089,7 @@
           {
             "name": "Rigidbody",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Level 2.unity",
               "Assets/Scenes/Level 3.unity"
             ],
@@ -1490,7 +1490,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
               "Assets/Scenes/Main Menu/MainMenu.unity",
               "Assets/Scenes/Main Menu/SettingsPage.unity"
@@ -1536,7 +1536,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
               "Assets/Scenes/Main Menu/MainMenu.unity",
               "Assets/Scenes/Main Menu/SettingsPage.unity"
@@ -1553,7 +1553,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1 - Pedestrial Walk.unity",
+              "Assets/Scenes/Level 1 - Carnivore.unity",
               "Assets/Scenes/Main Menu/Load Level Page.unity",
               "Assets/Scenes/Main Menu/MainMenu.unity",
               "Assets/Scenes/Main Menu/SettingsPage.unity"
